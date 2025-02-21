@@ -1,0 +1,44 @@
+name: urbanfit
+description: A new Flutter project for FitApp
+
+environment:
+  sdk: "^3.6.0"
+
+publish_to: 'none' # Remove this line if you want to publish to pub.dev
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Для работы с HTTP запросами
+  http: ^0.13.4
+
+  # Для хранения данных на устройстве (например, для токенов JWT)
+  shared_preferences: ^2.0.15
+
+  # Для работы с безопасным хранением данных
+  flutter_secure_storage: ^5.0.2
+
+  # Для работы с конфигурациями через YAML (например, для загрузки конфигурационных файлов)
+  yaml: ^3.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  # Для анализа кода
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/muscleGroup/chest.png
+    - assets/muscleGroup/back.png
+    - assets/muscleGroup/shoulders.png
+    - assets/muscleGroup/hands.png
+    - assets/muscleGroup/abs.png
+    - assets/muscleGroup/legs.png
+    - assets/exercise/press_bench.png
+    - assets/exercise/dumbbell_press.png
+    - assets/error.png
+
