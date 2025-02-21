@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KC1Oi+rHRkw=",
+  "dgSpecHash": "npCzz1tIH0I=",
   "success": true,
-  "projectFilePath": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitApp\\FitAppAPI\\FitAppAPI\\FitAppAPI.csproj",
+  "projectFilePath": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\FitAppAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Андрей Ярема\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Андрей Ярема\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
