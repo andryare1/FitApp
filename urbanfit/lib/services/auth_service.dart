@@ -5,7 +5,8 @@ import 'dart:convert';
 class AuthService {
   Future<String?> login(String username, String password) async {
     final response = await http.post(
-      Uri.parse('https://localhost:7081/api/auth/login'),
+      //Uri.parse('https://localhost:7081/api/auth/login'),
+      Uri.parse('http://localhost:5016/api/auth/login'),
       headers: {'Content-Type': 'application/json'},
       body: json.encode({'username': username, 'password': password}),
     );
@@ -24,7 +25,8 @@ class AuthService {
 
 Future<String?> register(String username, String email, String password) async {
   final response = await http.post(
-    Uri.parse('https://localhost:7081/api/auth/register'),
+    //Uri.parse('https://localhost:7081/api/auth/register'),
+    Uri.parse('http://localhost:5016/api/auth/register'),
     headers: {'Content-Type': 'application/json'},
     body: json.encode({'username': username, 'email': email, 'password': password}),
   );

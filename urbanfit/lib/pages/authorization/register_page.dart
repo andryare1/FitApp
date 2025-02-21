@@ -45,7 +45,8 @@ class _RegisterPageState extends State<RegisterPage> {
 
       if (errorMessage == null) {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(content: Text('Регистрация успешна! Войдите в аккаунт')),
+          const SnackBar(
+              content: Text('Регистрация успешна! Войдите в аккаунт')),
         );
 
         Navigator.pushReplacement(
