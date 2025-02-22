@@ -35,8 +35,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Center(child: Text(_titles[_currentIndex]))),
-      body: widget.token == '' ? const LoginPage() : _pages[_currentIndex], // Если нет токена, показываем LoginPage
+      body: widget.token == '' ? const LoginPage() : _pages[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentIndex,
         onTap: (index) {

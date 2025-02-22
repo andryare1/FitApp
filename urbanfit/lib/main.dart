@@ -22,6 +22,9 @@ class MyApp extends StatelessWidget {
       title: 'FitApp',
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Color.fromARGB(255, 214, 139, 230),
+        ),
       ),
       home: token == null ? const LoginPage() : HomePage(token: token),
     );

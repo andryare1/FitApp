@@ -17,6 +17,15 @@ class _RegisterPageState extends State<RegisterPage> {
 
   bool _isLoading = false;
 
+  bool _isUsernameValid(String username) {
+    return username.length >= 5;
+  }
+
+  bool _isEmailValid(String email) {
+    final emailRegex = RegExp(r"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$");
+    return emailRegex.hasMatch(email);
+  }
+
   Future<void> _register() async {
     if (_isLoading) return;
 
@@ -26,6 +35,21 @@ class _RegisterPageState extends State<RegisterPage> {
         _passwordController.text.trim().isEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text('Заполните все поля')),
+      );
+      return;
+    }
+
+    // Валидация логина и email
+    if (!_isUsernameValid(_usernameController.text)) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Логин должен содержать минимум 5 символов')),
+      );
+      return;
+    }
+
+    if (!_isEmailValid(_emailController.text)) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Введите корректный email')),
       );
       return;
     }
@@ -45,8 +69,7 @@ class _RegisterPageState extends State<RegisterPage> {
 
       if (errorMessage == null) {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-              content: Text('Регистрация успешна! Войдите в аккаунт')),
+          const SnackBar(content: Text('Регистрация успешна! Войдите в аккаунт')),
         );
 
         Navigator.pushReplacement(
@@ -72,32 +95,72 @@ class _RegisterPageState extends State<RegisterPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Регистрация')),
+      appBar: AppBar(title: const Center(child: Text('Регистрация'))),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
+            const SizedBox(height: 40),
             TextField(
               controller: _usernameController,
-              decoration: const InputDecoration(labelText: 'Имя пользователя'),
+              decoration: InputDecoration(
+                labelText: 'Имя пользователя',
+                prefixIcon: const Icon(Icons.person),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(8),
+                ),
+              ),
             ),
+            const SizedBox(height: 20),
             TextField(
               controller: _emailController,
-              decoration: const InputDecoration(labelText: 'Email'),
+              decoration: InputDecoration(
+                labelText: 'Email',
+                prefixIcon: const Icon(Icons.email),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(8),
+                ),
+              ),
               keyboardType: TextInputType.emailAddress,
             ),
+            const SizedBox(height: 20),
             TextField(
               controller: _passwordController,
               obscureText: true,
-              decoration: const InputDecoration(labelText: 'Пароль'),
+              decoration: InputDecoration(
+                labelText: 'Пароль',
+                prefixIcon: const Icon(Icons.lock),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(8),
+                ),
+              ),
             ),
             const SizedBox(height: 20),
             _isLoading
                 ? const CircularProgressIndicator()
                 : ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      padding: const EdgeInsets.symmetric(vertical: 16),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                    ),
                     onPressed: _register,
-                    child: const Text('Зарегистрироваться'),
+                    child: const Text(
+                      'Зарегистрироваться',
+                      style: TextStyle(fontSize: 18),
+                    ),
                   ),
+            const SizedBox(height: 10),
+            TextButton(
+              onPressed: () {
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(builder: (context) => const LoginPage()),
+                );
+              },
+              child: const Text('Уже есть аккаунт? Войти'),
+            ),
           ],
         ),
       ),

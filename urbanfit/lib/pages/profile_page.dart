@@ -27,30 +27,35 @@ class _ProfilePageState extends State<ProfilePage> {
     });
   }
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Профиль'),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.exit_to_app),
-            onPressed: () async {
-              // Запрос на выход
-              bool? exit = await _showExitDialog(context);
-              if (exit == true) {
-                // Очищаем токен
-                await _authService.clearToken();
-                // Перенаправляем на страницу входа
-                Navigator.pushReplacement(
-                  context,
-                  MaterialPageRoute(builder: (context) => const LoginPage()),
-                );
-              }
-            },
-          ),
+ @override
+Widget build(BuildContext context) {
+  return Scaffold(
+    appBar: AppBar(
+      title: const Row(
+        mainAxisAlignment: MainAxisAlignment.center, // Центрируем текст
+        children: [
+          Text('         Профиль', textAlign: TextAlign.center),
         ],
       ),
+      actions: [
+        IconButton(
+          icon: const Icon(Icons.exit_to_app),
+          onPressed: () async {
+            // Запрос на выход
+            bool? exit = await _showExitDialog(context);
+            if (exit == true) {
+              // Очищаем токен
+              await _authService.clearToken();
+              // Перенаправляем на страницу входа
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(builder: (context) => const LoginPage()),
+              );
+            }
+          },
+        ),
+      ],
+    ),
       body: Center(
         child: username == null
             ? const CircularProgressIndicator() // Показываем индикатор загрузки, пока не получим имя

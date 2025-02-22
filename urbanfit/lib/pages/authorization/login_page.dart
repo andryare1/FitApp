@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:urbanfit/pages/home_page.dart';
 import 'package:urbanfit/services/auth_service.dart';
-import '../home_page.dart';
-import 'register_page.dart';  // Подключаем страницу регистрации
+import 'register_page.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -58,31 +58,56 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Вход')),
+      appBar: AppBar(
+        title: const Center(child: Text('Вход')),
+      ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
+            const SizedBox(height: 40),
             TextField(
               controller: _usernameController,
-              decoration: const InputDecoration(labelText: 'Логин'),
+              decoration: InputDecoration(
+                labelText: 'Логин',
+                prefixIcon: const Icon(Icons.person),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(8),
+                ),
+              ),
             ),
+            const SizedBox(height: 20),
             TextField(
               controller: _passwordController,
               obscureText: true,
-              decoration: const InputDecoration(labelText: 'Пароль'),
+              decoration: InputDecoration(
+                labelText: 'Пароль',
+                prefixIcon: const Icon(Icons.lock),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(8),
+                ),
+              ),
             ),
             const SizedBox(height: 20),
             _isLoading
                 ? const CircularProgressIndicator()
                 : ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      padding: const EdgeInsets.symmetric(vertical: 16),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                    ),
                     onPressed: _login,
-                    child: const Text('Войти'),
+                    child: const Text(
+                      'Войти',
+                      style: TextStyle(fontSize: 18),
+                    ),
                   ),
             const SizedBox(height: 10),
             TextButton(
               onPressed: () {
-                Navigator.push(
+                Navigator.pushReplacement(
                   context,
                   MaterialPageRoute(builder: (context) => const RegisterPage()),
                 );
