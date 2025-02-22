@@ -16,6 +16,7 @@ class _RegisterPageState extends State<RegisterPage> {
   final AuthService _authService = AuthService();
 
   bool _isLoading = false;
+  bool _isPasswordVisible = false; // Переменная для показа/скрытия пароля
 
   bool _isUsernameValid(String username) {
     return username.length >= 5;
@@ -29,7 +30,6 @@ class _RegisterPageState extends State<RegisterPage> {
   Future<void> _register() async {
     if (_isLoading) return;
 
-    // Проверяем, чтобы все поля были заполнены
     if (_usernameController.text.trim().isEmpty ||
         _emailController.text.trim().isEmpty ||
         _passwordController.text.trim().isEmpty) {
@@ -39,7 +39,6 @@ class _RegisterPageState extends State<RegisterPage> {
       return;
     }
 
-    // Валидация логина и email
     if (!_isUsernameValid(_usernameController.text)) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text('Логин должен содержать минимум 5 символов')),
@@ -78,7 +77,7 @@ class _RegisterPageState extends State<RegisterPage> {
         );
       } else {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text(errorMessage)), // Показываем ошибку от API
+          SnackBar(content: Text(errorMessage)),
         );
       }
     } catch (e) {
@@ -126,12 +125,22 @@ class _RegisterPageState extends State<RegisterPage> {
             const SizedBox(height: 20),
             TextField(
               controller: _passwordController,
-              obscureText: true,
+              obscureText: !_isPasswordVisible, // Меняем видимость пароля
               decoration: InputDecoration(
                 labelText: 'Пароль',
                 prefixIcon: const Icon(Icons.lock),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(8),
+                ),
+                suffixIcon: IconButton(
+                  icon: Icon(
+                    _isPasswordVisible ? Icons.visibility : Icons.visibility_off,
+                  ),
+                  onPressed: () {
+                    setState(() {
+                      _isPasswordVisible = !_isPasswordVisible; // Меняем состояние
+                    });
+                  },
                 ),
               ),
             ),
@@ -145,7 +154,7 @@ class _RegisterPageState extends State<RegisterPage> {
                         borderRadius: BorderRadius.circular(20),
                       ),
                       elevation: 5,
-                      minimumSize: const Size(double.infinity, 0.1), // Делаем ширину фиксированной
+                      minimumSize: const Size(double.infinity, 0.1),
                     ),
                     onPressed: _register,
                     child: const Text(

@@ -64,30 +64,30 @@ Widget build(BuildContext context) {
     );
   }
 
-  // Диалог с вопросом о выходе
-  Future<bool?> _showExitDialog(BuildContext context) {
-    return showDialog<bool>(
-      context: context,
-      builder: (context) {
-        return AlertDialog(
-          title: const Text('Выход'),
-          content: const Text('Вы действительно хотите выйти?'),
-          actions: <Widget>[
-            TextButton(
-              onPressed: () {
-                Navigator.of(context).pop(false); // Отмена
-              },
-              child: const Text('Отмена'),
-            ),
-            TextButton(
-              onPressed: () {
-                Navigator.of(context).pop(true); // Выйти
-              },
-              child: const Text('Выйти'),
-            ),
-          ],
-        );
-      },
-    );
-  }
+ Future<bool?> _showExitDialog(BuildContext context) {
+  return showDialog<bool>(
+    context: context,
+    builder: (context) {
+      return AlertDialog(
+        title: const Text('Выход'),
+        content: const Text('Вы действительно хотите выйти?'),
+        actions: <Widget>[
+          TextButton(
+            style: TextButton.styleFrom(foregroundColor: Colors.red), // Красный цвет кнопки
+            onPressed: () {
+              Navigator.of(context).pop(false); // Отмена
+            },
+            child: const Text('Отмена'),
+          ),
+          TextButton(
+            onPressed: () {
+              Navigator.of(context).pop(true); // Выйти
+            },
+            child: const Text('Выйти'),
+          ),
+        ],
+      );
+    },
+  );
+}
 }
