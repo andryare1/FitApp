@@ -142,8 +142,10 @@ class _RegisterPageState extends State<RegisterPage> {
                     style: ElevatedButton.styleFrom(
                       padding: const EdgeInsets.symmetric(vertical: 16),
                       shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(8),
+                        borderRadius: BorderRadius.circular(20),
                       ),
+                      elevation: 5,
+                      minimumSize: const Size(double.infinity, 0.1), // Делаем ширину фиксированной
                     ),
                     onPressed: _register,
                     child: const Text(

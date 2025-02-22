@@ -17,13 +17,6 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   int _currentIndex = 0;
 
-  // Список названий вкладок для AppBar
-  final List<String> _titles = [
-    'Главная',
-    'Тренировки',
-    'Упражнения',
-    'Профиль',
-  ];
 
   final List<Widget> _pages = [
     const MainPage(), // Главная страница
