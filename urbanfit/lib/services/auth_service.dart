@@ -57,4 +57,17 @@ Future<String?> register(String username, String email, String password) async {
     final prefs = await SharedPreferences.getInstance();
     return prefs.getString('jwt_token'); // Получаем токен из SharedPreferences
   }
+
+  // Метод для получения пути к аватарке
+  Future<String?> getAvatarPath() async {
+    final prefs = await SharedPreferences.getInstance();
+    return prefs.getString('avatarPath');
+  }
+
+  // Метод для сохранения пути к аватарке
+  Future<void> saveAvatarPath(String path) async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString('avatarPath', path);
+  }
 }
+
