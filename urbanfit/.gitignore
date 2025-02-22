@@ -43,3 +43,14 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Игнорируем временные файлы Visual Studio
+.vs/
+*.suo
+*.user
+*.cache
+*.log
+
+# Игнорируем скомпилированные файлы
+bin/
+obj/
