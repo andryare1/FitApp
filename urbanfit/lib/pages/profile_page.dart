@@ -27,24 +27,25 @@ class _ProfilePageState extends State<ProfilePage> {
   }
 
   Future<void> _loadUserData() async {
-  setState(() => _isLoading = true);
+    setState(() => _isLoading = true);
 
-  try {
-    final storedUsername = await _authService.getUsername();
-    final storedAvatarBytes = await _authService.getAvatarFromServer(); // Берем URL с сервера
+    try {
+      final storedUsername = await _authService.getUsername();
+      final storedAvatarBytes =
+          await _authService.getAvatarFromServer(); // Берем URL с сервера
 
-    setState(() {
-      username = storedUsername;
-      avatarBytes = storedAvatarBytes; // Устанавливаем аватар с сервера
-    });
-  } catch (e) {
-    debugPrint('Ошибка загрузки данных: $e');
-    setState(() => avatarBytes = null); // Если ошибка - показываем дефолтный аватар
-  } finally {
-    setState(() => _isLoading = false);
+      setState(() {
+        username = storedUsername;
+        avatarBytes = storedAvatarBytes; // Устанавливаем аватар с сервера
+      });
+    } catch (e) {
+      debugPrint('Ошибка загрузки данных: $e');
+      setState(() =>
+          avatarBytes = null); // Если ошибка - показываем дефолтный аватар
+    } finally {
+      setState(() => _isLoading = false);
+    }
   }
-}
-
 
   /// Загружает новое изображение и отправляет на сервер
   Future<void> _pickImage(ImageSource source) async {
@@ -60,9 +61,6 @@ class _ProfilePageState extends State<ProfilePage> {
 
   /// Отправляет новый аватар на сервер
   Future<void> _uploadAvatar(File image) async {
-
-    
-
     setState(() => _isLoading = true);
 
     try {
@@ -165,59 +163,62 @@ class _ProfilePageState extends State<ProfilePage> {
     );
   }
 
- @override
-Widget build(BuildContext context) {
-  return Scaffold(
-    appBar: AppBar(
-      title: const Center(child: Text('Профиль')),
-      actions: [
-        IconButton(
-          icon: const Icon(Icons.exit_to_app),
-          onPressed: _showExitDialog,
-        ),
-      ],
-    ),
-    body: Padding(
-      padding: const EdgeInsets.all(16.0),
-      child: _isLoading
-          ? const Center(child: CircularProgressIndicator()) // Индикатор загрузки
-          : Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Center(
-                  child: CircleAvatar(
-                    radius: 60,
-                    backgroundColor: Colors.transparent,
-                    child: avatarBytes != null
-                        ? ClipOval(
-                            child: Image.memory(
-                              avatarBytes!,
-                              fit: BoxFit.cover,
-                              width: 120,
-                              height: 120,
-                              errorBuilder: (context, error, stackTrace) {
-                                return Image.asset('assets/error.png'); // Если ошибка
-                              },
-                            ),
-                          )
-                        : const Icon(Icons.person, size: 60), // Если нет аватарки
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Center(child: Text('Профиль')),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.exit_to_app),
+            onPressed: _showExitDialog,
+          ),
+        ],
+      ),
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: _isLoading
+            ? const Center(
+                child: CircularProgressIndicator()) // Индикатор загрузки
+            : Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Center(
+                    child: CircleAvatar(
+                      radius: 60,
+                      backgroundColor: Colors.transparent,
+                      child: avatarBytes != null
+                          ? ClipOval(
+                              child: Image.memory(
+                                avatarBytes!,
+                                fit: BoxFit.cover,
+                                width: 120,
+                                height: 120,
+                                errorBuilder: (context, error, stackTrace) {
+                                  return Image.asset(
+                                      'assets/error.png'); // Если ошибка
+                                },
+                              ),
+                            )
+                          : const Icon(Icons.person,
+                              size: 60), // Если нет аватарки
+                    ),
                   ),
-                ),
-                const SizedBox(height: 20),
-                ElevatedButton(
-                  onPressed: _showPhotoOptions,
-                  child: const Text('Изменить фото профиля'),
-                ),
-                const SizedBox(height: 20),
-                Text(
-                  username != null
-                      ? 'Добро пожаловать, $username!'
-                      : 'Загрузка...',
-                  style: const TextStyle(fontSize: 18),
-                ),
-              ],
-            ),
-    ),
-  );
-}
+                  const SizedBox(height: 20),
+                  ElevatedButton(
+                    onPressed: _showPhotoOptions,
+                    child: const Text('Изменить фото профиля'),
+                  ),
+                  const SizedBox(height: 20),
+                  Text(
+                    username != null
+                        ? 'Добро пожаловать, $username!'
+                        : 'Загрузка...',
+                    style: const TextStyle(fontSize: 18),
+                  ),
+                ],
+              ),
+      ),
+    );
+  }
 }

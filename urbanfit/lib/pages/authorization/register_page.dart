@@ -23,7 +23,8 @@ class _RegisterPageState extends State<RegisterPage> {
   }
 
   bool _isEmailValid(String email) {
-    final emailRegex = RegExp(r"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$");
+    final emailRegex =
+        RegExp(r"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$");
     return emailRegex.hasMatch(email);
   }
 
@@ -41,7 +42,8 @@ class _RegisterPageState extends State<RegisterPage> {
 
     if (!_isUsernameValid(_usernameController.text)) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Логин должен содержать минимум 5 символов')),
+        const SnackBar(
+            content: Text('Логин должен содержать минимум 5 символов')),
       );
       return;
     }
@@ -68,7 +70,8 @@ class _RegisterPageState extends State<RegisterPage> {
 
       if (errorMessage == null) {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(content: Text('Регистрация успешна! Войдите в аккаунт')),
+          const SnackBar(
+              content: Text('Регистрация успешна! Войдите в аккаунт')),
         );
 
         Navigator.pushReplacement(
@@ -134,11 +137,14 @@ class _RegisterPageState extends State<RegisterPage> {
                 ),
                 suffixIcon: IconButton(
                   icon: Icon(
-                    _isPasswordVisible ? Icons.visibility : Icons.visibility_off,
+                    _isPasswordVisible
+                        ? Icons.visibility
+                        : Icons.visibility_off,
                   ),
                   onPressed: () {
                     setState(() {
-                      _isPasswordVisible = !_isPasswordVisible; // Меняем состояние
+                      _isPasswordVisible =
+                          !_isPasswordVisible; // Меняем состояние
                     });
                   },
                 ),

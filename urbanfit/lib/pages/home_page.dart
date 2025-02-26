@@ -3,7 +3,7 @@ import 'package:urbanfit/pages/exercises_page.dart';
 import 'package:urbanfit/pages/main_page.dart';
 import 'package:urbanfit/pages/profile_page.dart';
 import 'package:urbanfit/pages/trainings_pade.dart';
-import 'authorization/login_page.dart';  // Импортируем страницу входа
+import 'authorization/login_page.dart'; // Импортируем страницу входа
 
 class HomePage extends StatefulWidget {
   final String? token;
@@ -16,7 +16,6 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   int _currentIndex = 0;
-
 
   final List<Widget> _pages = [
     const MainPage(), // Главная страница
@@ -40,9 +39,12 @@ class _HomePageState extends State<HomePage> {
         unselectedItemColor: Colors.grey,
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Главная'),
-          BottomNavigationBarItem(icon: Icon(Icons.fitness_center), label: 'Тренировки'),
-          BottomNavigationBarItem(icon: Icon(Icons.library_books), label: 'Упражнения'),
-          BottomNavigationBarItem(icon: Icon(Icons.account_circle), label: 'Профиль'),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.fitness_center), label: 'Тренировки'),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.library_books), label: 'Упражнения'),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.account_circle), label: 'Профиль'),
         ],
       ),
     );

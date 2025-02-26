@@ -9,7 +9,6 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Logging.AddConsole(); // Добавить вывод в консоль
 
-// ��������� ������ ��� ������ � JWT
 builder.Services.AddScoped<JwtService>();
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
@@ -18,9 +17,6 @@ Console.WriteLine("JWT SecretKey: " + builder.Configuration["Jwt:SecretKey"]);
 Console.WriteLine("JWT Issuer: " + builder.Configuration["Jwt:Issuer"]);
 Console.WriteLine("JWT Audience: " + builder.Configuration["Jwt:Audience"]);
 
-
-
-// ������������ JWT
 builder.Services.AddAuthentication("Bearer")
     .AddJwtBearer(options =>
     {
@@ -37,16 +33,13 @@ builder.Services.AddAuthentication("Bearer")
     });
 
 
-// ��������� �����������
 builder.Services.AddControllers();
 
-// ��������� ��������� Swagger (OpenAPI)
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// �������� Swagger ��� ������������
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -54,13 +47,12 @@ if (app.Environment.IsDevelopment())
 }
 
 // Middleware
-app.UseAuthentication();  // �������� ��������������
-app.UseAuthorization();   // �������� �����������
+app.UseAuthentication();  
+app.UseAuthorization();   
 
 app.UseAuthorization();
 
 app.MapControllers();
 app.UseStaticFiles(); // Для обслуживания статических файлов
-
 
 app.Run();

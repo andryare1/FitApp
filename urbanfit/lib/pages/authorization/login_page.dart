@@ -41,7 +41,8 @@ class _LoginPageState extends State<LoginPage> {
         );
       } else {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(content: Text('Ошибка авторизации. Проверьте данные!')),
+          const SnackBar(
+              content: Text('Ошибка авторизации. Проверьте данные!')),
         );
       }
     } catch (e) {
@@ -97,8 +98,9 @@ class _LoginPageState extends State<LoginPage> {
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20),
                       ),
-                       elevation: 5,
-                      minimumSize: const Size(double.infinity, 0.1), // Делаем ширину фиксированной
+                      elevation: 5,
+                      minimumSize: const Size(
+                          double.infinity, 0.1), // Делаем ширину фиксированной
                     ),
                     onPressed: _login,
                     child: const Text(

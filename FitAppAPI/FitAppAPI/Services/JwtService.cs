@@ -18,27 +18,27 @@ namespace FitAppAPI.Services
             _audience = configuration["Jwt:Audience"];
         }
 
-      public string GenerateToken(string username, string userId)
-{
-    var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_secretKey));
-    var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
+        public string GenerateToken(string username, string userId)
+        {
+            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_secretKey));
+            var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
 
-    var claims = new List<Claim>
+            var claims = new List<Claim>
     {
         new Claim(ClaimTypes.Name, username),
         new Claim(ClaimTypes.NameIdentifier, userId), // Добавляем userId в токен
     };
 
-    var token = new JwtSecurityToken(
-        _issuer,
-        _audience,
-        claims,
-        expires: DateTime.Now.AddDays(1),
-        signingCredentials: credentials
-    );
+            var token = new JwtSecurityToken(
+                _issuer,
+                _audience,
+                claims,
+                expires: DateTime.Now.AddDays(1),
+                signingCredentials: credentials
+            );
 
-    return new JwtSecurityTokenHandler().WriteToken(token);
-}
+            return new JwtSecurityTokenHandler().WriteToken(token);
+        }
 
 
 

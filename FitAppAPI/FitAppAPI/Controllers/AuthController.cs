@@ -52,19 +52,19 @@ namespace FitAppAPI.Controllers
         }
 
 
-       [HttpPost("login")]
-public IActionResult Login([FromBody] UserLoginDto model)
-{
-    var user = _context.Users.SingleOrDefault(u => u.Username == model.Username);
-    if (user == null || !VerifyPassword(model.Password, user.PasswordHash))
-    {
-        return Unauthorized(new { message = "Неверный логин или пароль." });
-    }
+        [HttpPost("login")]
+        public IActionResult Login([FromBody] UserLoginDto model)
+        {
+            var user = _context.Users.SingleOrDefault(u => u.Username == model.Username);
+            if (user == null || !VerifyPassword(model.Password, user.PasswordHash))
+            {
+                return Unauthorized(new { message = "Неверный логин или пароль." });
+            }
 
-    // Преобразуем userId из Guid в строку
-    var token = _jwtService.GenerateToken(user.Username, user.Id.ToString());
-    return Ok(new { Token = token });
-}
+            // Преобразуем userId из Guid в строку
+            var token = _jwtService.GenerateToken(user.Username, user.Id.ToString());
+            return Ok(new { Token = token });
+        }
 
         private static string HashPassword(string password)
         {

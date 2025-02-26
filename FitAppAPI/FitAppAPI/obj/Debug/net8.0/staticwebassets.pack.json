@@ -1,12 +1,16 @@
 {
   "Files": [
     {
-      "Id": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\50b8fe42-1438-47b1-9a25-1a521b83b494.jpg",
-      "PackagePath": "staticwebassets\\avatars\\50b8fe42-1438-47b1-9a25-1a521b83b494.jpg"
+      "Id": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\396ac8e5-5b5a-4132-b34c-1d179e89f223.jpg",
+      "PackagePath": "staticwebassets\\avatars\\396ac8e5-5b5a-4132-b34c-1d179e89f223.jpg"
     },
     {
-      "Id": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\6996ab9b-2d70-49e9-b886-32ee1241d159.jpeg",
-      "PackagePath": "staticwebassets\\avatars\\6996ab9b-2d70-49e9-b886-32ee1241d159.jpeg"
+      "Id": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\8117bbcd-a25f-47f7-91eb-a263ff4f7ab7.jpg",
+      "PackagePath": "staticwebassets\\avatars\\8117bbcd-a25f-47f7-91eb-a263ff4f7ab7.jpg"
+    },
+    {
+      "Id": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\d79a6268-8676-4a07-bf57-dba47f0daea0.jpeg",
+      "PackagePath": "staticwebassets\\avatars\\d79a6268-8676-4a07-bf57-dba47f0daea0.jpeg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.FitAppAPI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

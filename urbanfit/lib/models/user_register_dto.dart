@@ -4,7 +4,8 @@ class UserRegisterDto {
   String email;
   String password;
 
-  UserRegisterDto({required this.username, required this.email, required this.password});
+  UserRegisterDto(
+      {required this.username, required this.email, required this.password});
 
   Map<String, dynamic> toJson() {
     return {
