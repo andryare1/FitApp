@@ -19,6 +19,7 @@ dependencies:
   # Для работы с конфигурациями через YAML (например, для загрузки конфигурационных файлов)
   yaml: ^3.1.0
   path_provider: ^2.1.5
+  mime_type: ^1.0.1
 
   
 dev_dependencies:

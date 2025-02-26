@@ -19,6 +19,8 @@ namespace FitAppAPI.Models
         [Required]
         public string PasswordHash { get; set; }
 
+        public string? AvatarUrl { get; set; }
+
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     }
 }

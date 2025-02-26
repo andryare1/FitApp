@@ -1,73 +1,158 @@
+import 'dart:typed_data';
+
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
+import 'dart:io';
+import 'package:http_parser/http_parser.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class AuthService {
-  Future<String?> login(String username, String password) async {
-    final response = await http.post(
-      //Uri.parse('https://localhost:7081/api/auth/login'),
-      Uri.parse('http://localhost:5016/api/auth/login'),
-      headers: {'Content-Type': 'application/json'},
-      body: json.encode({'username': username, 'password': password}),
-    );
+  Future<void> saveUsername(String username) async {
+  final prefs = await SharedPreferences.getInstance();
+  await prefs.setString('username', username); // Сохраняем username
+}
 
-    if (response.statusCode == 200) {
-      final data = json.decode(response.body);
-      // Сохраняем токен и имя пользователя в SharedPreferences
-      final prefs = await SharedPreferences.getInstance();
-      await prefs.setString('jwt_token', data['token']);
-      await prefs.setString('username', username); // Сохраняем имя пользователя
-      return data['token'];
-    } else {
-      return null;
-    }
-  }
+Future<String?> getToken() async {
+  final prefs = await SharedPreferences.getInstance();
+  return prefs.getString('token'); // Должно совпадать с тем, как вы сохраняете токен
+}
 
-Future<String?> register(String username, String email, String password) async {
+Future<String?> login(String username, String password) async {
   final response = await http.post(
-    //Uri.parse('https://localhost:7081/api/auth/register'),
-    Uri.parse('http://localhost:5016/api/auth/register'),
+    Uri.parse('http://localhost:5016/api/auth/login'),
     headers: {'Content-Type': 'application/json'},
-    body: json.encode({'username': username, 'email': email, 'password': password}),
+    body: json.encode({'username': username, 'password': password}),
   );
 
   if (response.statusCode == 200) {
-    return null; // Регистрация успешна, возвращаем null (нет ошибки)
+    final data = json.decode(response.body);
+    final token = data['token'];  // Токен возвращается в поле 'token'
+
+    // Сохраняем токен и username
+    await saveToken(token);
+    await saveUsername(username);
+
+    return token;
   } else {
-    final errorData = json.decode(response.body);
-    return errorData['message'] ?? 'Ошибка регистрации'; // Получаем сообщение об ошибке с сервера
+    return null;
   }
 }
 
+Future<void> saveToken(String token) async {
+  final prefs = await SharedPreferences.getInstance();
+  await prefs.setString('token', token); // Сохраняем токен
+}
 
+
+  Future<String?> register(String username, String email, String password) async {
+    final response = await http.post(
+      Uri.parse('http://localhost:5016/api/auth/register'),
+      headers: {'Content-Type': 'application/json'},
+      body: json.encode({'username': username, 'email': email, 'password': password}),
+    );
+
+    if (response.statusCode == 200) {
+      return null; // Регистрация успешна, возвращаем null (нет ошибки)
+    } else {
+      final errorData = json.decode(response.body);
+      return errorData['message'] ?? 'Ошибка регистрации'; // Получаем сообщение об ошибке с сервера
+    }
+  }
 
   Future<String?> getUsername() async {
     final prefs = await SharedPreferences.getInstance();
     return prefs.getString('username');
   }
-  
+
   Future<void> clearToken() async {
     final prefs = await SharedPreferences.getInstance();
-    await prefs.remove('jwt_token');
+    await prefs.remove('token');
     await prefs.remove('username');
   }
 
-    // Функция для получения токена
-  Future<String?> getToken() async {
-    final prefs = await SharedPreferences.getInstance();
-    return prefs.getString('jwt_token'); // Получаем токен из SharedPreferences
+Future<Uint8List?> getAvatarFromServer() async {
+  // Получаем userId текущего пользователя (например, из SharedPreferences или токена)
+  final userId = await getUserId(); // Замените на реальный способ получения userId
+
+  // Формируем URL с userId
+  final url = 'http://localhost:5016/api/avatar/$userId';
+  
+  // Запрос аватарки с сервера
+  final response = await http.get(Uri.parse(url));
+
+  if (response.statusCode == 200) {
+    // Сервер возвращает успешный ответ, можем обработать данные
+    return response.bodyBytes;  // Возвращаем путь или URL к аватарке
+  } else {
+    // Если сервер вернул ошибку, возвращаем null
+    return null;
+  }
+}
+
+
+
+Future<String?> getUserId() async {
+  final token = await getToken();
+
+  if (token == null) {
+    return null;  // Токен не найден
   }
 
-  // Метод для получения пути к аватарке
-  Future<String?> getAvatarPath() async {
-    final prefs = await SharedPreferences.getInstance();
-    return prefs.getString('avatarPath');
+  // Декодируем токен
+  final parts = token.split('.');
+  if (parts.length != 3) {
+    return null;  // Неверный формат токена
   }
+
+  final payload = parts[1];
+  final decoded = utf8.decode(base64Url.decode(base64Url.normalize(payload)));
+
+  // Парсим payload и извлекаем userId
+  final Map<String, dynamic> payloadData = json.decode(decoded);
+  
+  // Извлекаем userId
+  return payloadData["http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier"];
+
+}
+
+
+
 
   // Метод для сохранения пути к аватарке
   Future<void> saveAvatarPath(String path) async {
     final prefs = await SharedPreferences.getInstance();
     await prefs.setString('avatarPath', path);
   }
-}
 
+  // Метод для загрузки аватарки
+  Future<bool> uploadAvatar(File avatar) async {
+    
+     final token = await getToken();
+
+    if (token == null) {
+      return false; // Нет токена, не можем загрузить аватарку
+    }
+
+    final uri = Uri.parse('http://localhost:5016/api/avatar/upload');
+    final request = http.MultipartRequest('POST', uri)
+      ..headers['Authorization'] = 'Bearer $token'
+      ..files.add(await http.MultipartFile.fromPath(
+        'avatar', 
+        avatar.path, 
+        contentType: MediaType('image', 'jpeg'), // Можно использовать mime_type пакеты для динамического типа
+      ));
+
+    final response = await request.send();
+
+    if (response.statusCode == 200) {
+      final responseBody = await response.stream.bytesToString();
+      final data = json.decode(responseBody);
+      final avatarUrl = 'http://localhost:5016${data['avatarUrl']}';
+      await saveAvatarPath(avatarUrl); // Сохраняем путь к аватарке в SharedPreferences
+      return true;
+    } else {
+      return false;
+    }
+  }
+}

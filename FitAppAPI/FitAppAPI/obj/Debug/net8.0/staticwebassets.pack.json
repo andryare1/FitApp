@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\50b8fe42-1438-47b1-9a25-1a521b83b494.jpg",
+      "PackagePath": "staticwebassets\\avatars\\50b8fe42-1438-47b1-9a25-1a521b83b494.jpg"
+    },
+    {
+      "Id": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\6996ab9b-2d70-49e9-b886-32ee1241d159.jpeg",
+      "PackagePath": "staticwebassets\\avatars\\6996ab9b-2d70-49e9-b886-32ee1241d159.jpeg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.FitAppAPI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.FitAppAPI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.FitAppAPI.props",
+      "PackagePath": "build\\FitAppAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.FitAppAPI.props",
+      "PackagePath": "buildMultiTargeting\\FitAppAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.FitAppAPI.props",
+      "PackagePath": "buildTransitive\\FitAppAPI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

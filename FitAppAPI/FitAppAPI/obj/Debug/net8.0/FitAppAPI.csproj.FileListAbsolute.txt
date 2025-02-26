@@ -692,3 +692,4 @@ C:\myData\Knowledge\Projects\FitApp\FitAppAPI\FitAppAPI\obj\Debug\net8.0\ref\Fit
 /Users/andryare/college/diploma/FitApp/FitApp/FitAppAPI/FitAppAPI/obj/Debug/net8.0/FitAppAPI.genruntimeconfig.cache
 /Users/andryare/college/diploma/FitApp/FitApp/FitAppAPI/FitAppAPI/obj/Debug/net8.0/ref/FitAppAPI.dll
 >>>>>>> e226ae361cd8e871c67bcb6f1df4a758a33c738a
+C:\myData\Knowledge\Projects\FitApp\FitAppAPI\FitAppAPI\bin\Debug\net8.0\FitAppAPI.staticwebassets.runtime.json

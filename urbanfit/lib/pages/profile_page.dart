@@ -1,10 +1,10 @@
-import 'dart:io'; 
+import 'dart:io';
+import 'dart:typed_data';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:image_picker/image_picker.dart';
 import 'package:urbanfit/pages/authorization/login_page.dart';
 import 'package:urbanfit/services/auth_service.dart';
-import 'package:image_picker/image_picker.dart';
-import 'package:path_provider/path_provider.dart'; // Для получения директории
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});
@@ -15,132 +15,93 @@ class ProfilePage extends StatefulWidget {
 
 class _ProfilePageState extends State<ProfilePage> {
   String? username;
-  XFile? _avatarImage;
+  Uint8List? avatarBytes;
   final AuthService _authService = AuthService();
   final ImagePicker _picker = ImagePicker();
+  bool _isLoading = true;
 
   @override
   void initState() {
     super.initState();
-    _getUserData();
-    _loadAvatarImage();
+    _loadUserData();
   }
 
-  // Получаем имя пользователя из SharedPreferences
-  _getUserData() async {
+  Future<void> _loadUserData() async {
+  setState(() => _isLoading = true);
+
+  try {
     final storedUsername = await _authService.getUsername();
+    final storedAvatarBytes = await _authService.getAvatarFromServer(); // Берем URL с сервера
+
     setState(() {
       username = storedUsername;
+      avatarBytes = storedAvatarBytes; // Устанавливаем аватар с сервера
     });
+  } catch (e) {
+    debugPrint('Ошибка загрузки данных: $e');
+    setState(() => avatarBytes = null); // Если ошибка - показываем дефолтный аватар
+  } finally {
+    setState(() => _isLoading = false);
   }
+}
 
-  // Метод для загрузки аватарки из локального хранилища
-  _loadAvatarImage() async {
-    final directory = await getApplicationDocumentsDirectory();
-    final filePath = await _authService.getAvatarPath(); // Предположим, что этот метод извлекает путь из SharedPreferences.
-    
-    if (filePath != null) {
-      final file = File(filePath);
-      if (file.existsSync()) {
-        setState(() {
-          _avatarImage = XFile(filePath);
-        });
+
+  /// Загружает новое изображение и отправляет на сервер
+  Future<void> _pickImage(ImageSource source) async {
+    try {
+      final XFile? pickedFile = await _picker.pickImage(source: source);
+      if (pickedFile != null) {
+        await _uploadAvatar(File(pickedFile.path));
       }
+    } catch (e) {
+      debugPrint('Ошибка при выборе изображения: $e');
     }
   }
 
-  // Метод для выбора изображения из галереи
-  Future<void> _pickImage() async {
-    final XFile? pickedFile = await _picker.pickImage(source: ImageSource.gallery);
-    if (pickedFile != null) {
-      _saveAvatarImage(pickedFile);
-    }
-  }
+  /// Отправляет новый аватар на сервер
+  Future<void> _uploadAvatar(File image) async {
 
-  // Метод для снятия фотографии с камеры
-  Future<void> _takePhoto() async {
-    final XFile? pickedFile = await _picker.pickImage(source: ImageSource.camera);
-    if (pickedFile != null) {
-      _saveAvatarImage(pickedFile);
-    }
-  }
-
-  // Метод для сохранения фото в локальное хранилище
-  Future<void> _saveAvatarImage(XFile image) async {
-    final directory = await getApplicationDocumentsDirectory();
-    final name = DateTime.now().millisecondsSinceEpoch.toString(); // Генерируем уникальное имя для файла
-    final file = File('${directory.path}/$name.png');
-    await file.writeAsBytes(await image.readAsBytes());
-    await _authService.saveAvatarPath(file.path); // Сохраняем путь в SharedPreferences или в другом месте.
     
-    setState(() {
-      _avatarImage = image;
-    });
+
+    setState(() => _isLoading = true);
+
+    try {
+      final success = await _authService.uploadAvatar(image);
+      if (success) {
+        _loadUserData(); // Перезагружаем данные пользователя, чтобы обновить аватар
+      } else {
+        _showErrorDialog('Ошибка загрузки аватара. Попробуйте снова.');
+      }
+    } catch (e) {
+      debugPrint('Ошибка загрузки аватара на сервер: $e');
+      _showErrorDialog('Ошибка при загрузке аватара. Попробуйте позже.');
+    } finally {
+      setState(() => _isLoading = false);
+    }
   }
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text('      Профиль'),
-          ],
-        ),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.exit_to_app),
-            onPressed: () async {
-              bool? exit = await _showExitDialog(context);
-              if (exit == true) {
-                await _authService.clearToken();
-                Navigator.pushReplacement(
-                  context,
-                  MaterialPageRoute(builder: (context) => const LoginPage()),
-                );
-              }
-            },
-          ),
-        ],
-      ),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(
-          children: [
-            const SizedBox(height: 20),
-            // Отображаем аватарку или иконку по умолчанию
-            Center(
-              child: CircleAvatar(
-                radius: 60,
-                backgroundImage: _avatarImage == null
-                    ? const AssetImage('assets/default_avatar.png')
-                    : FileImage(File(_avatarImage!.path)) as ImageProvider,
-                child: _avatarImage == null
-                    ? const Icon(Icons.person, size: 40)
-                    : null,
-              ),
+  /// Показывает диалог ошибки
+  Future<void> _showErrorDialog(String message) async {
+    showDialog<void>(
+      context: context,
+      builder: (context) {
+        return AlertDialog(
+          title: const Text('Ошибка'),
+          content: Text(message),
+          actions: <Widget>[
+            TextButton(
+              onPressed: () => Navigator.of(context).pop(),
+              child: const Text('OK'),
             ),
-            const SizedBox(height: 20),
-            // Кнопка для изменения аватарки
-            ElevatedButton(
-              onPressed: _showPhotoOptions,
-              child: const Text('Изменить фото профиля'),
-            ),
-            const SizedBox(height: 20),
-            // Отображаем имя пользователя
-            username == null
-                ? const CircularProgressIndicator()
-                : Text('Добро пожаловать, $username!', style: const TextStyle(fontSize: 18)),
           ],
-        ),
-      ),
+        );
+      },
     );
   }
 
-  // Диалоговое окно для подтверждения выхода
-  Future<bool?> _showExitDialog(BuildContext context) {
-    return showDialog<bool>(
+  /// Показывает диалог выхода
+  Future<void> _showExitDialog() async {
+    final bool? exit = await showDialog<bool>(
       context: context,
       builder: (context) {
         return AlertDialog(
@@ -148,56 +109,115 @@ class _ProfilePageState extends State<ProfilePage> {
           content: const Text('Вы действительно хотите выйти?'),
           actions: <Widget>[
             TextButton(
-              style: TextButton.styleFrom(foregroundColor: Colors.red),
-              onPressed: () {
-                Navigator.of(context).pop(false);
-              },
-              child: const Text('Отмена'),
+              onPressed: () => Navigator.of(context).pop(false),
+              child: const Text('Отмена', style: TextStyle(color: Colors.red)),
             ),
             TextButton(
-              onPressed: () {
-                Navigator.of(context).pop(true);
-              },
+              onPressed: () => Navigator.of(context).pop(true),
               child: const Text('Выйти'),
             ),
           ],
         );
       },
     );
+
+    if (exit == true) {
+      await _authService.clearToken();
+      if (mounted) {
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(builder: (context) => const LoginPage()),
+        );
+      }
+    }
   }
 
-  // Метод для отображения диалога с выбором источника фото
+  /// Показывает диалог выбора фото
   void _showPhotoOptions() {
-    showDialog(
+    showCupertinoModalPopup(
       context: context,
       builder: (BuildContext context) {
-        return CupertinoAlertDialog(
+        return CupertinoActionSheet(
           title: const Text('Выберите источник фото'),
           actions: <Widget>[
-            CupertinoDialogAction(
+            CupertinoActionSheetAction(
               onPressed: () {
                 Navigator.pop(context);
-                _takePhoto();
+                _pickImage(ImageSource.camera);
               },
               child: const Text('Сделать фото'),
             ),
-            CupertinoDialogAction(
+            CupertinoActionSheetAction(
               onPressed: () {
                 Navigator.pop(context);
-                _pickImage();
+                _pickImage(ImageSource.gallery);
               },
               child: const Text('Выбрать из галереи'),
             ),
-            CupertinoDialogAction(
-              onPressed: () {
-                Navigator.pop(context); // Закрытие диалога без действий
-              },
-              isDestructiveAction: true,
-              child: const Text('Отмена'),
-            ),
           ],
+          cancelButton: CupertinoActionSheetAction(
+            isDestructiveAction: true,
+            onPressed: () => Navigator.pop(context),
+            child: const Text('Отмена'),
+          ),
         );
       },
     );
   }
+
+ @override
+Widget build(BuildContext context) {
+  return Scaffold(
+    appBar: AppBar(
+      title: const Center(child: Text('Профиль')),
+      actions: [
+        IconButton(
+          icon: const Icon(Icons.exit_to_app),
+          onPressed: _showExitDialog,
+        ),
+      ],
+    ),
+    body: Padding(
+      padding: const EdgeInsets.all(16.0),
+      child: _isLoading
+          ? const Center(child: CircularProgressIndicator()) // Индикатор загрузки
+          : Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Center(
+                  child: CircleAvatar(
+                    radius: 60,
+                    backgroundColor: Colors.transparent,
+                    child: avatarBytes != null
+                        ? ClipOval(
+                            child: Image.memory(
+                              avatarBytes!,
+                              fit: BoxFit.cover,
+                              width: 120,
+                              height: 120,
+                              errorBuilder: (context, error, stackTrace) {
+                                return Image.asset('assets/error.png'); // Если ошибка
+                              },
+                            ),
+                          )
+                        : const Icon(Icons.person, size: 60), // Если нет аватарки
+                  ),
+                ),
+                const SizedBox(height: 20),
+                ElevatedButton(
+                  onPressed: _showPhotoOptions,
+                  child: const Text('Изменить фото профиля'),
+                ),
+                const SizedBox(height: 20),
+                Text(
+                  username != null
+                      ? 'Добро пожаловать, $username!'
+                      : 'Загрузка...',
+                  style: const TextStyle(fontSize: 18),
+                ),
+              ],
+            ),
+    ),
+  );
+}
 }

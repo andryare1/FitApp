@@ -7,7 +7,9 @@ using FitAppAPI.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Добавляем службы для работы с JWT
+builder.Logging.AddConsole(); // Р”РѕР±Р°РІРёС‚СЊ РІС‹РІРѕРґ РІ РєРѕРЅСЃРѕР»СЊ
+
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ JWT
 builder.Services.AddScoped<JwtService>();
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
@@ -18,7 +20,7 @@ Console.WriteLine("JWT Audience: " + builder.Configuration["Jwt:Audience"]);
 
 
 
-// Конфигурация JWT
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ JWT
 builder.Services.AddAuthentication("Bearer")
     .AddJwtBearer(options =>
     {
@@ -35,16 +37,16 @@ builder.Services.AddAuthentication("Bearer")
     });
 
 
-// Добавляем контроллеры
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 builder.Services.AddControllers();
 
-// Оставляем настройку Swagger (OpenAPI)
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ Swagger (OpenAPI)
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Включаем Swagger для тестирования
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ Swagger пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -52,11 +54,13 @@ if (app.Environment.IsDevelopment())
 }
 
 // Middleware
-app.UseAuthentication();  // Включаем аутентификацию
-app.UseAuthorization();   // Включаем авторизацию
+app.UseAuthentication();  // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+app.UseAuthorization();   // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
 app.UseAuthorization();
 
 app.MapControllers();
+app.UseStaticFiles(); // Р”Р»СЏ РѕР±СЃР»СѓР¶РёРІР°РЅРёСЏ СЃС‚Р°С‚РёС‡РµСЃРєРёС… С„Р°Р№Р»РѕРІ
+
 
 app.Run();
