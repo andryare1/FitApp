@@ -7,6 +7,8 @@ import 'dart:io';
 import 'package:http_parser/http_parser.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+const baseUrl = 'http://192.168.31.166:5016';
+
 class AuthService {
   Future<void> saveUsername(String username) async {
     final prefs = await SharedPreferences.getInstance();
@@ -21,7 +23,7 @@ class AuthService {
 
   Future<String?> login(String username, String password) async {
     final response = await http.post(
-      Uri.parse('http://localhost:5016/api/auth/login'),
+      Uri.parse('$baseUrl/api/auth/login'),
       headers: {'Content-Type': 'application/json'},
       body: json.encode({'username': username, 'password': password}),
     );
@@ -48,7 +50,7 @@ class AuthService {
   Future<String?> register(
       String username, String email, String password) async {
     final response = await http.post(
-      Uri.parse('http://localhost:5016/api/auth/register'),
+      Uri.parse('$baseUrl/api/auth/register'),
       headers: {'Content-Type': 'application/json'},
       body: json
           .encode({'username': username, 'email': email, 'password': password}),
@@ -80,7 +82,7 @@ class AuthService {
         await getUserId(); // Замените на реальный способ получения userId
 
     // Формируем URL с userId
-    final url = 'http://localhost:5016/api/avatar/$userId';
+    final url = '$baseUrl/api/avatar/$userId';
 
     // Запрос аватарки с сервера
     final response = await http.get(Uri.parse(url));
@@ -132,7 +134,7 @@ class AuthService {
       return false; // Нет токена, не можем загрузить аватарку
     }
 
-    final uri = Uri.parse('http://localhost:5016/api/avatar/upload');
+    final uri = Uri.parse('$baseUrl/api/avatar/upload');
     final request = http.MultipartRequest('POST', uri)
       ..headers['Authorization'] = 'Bearer $token'
       ..files.add(await http.MultipartFile.fromPath(
@@ -147,7 +149,7 @@ class AuthService {
     if (response.statusCode == 200) {
       final responseBody = await response.stream.bytesToString();
       final data = json.decode(responseBody);
-      final avatarUrl = 'http://localhost:5016${data['avatarUrl']}';
+      final avatarUrl = '$baseUrl${data['avatarUrl']}';
       await saveAvatarPath(
           avatarUrl); // Сохраняем путь к аватарке в SharedPreferences
       return true;
