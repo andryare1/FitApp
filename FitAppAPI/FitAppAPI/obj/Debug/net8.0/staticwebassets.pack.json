@@ -5,10 +5,6 @@
       "PackagePath": "staticwebassets/avatars/085edd4e-5e1f-4bca-a355-cf37857487c3.jpg"
     },
     {
-      "Id": "/Users/andryare/college/FitApp/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/17b559ee-fac5-4932-b954-ecce420b662d.jpg",
-      "PackagePath": "staticwebassets/avatars/17b559ee-fac5-4932-b954-ecce420b662d.jpg"
-    },
-    {
       "Id": "/Users/andryare/college/FitApp/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/18f9ab88-f8da-47c9-a231-6340684f2f0a.jpg",
       "PackagePath": "staticwebassets/avatars/18f9ab88-f8da-47c9-a231-6340684f2f0a.jpg"
     },
@@ -19,6 +15,10 @@
     {
       "Id": "/Users/andryare/college/FitApp/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/396ac8e5-5b5a-4132-b34c-1d179e89f223.jpg",
       "PackagePath": "staticwebassets/avatars/396ac8e5-5b5a-4132-b34c-1d179e89f223.jpg"
+    },
+    {
+      "Id": "/Users/andryare/college/FitApp/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/68803e30-a0b7-4f72-9623-9da9daa513b8.jpg",
+      "PackagePath": "staticwebassets/avatars/68803e30-a0b7-4f72-9623-9da9daa513b8.jpg"
     },
     {
       "Id": "/Users/andryare/college/FitApp/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/acfe8da4-4ea5-4366-85ef-c7ebe674a748.png",

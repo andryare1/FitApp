@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "CuqNddPLxGJ/97un7Jeo4hdtgZTRQKWEEmaL2+2T9Lo=",
+  "Hash": "G2n3+1GjCbP6VHYftFfDl/uNvLxYnubw/1m/emUdzG4=",
   "Source": "FitAppAPI",
   "BasePath": "_content/FitAppAPI",
   "Mode": "Default",
@@ -36,27 +36,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/avatars/085edd4e-5e1f-4bca-a355-cf37857487c3.jpg"
-    },
-    {
-      "Identity": "/Users/andryare/college/FitApp/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/17b559ee-fac5-4932-b954-ecce420b662d.jpg",
-      "SourceId": "FitAppAPI",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
-      "BasePath": "_content/FitAppAPI",
-      "RelativePath": "avatars/17b559ee-fac5-4932-b954-ecce420b662d#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "2mxjyg44ce",
-      "Integrity": "6hI5JNOk7roQxQXhI0O+AzXuEX+EPatB+sELEF0efxw=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/avatars/17b559ee-fac5-4932-b954-ecce420b662d.jpg"
     },
     {
       "Identity": "/Users/andryare/college/FitApp/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/18f9ab88-f8da-47c9-a231-6340684f2f0a.jpg",
@@ -120,6 +99,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/avatars/396ac8e5-5b5a-4132-b34c-1d179e89f223.jpg"
+    },
+    {
+      "Identity": "/Users/andryare/college/FitApp/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/68803e30-a0b7-4f72-9623-9da9daa513b8.jpg",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "avatars/68803e30-a0b7-4f72-9623-9da9daa513b8#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "30gsgd6yp5",
+      "Integrity": "/Xtb/w54ej+1hQ5R/0ZChm+rj5v12CPk3y6KWftChbk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/avatars/68803e30-a0b7-4f72-9623-9da9daa513b8.jpg"
     },
     {
       "Identity": "/Users/andryare/college/FitApp/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/acfe8da4-4ea5-4366-85ef-c7ebe674a748.png",
@@ -244,88 +244,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-ULWdu4i0l+p+ICJrx7qn5HZ34dATijnChUfaqBAwtSg="
-        }
-      ]
-    },
-    {
-      "Route": "avatars/17b559ee-fac5-4932-b954-ecce420b662d.2mxjyg44ce.jpg",
-      "AssetFile": "/Users/andryare/college/FitApp/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/17b559ee-fac5-4932-b954-ecce420b662d.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1360476"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"6hI5JNOk7roQxQXhI0O+AzXuEX+EPatB+sELEF0efxw=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 04 Mar 2025 08:39:02 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "2mxjyg44ce"
-        },
-        {
-          "Name": "label",
-          "Value": "avatars/17b559ee-fac5-4932-b954-ecce420b662d.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-6hI5JNOk7roQxQXhI0O+AzXuEX+EPatB+sELEF0efxw="
-        }
-      ]
-    },
-    {
-      "Route": "avatars/17b559ee-fac5-4932-b954-ecce420b662d.jpg",
-      "AssetFile": "/Users/andryare/college/FitApp/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/17b559ee-fac5-4932-b954-ecce420b662d.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1360476"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"6hI5JNOk7roQxQXhI0O+AzXuEX+EPatB+sELEF0efxw=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 04 Mar 2025 08:39:02 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-6hI5JNOk7roQxQXhI0O+AzXuEX+EPatB+sELEF0efxw="
         }
       ]
     },
@@ -572,6 +490,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-6f1rbWUO6yk8hm0shCcnPTqzsZ2QGP46zSI/MD82pOU="
+        }
+      ]
+    },
+    {
+      "Route": "avatars/68803e30-a0b7-4f72-9623-9da9daa513b8.30gsgd6yp5.jpg",
+      "AssetFile": "/Users/andryare/college/FitApp/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/68803e30-a0b7-4f72-9623-9da9daa513b8.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "989042"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/Xtb/w54ej+1hQ5R/0ZChm+rj5v12CPk3y6KWftChbk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Mar 2025 18:33:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "30gsgd6yp5"
+        },
+        {
+          "Name": "label",
+          "Value": "avatars/68803e30-a0b7-4f72-9623-9da9daa513b8.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/Xtb/w54ej+1hQ5R/0ZChm+rj5v12CPk3y6KWftChbk="
+        }
+      ]
+    },
+    {
+      "Route": "avatars/68803e30-a0b7-4f72-9623-9da9daa513b8.jpg",
+      "AssetFile": "/Users/andryare/college/FitApp/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/68803e30-a0b7-4f72-9623-9da9daa513b8.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "989042"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/Xtb/w54ej+1hQ5R/0ZChm+rj5v12CPk3y6KWftChbk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Mar 2025 18:33:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/Xtb/w54ej+1hQ5R/0ZChm+rj5v12CPk3y6KWftChbk="
         }
       ]
     },

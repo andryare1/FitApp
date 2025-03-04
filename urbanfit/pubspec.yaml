@@ -35,7 +35,7 @@ flutter:
     - assets/muscleGroup/chest.png
     - assets/muscleGroup/back.png
     - assets/muscleGroup/shoulders.png
-    - assets/muscleGroup/hands.png
+    - assets/muscleGroup/arms.png
     - assets/muscleGroup/abs.png
     - assets/muscleGroup/legs.png
     - assets/exercise/press_bench.png

@@ -6,7 +6,6 @@ using FitAppAPI.Models;
 using Microsoft.AspNetCore.Authorization;
 using System.Security.Claims;
 using FitAppAPI.Services;
-using Microsoft.Extensions.Logging;
 
 namespace FitAppAPI.Controllers
 {

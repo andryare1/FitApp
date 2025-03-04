@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:urbanfit/pages/exercises_page.dart';
+import 'package:urbanfit/pages/exercisesPage/exercises_page.dart';
 import 'package:urbanfit/pages/main_page.dart';
 import 'package:urbanfit/pages/profile_page.dart';
 import 'package:urbanfit/pages/trainings_pade.dart';

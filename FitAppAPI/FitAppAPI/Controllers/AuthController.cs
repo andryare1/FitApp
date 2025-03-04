@@ -2,7 +2,6 @@
 using FitAppAPI.Models;
 using FitAppAPI.Services;
 using FitAppAPI.Data;
-using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 

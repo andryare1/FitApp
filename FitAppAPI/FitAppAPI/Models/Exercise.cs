@@ -15,20 +15,21 @@ namespace FitAppAPI.Models
     public class Exercise
     {
         [Key]
-        public int Id { get; set; } // Поле id типа int
+        public int Id { get; set; }
 
         [Required]
         [MaxLength(100)]
-        public string Name { get; set; } // Название упражнения
+        public string Name { get; set; }
 
         [Required]
         [MaxLength(500)]
-        public string Description { get; set; } // Описание упражнения
+        public string Description { get; set; }
 
         [Required]
-        public MuscleGroup MuscleGroup { get; set; } // Группа мышц (через enum)
+        public MuscleGroup MuscleGroup { get; set; }
 
         [Required]
-        public string ImageUrl { get; set; } // URL изображения
+        public string ImageUrl { get; set; }
+
     }
 }
