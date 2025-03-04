@@ -42,12 +42,15 @@ class _LoginPageState extends State<LoginPage> {
       } else {
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(
+              backgroundColor: Color.fromARGB(255, 200, 108, 108),
               content: Text('Ошибка авторизации. Проверьте данные!')),
         );
       }
     } catch (e) {
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text(e.toString())),
+        SnackBar(
+            backgroundColor: const Color.fromARGB(255, 200, 108, 108),
+            content: Text(e.toString())),
       );
     } finally {
       setState(() {

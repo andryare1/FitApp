@@ -39,9 +39,8 @@ class _ProfilePageState extends State<ProfilePage> {
         avatarBytes = storedAvatarBytes; // Устанавливаем аватар с сервера
       });
     } catch (e) {
-      debugPrint('Ошибка загрузки данных: $e');
-      setState(() =>
-          avatarBytes = null); // Если ошибка - показываем дефолтный аватар
+      setState(() => avatarBytes =
+          Uint8List(0)); // Если ошибка - показываем дефолтный аватар
     } finally {
       setState(() => _isLoading = false);
     }
@@ -59,7 +58,7 @@ class _ProfilePageState extends State<ProfilePage> {
     }
   }
 
-  /// Отправляет новый аватар на сервер
+  // Отправляет новый аватар на сервер
   Future<void> _uploadAvatar(File image) async {
     setState(() => _isLoading = true);
 
@@ -71,14 +70,13 @@ class _ProfilePageState extends State<ProfilePage> {
         _showErrorDialog('Ошибка загрузки аватара. Попробуйте снова.');
       }
     } catch (e) {
-      debugPrint('Ошибка загрузки аватара на сервер: $e');
       _showErrorDialog('Ошибка при загрузке аватара. Попробуйте позже.');
     } finally {
       setState(() => _isLoading = false);
     }
   }
 
-  /// Показывает диалог ошибки
+  // Показывает диалог ошибки
   Future<void> _showErrorDialog(String message) async {
     showDialog<void>(
       context: context,
@@ -97,7 +95,7 @@ class _ProfilePageState extends State<ProfilePage> {
     );
   }
 
-  /// Показывает диалог выхода
+  // Показывает диалог выхода
   Future<void> _showExitDialog() async {
     final bool? exit = await showDialog<bool>(
       context: context,
@@ -167,7 +165,8 @@ class _ProfilePageState extends State<ProfilePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Center(child: Text('Профиль')),
+        title: const Text('Профиль'),
+        centerTitle: true,
         actions: [
           IconButton(
             icon: const Icon(Icons.exit_to_app),
@@ -179,14 +178,16 @@ class _ProfilePageState extends State<ProfilePage> {
         padding: const EdgeInsets.all(16.0),
         child: _isLoading
             ? const Center(
-                child: CircularProgressIndicator()) // Индикатор загрузки
+                child: CircularProgressIndicator())
             : Column(
-                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Center(
                     child: CircleAvatar(
                       radius: 60,
-                      backgroundColor: Colors.transparent,
+                      backgroundColor: avatarBytes == null
+                          ? Colors.grey[300]
+                          : Colors.transparent,
                       child: avatarBytes != null
                           ? ClipOval(
                               child: Image.memory(
@@ -196,20 +197,23 @@ class _ProfilePageState extends State<ProfilePage> {
                                 height: 120,
                                 errorBuilder: (context, error, stackTrace) {
                                   return Image.asset(
-                                      'assets/error.png'); // Если ошибка
+                                      'assets/error.png');
                                 },
                               ),
                             )
                           : const Icon(Icons.person,
-                              size: 60), // Если нет аватарки
+                              size: 60,
+                              color: Colors.white),
                     ),
                   ),
-                  const SizedBox(height: 20),
-                  ElevatedButton(
+                  TextButton(
                     onPressed: _showPhotoOptions,
-                    child: const Text('Изменить фото профиля'),
+                    style: TextButton.styleFrom(
+                      foregroundColor: Colors.black,
+                      
+                    ),
+                    child: const Text('Изменить фото'),
                   ),
-                  const SizedBox(height: 20),
                   Text(
                     username != null
                         ? 'Добро пожаловать, $username!'

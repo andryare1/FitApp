@@ -13,9 +13,9 @@ builder.Services.AddScoped<JwtService>();
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-Console.WriteLine("JWT SecretKey: " + builder.Configuration["Jwt:SecretKey"]);
-Console.WriteLine("JWT Issuer: " + builder.Configuration["Jwt:Issuer"]);
-Console.WriteLine("JWT Audience: " + builder.Configuration["Jwt:Audience"]);
+// Console.WriteLine("JWT SecretKey: " + builder.Configuration["Jwt:SecretKey"]);
+// Console.WriteLine("JWT Issuer: " + builder.Configuration["Jwt:Issuer"]);
+// Console.WriteLine("JWT Audience: " + builder.Configuration["Jwt:Audience"]);
 
 builder.Services.AddAuthentication("Bearer")
     .AddJwtBearer(options =>
@@ -59,7 +59,7 @@ if (app.Environment.IsDevelopment())
 // Middleware
 app.UseAuthentication();
 app.UseCors("AllowAll"); // Включаем CORS  
-app.UseAuthorization();   
+app.UseAuthorization();
 
 app.UseAuthorization();
 

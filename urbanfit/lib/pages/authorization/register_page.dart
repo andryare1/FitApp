@@ -35,7 +35,9 @@ class _RegisterPageState extends State<RegisterPage> {
         _emailController.text.trim().isEmpty ||
         _passwordController.text.trim().isEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Заполните все поля')),
+        const SnackBar(
+            backgroundColor: Color.fromARGB(255, 200, 108, 108),
+            content: Text('Заполните все поля')),
       );
       return;
     }
@@ -43,6 +45,7 @@ class _RegisterPageState extends State<RegisterPage> {
     if (!_isUsernameValid(_usernameController.text)) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
+            backgroundColor: Color.fromARGB(255, 200, 108, 108),
             content: Text('Логин должен содержать минимум 5 символов')),
       );
       return;
@@ -50,7 +53,9 @@ class _RegisterPageState extends State<RegisterPage> {
 
     if (!_isEmailValid(_emailController.text)) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Введите корректный email')),
+        const SnackBar(
+            backgroundColor: Color.fromARGB(255, 200, 108, 108),
+            content: Text('Введите корректный email')),
       );
       return;
     }
@@ -71,6 +76,7 @@ class _RegisterPageState extends State<RegisterPage> {
       if (errorMessage == null) {
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(
+              backgroundColor: Color.fromARGB(255, 168, 225, 162),
               content: Text('Регистрация успешна! Войдите в аккаунт')),
         );
 
@@ -80,12 +86,16 @@ class _RegisterPageState extends State<RegisterPage> {
         );
       } else {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text(errorMessage)),
+          SnackBar(
+              backgroundColor: const Color.fromARGB(255, 200, 108, 108),
+              content: Text(errorMessage)),
         );
       }
     } catch (e) {
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Ошибка: ${e.toString()}')),
+        SnackBar(
+            backgroundColor: const Color.fromARGB(255, 200, 108, 108),
+            content: Text('Ошибка: ${e.toString()}')),
       );
     } finally {
       setState(() {
