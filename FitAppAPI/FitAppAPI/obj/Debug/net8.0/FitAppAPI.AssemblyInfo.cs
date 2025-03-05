@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FitAppAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7752c1ac35f08b56a79584bfac5130c49a356095")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bbb8b5499b4cb336830d01cc49724dbd1187479e")]
 [assembly: System.Reflection.AssemblyProductAttribute("FitAppAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FitAppAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

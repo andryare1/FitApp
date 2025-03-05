@@ -4896,11 +4896,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/andryare/college/FitApp/FitApp/FitAppAPI/FitAppAPI/FitAppAPI.csproj",
+      "projectUniqueName": "/Users/andryare/college/FitApp-1/FitAppAPI/FitAppAPI/FitAppAPI.csproj",
       "projectName": "FitAppAPI",
-      "projectPath": "/Users/andryare/college/FitApp/FitApp/FitAppAPI/FitAppAPI/FitAppAPI.csproj",
+      "projectPath": "/Users/andryare/college/FitApp-1/FitAppAPI/FitAppAPI/FitAppAPI.csproj",
       "packagesPath": "/Users/andryare/.nuget/packages/",
-      "outputPath": "/Users/andryare/college/FitApp/FitApp/FitAppAPI/FitAppAPI/obj/",
+      "outputPath": "/Users/andryare/college/FitApp-1/FitAppAPI/FitAppAPI/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/andryare/.nuget/NuGet/NuGet.Config"
