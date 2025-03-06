@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:urbanfit/pages/exercisesPage/exercises_detail_page.dart';
 import 'package:urbanfit/services/exercise_service.dart';
 
 class ExerciseListPage extends StatefulWidget {
@@ -101,13 +102,13 @@ String getMuscleGroupName(dynamic muscleGroup) {
                   elevation: 5,
                   child: InkWell(
                     onTap: () {
-                      // // Переход на страницу деталей
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(
-                      //     builder: (context) => ExerciseDetailPage(exercise: exercise),
-                      //   ),
-                      // );
+                      // Переход на страницу деталей
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => ExerciseDetailPage(exercise: exercise),
+                        ),
+                      );
                     },
                     child: Row(
                       children: [
