@@ -6,8 +6,8 @@ import 'dart:convert';
 import 'dart:io';
 import 'package:http_parser/http_parser.dart';
 
-const baseUrl = 'http://192.168.31.166:5016'; // для макбука
-//const baseUrl = 'http://192.168.31.142:5016';   // для ПК
+//const baseUrl = 'http://192.168.31.166:5016'; // для макбука
+const baseUrl = 'http://192.168.31.142:5016';   // для ПК
 
 class AuthService {
   Future<void> saveUsername(String username) async {
@@ -156,5 +156,28 @@ class AuthService {
     } else {
       return false;
     }
+  }
+
+
+    Future<bool> deleteAvatar() async {
+    final token = await getToken();
+    if (token == null) return false;
+
+    final url = Uri.parse('$baseUrl/api/avatar/delete');
+    final response = await http.delete(
+      url,
+      headers: {'Authorization': 'Bearer $token'},
+    );
+
+    if (response.statusCode == 200) {
+      await clearAvatarPath(); 
+      return true;
+    } else {
+      return false;
+    }
+  }
+  Future<void> clearAvatarPath() async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.remove('avatarPath');
   }
 }

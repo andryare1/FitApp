@@ -150,6 +150,19 @@ class _ProfilePageState extends State<ProfilePage> {
               },
               child: const Text('Выбрать из галереи'),
             ),
+            CupertinoActionSheetAction(
+              onPressed: () async {
+              Navigator.pop(context);
+                  bool success = await _authService.deleteAvatar();
+
+                   if (success) {
+                      setState(() {
+                        avatarBytes = null;
+                      });
+                  }
+                    },
+              child: const Text("Удалить фото"),
+            )
           ],
           cancelButton: CupertinoActionSheetAction(
             isDestructiveAction: true,
