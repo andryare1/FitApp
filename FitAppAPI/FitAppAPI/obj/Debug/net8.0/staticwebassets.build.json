@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "bBNj8ZqGUl6UMaVKtDZuHUdocPmBYGnP/0O7DVFrO+M=",
+  "Hash": "XHdkfU5jo0Evwv2NwfVho0Yeg5MCi4xMRvEa5LlNSPk=",
   "Source": "FitAppAPI",
   "BasePath": "_content/FitAppAPI",
   "Mode": "Default",
@@ -8,19 +8,19 @@
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
-      "Name": "FitAppAPI\\wwwroot",
+      "Name": "FitAppAPI/wwwroot",
       "Source": "FitAppAPI",
-      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp-1\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
       "BasePath": "_content/FitAppAPI",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp-1\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\085edd4e-5e1f-4bca-a355-cf37857487c3.jpg",
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/085edd4e-5e1f-4bca-a355-cf37857487c3.jpg",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp-1\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "avatars/085edd4e-5e1f-4bca-a355-cf37857487c3#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -35,13 +35,13 @@
       "Integrity": "ULWdu4i0l+p+ICJrx7qn5HZ34dATijnChUfaqBAwtSg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\avatars\\085edd4e-5e1f-4bca-a355-cf37857487c3.jpg"
+      "OriginalItemSpec": "wwwroot/avatars/085edd4e-5e1f-4bca-a355-cf37857487c3.jpg"
     },
     {
-      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp-1\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\18f9ab88-f8da-47c9-a231-6340684f2f0a.jpg",
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/18f9ab88-f8da-47c9-a231-6340684f2f0a.jpg",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp-1\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "avatars/18f9ab88-f8da-47c9-a231-6340684f2f0a#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -56,13 +56,13 @@
       "Integrity": "8XQDUj2otoZ3OBPyLicZBPlPI11H/H5dj8Z0CuwkQbA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\avatars\\18f9ab88-f8da-47c9-a231-6340684f2f0a.jpg"
+      "OriginalItemSpec": "wwwroot/avatars/18f9ab88-f8da-47c9-a231-6340684f2f0a.jpg"
     },
     {
-      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp-1\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\32e6f3bc-070d-435a-a026-6c3289b9c5b4.jpeg",
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/32e6f3bc-070d-435a-a026-6c3289b9c5b4.jpeg",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp-1\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "avatars/32e6f3bc-070d-435a-a026-6c3289b9c5b4#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
@@ -77,13 +77,13 @@
       "Integrity": "u7lo8BOR1cdwXcBjJ9DwcD9sdSHuyS/PAsfhU2sF8T0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\avatars\\32e6f3bc-070d-435a-a026-6c3289b9c5b4.jpeg"
+      "OriginalItemSpec": "wwwroot/avatars/32e6f3bc-070d-435a-a026-6c3289b9c5b4.jpeg"
     },
     {
-      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp-1\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\396ac8e5-5b5a-4132-b34c-1d179e89f223.jpg",
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/396ac8e5-5b5a-4132-b34c-1d179e89f223.jpg",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp-1\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "avatars/396ac8e5-5b5a-4132-b34c-1d179e89f223#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -98,13 +98,13 @@
       "Integrity": "6f1rbWUO6yk8hm0shCcnPTqzsZ2QGP46zSI/MD82pOU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\avatars\\396ac8e5-5b5a-4132-b34c-1d179e89f223.jpg"
+      "OriginalItemSpec": "wwwroot/avatars/396ac8e5-5b5a-4132-b34c-1d179e89f223.jpg"
     },
     {
-      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp-1\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\acfe8da4-4ea5-4366-85ef-c7ebe674a748.png",
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/acfe8da4-4ea5-4366-85ef-c7ebe674a748.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp-1\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "avatars/acfe8da4-4ea5-4366-85ef-c7ebe674a748#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -119,13 +119,13 @@
       "Integrity": "3BoqEf+hULsrZ9Y7gz50qllgqD3qrh7pvX3U+aGaOUs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\avatars\\acfe8da4-4ea5-4366-85ef-c7ebe674a748.png"
+      "OriginalItemSpec": "wwwroot/avatars/acfe8da4-4ea5-4366-85ef-c7ebe674a748.png"
     },
     {
-      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp-1\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\ad168a1b-cd18-4d22-8222-8432ff298567.jpg",
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/ad168a1b-cd18-4d22-8222-8432ff298567.jpg",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp-1\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "avatars/ad168a1b-cd18-4d22-8222-8432ff298567#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -140,13 +140,13 @@
       "Integrity": "9DT8pyp5fIP5PrUSUDdQKI46atYc67TFCye3jtvWvyQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\avatars\\ad168a1b-cd18-4d22-8222-8432ff298567.jpg"
+      "OriginalItemSpec": "wwwroot/avatars/ad168a1b-cd18-4d22-8222-8432ff298567.jpg"
     },
     {
-      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp-1\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\b3c91469-d489-4a0c-8e7b-722234234eb7.jpg",
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/b3c91469-d489-4a0c-8e7b-722234234eb7.jpg",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp-1\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "avatars/b3c91469-d489-4a0c-8e7b-722234234eb7#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -161,13 +161,13 @@
       "Integrity": "o1gysXpAqr2/23j0Ni/HrZnP3bSq01S8dCP/vkdud9Y=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\avatars\\b3c91469-d489-4a0c-8e7b-722234234eb7.jpg"
+      "OriginalItemSpec": "wwwroot/avatars/b3c91469-d489-4a0c-8e7b-722234234eb7.jpg"
     },
     {
-      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp-1\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\b9778e18-7996-4aaf-b246-6c163eea76d0.jpg",
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/b9778e18-7996-4aaf-b246-6c163eea76d0.jpg",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp-1\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "avatars/b9778e18-7996-4aaf-b246-6c163eea76d0#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -182,13 +182,13 @@
       "Integrity": "t+rjv0ti3u5xDts5ER4eK6vfY4ShkMXwkcczacC6nbM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\avatars\\b9778e18-7996-4aaf-b246-6c163eea76d0.jpg"
+      "OriginalItemSpec": "wwwroot/avatars/b9778e18-7996-4aaf-b246-6c163eea76d0.jpg"
     }
   ],
   "Endpoints": [
     {
       "Route": "avatars/085edd4e-5e1f-4bca-a355-cf37857487c3.43i7u08swk.jpg",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp-1\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\085edd4e-5e1f-4bca-a355-cf37857487c3.jpg",
+      "AssetFile": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/085edd4e-5e1f-4bca-a355-cf37857487c3.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -209,7 +209,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Mar 2025 14:44:21 GMT"
+          "Value": "Tue, 18 Mar 2025 17:49:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -233,7 +233,7 @@
     },
     {
       "Route": "avatars/085edd4e-5e1f-4bca-a355-cf37857487c3.jpg",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp-1\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\085edd4e-5e1f-4bca-a355-cf37857487c3.jpg",
+      "AssetFile": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/085edd4e-5e1f-4bca-a355-cf37857487c3.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -254,7 +254,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Mar 2025 14:44:21 GMT"
+          "Value": "Tue, 18 Mar 2025 17:49:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -270,7 +270,7 @@
     },
     {
       "Route": "avatars/18f9ab88-f8da-47c9-a231-6340684f2f0a.h8s8syp9pd.jpg",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp-1\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\18f9ab88-f8da-47c9-a231-6340684f2f0a.jpg",
+      "AssetFile": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/18f9ab88-f8da-47c9-a231-6340684f2f0a.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -291,7 +291,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Mar 2025 14:44:21 GMT"
+          "Value": "Tue, 18 Mar 2025 17:49:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -315,7 +315,7 @@
     },
     {
       "Route": "avatars/18f9ab88-f8da-47c9-a231-6340684f2f0a.jpg",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp-1\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\18f9ab88-f8da-47c9-a231-6340684f2f0a.jpg",
+      "AssetFile": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/18f9ab88-f8da-47c9-a231-6340684f2f0a.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -336,7 +336,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Mar 2025 14:44:21 GMT"
+          "Value": "Tue, 18 Mar 2025 17:49:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -352,7 +352,7 @@
     },
     {
       "Route": "avatars/32e6f3bc-070d-435a-a026-6c3289b9c5b4.jpeg",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp-1\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\32e6f3bc-070d-435a-a026-6c3289b9c5b4.jpeg",
+      "AssetFile": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/32e6f3bc-070d-435a-a026-6c3289b9c5b4.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -373,7 +373,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Mar 2025 14:44:21 GMT"
+          "Value": "Tue, 18 Mar 2025 17:49:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -389,7 +389,7 @@
     },
     {
       "Route": "avatars/32e6f3bc-070d-435a-a026-6c3289b9c5b4.r410w99l63.jpeg",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp-1\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\32e6f3bc-070d-435a-a026-6c3289b9c5b4.jpeg",
+      "AssetFile": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/32e6f3bc-070d-435a-a026-6c3289b9c5b4.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -410,7 +410,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Mar 2025 14:44:21 GMT"
+          "Value": "Tue, 18 Mar 2025 17:49:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -434,7 +434,7 @@
     },
     {
       "Route": "avatars/396ac8e5-5b5a-4132-b34c-1d179e89f223.dbxhvjd30j.jpg",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp-1\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\396ac8e5-5b5a-4132-b34c-1d179e89f223.jpg",
+      "AssetFile": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/396ac8e5-5b5a-4132-b34c-1d179e89f223.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -455,7 +455,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Mar 2025 14:44:21 GMT"
+          "Value": "Tue, 18 Mar 2025 17:49:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -479,7 +479,7 @@
     },
     {
       "Route": "avatars/396ac8e5-5b5a-4132-b34c-1d179e89f223.jpg",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp-1\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\396ac8e5-5b5a-4132-b34c-1d179e89f223.jpg",
+      "AssetFile": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/396ac8e5-5b5a-4132-b34c-1d179e89f223.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -500,7 +500,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Mar 2025 14:44:21 GMT"
+          "Value": "Tue, 18 Mar 2025 17:49:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -516,7 +516,7 @@
     },
     {
       "Route": "avatars/acfe8da4-4ea5-4366-85ef-c7ebe674a748.png",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp-1\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\acfe8da4-4ea5-4366-85ef-c7ebe674a748.png",
+      "AssetFile": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/acfe8da4-4ea5-4366-85ef-c7ebe674a748.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -537,7 +537,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Mar 2025 14:44:21 GMT"
+          "Value": "Tue, 18 Mar 2025 17:49:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -553,7 +553,7 @@
     },
     {
       "Route": "avatars/acfe8da4-4ea5-4366-85ef-c7ebe674a748.wnk5zoopog.png",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp-1\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\acfe8da4-4ea5-4366-85ef-c7ebe674a748.png",
+      "AssetFile": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/acfe8da4-4ea5-4366-85ef-c7ebe674a748.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -574,7 +574,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Mar 2025 14:44:21 GMT"
+          "Value": "Tue, 18 Mar 2025 17:49:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -598,7 +598,7 @@
     },
     {
       "Route": "avatars/ad168a1b-cd18-4d22-8222-8432ff298567.8pgaw2fkob.jpg",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp-1\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\ad168a1b-cd18-4d22-8222-8432ff298567.jpg",
+      "AssetFile": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/ad168a1b-cd18-4d22-8222-8432ff298567.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -619,7 +619,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Mar 2025 14:44:21 GMT"
+          "Value": "Tue, 18 Mar 2025 17:49:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -643,7 +643,7 @@
     },
     {
       "Route": "avatars/ad168a1b-cd18-4d22-8222-8432ff298567.jpg",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp-1\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\ad168a1b-cd18-4d22-8222-8432ff298567.jpg",
+      "AssetFile": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/ad168a1b-cd18-4d22-8222-8432ff298567.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -664,7 +664,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Mar 2025 14:44:21 GMT"
+          "Value": "Tue, 18 Mar 2025 17:49:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -680,7 +680,7 @@
     },
     {
       "Route": "avatars/b3c91469-d489-4a0c-8e7b-722234234eb7.hbcc6az60b.jpg",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp-1\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\b3c91469-d489-4a0c-8e7b-722234234eb7.jpg",
+      "AssetFile": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/b3c91469-d489-4a0c-8e7b-722234234eb7.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -701,7 +701,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Mar 2025 14:48:09 GMT"
+          "Value": "Tue, 18 Mar 2025 18:02:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -725,7 +725,7 @@
     },
     {
       "Route": "avatars/b3c91469-d489-4a0c-8e7b-722234234eb7.jpg",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp-1\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\b3c91469-d489-4a0c-8e7b-722234234eb7.jpg",
+      "AssetFile": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/b3c91469-d489-4a0c-8e7b-722234234eb7.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -746,7 +746,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Mar 2025 14:48:09 GMT"
+          "Value": "Tue, 18 Mar 2025 18:02:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -762,7 +762,7 @@
     },
     {
       "Route": "avatars/b9778e18-7996-4aaf-b246-6c163eea76d0.jpg",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp-1\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\b9778e18-7996-4aaf-b246-6c163eea76d0.jpg",
+      "AssetFile": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/b9778e18-7996-4aaf-b246-6c163eea76d0.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -783,7 +783,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Mar 2025 14:44:21 GMT"
+          "Value": "Tue, 18 Mar 2025 17:49:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -799,7 +799,7 @@
     },
     {
       "Route": "avatars/b9778e18-7996-4aaf-b246-6c163eea76d0.r76hxkehgs.jpg",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp-1\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\b9778e18-7996-4aaf-b246-6c163eea76d0.jpg",
+      "AssetFile": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/b9778e18-7996-4aaf-b246-6c163eea76d0.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -820,7 +820,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Mar 2025 14:44:21 GMT"
+          "Value": "Tue, 18 Mar 2025 17:49:13 GMT"
         },
         {
           "Name": "Cache-Control",
