@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSCameraUsageDescription</key>
+	<string>Мы используем камеру для того, чтобы вы могли сделать фото для вашего профиля.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Мы используем вашу фотогалерею для того, чтобы вы могли выбрать фото для вашего профиля.</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>

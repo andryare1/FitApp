@@ -53,29 +53,30 @@ class _ExercisesPageState extends State<ExercisesPage> {
     },
   ];
 
- void _onSearchTextChanged(String query) async {
-  if (query.isEmpty) {
-    setState(() {
-      _searchResults.clear(); // Очищаем результаты, но остаемся в режиме поиска
-    });
-    return;
-  }
+  void _onSearchTextChanged(String query) async {
+    if (query.isEmpty) {
+      setState(() {
+        _searchResults
+            .clear(); // Очищаем результаты, но остаемся в режиме поиска
+      });
+      return;
+    }
 
-  setState(() {
-    _isSearching = true;
-  });
+    setState(() {
+      _isSearching = true;
+    });
 
-  try {
-    final results = await _exerciseService.searchExercises(query);
-    setState(() {
-      _searchResults = results;
-    });
-  } catch (e) {
-    setState(() {
-      _searchResults = []; // Очищаем результаты при ошибке
-    });
+    try {
+      final results = await _exerciseService.searchExercises(query);
+      setState(() {
+        _searchResults = results;
+      });
+    } catch (e) {
+      setState(() {
+        _searchResults = []; // Очищаем результаты при ошибке
+      });
+    }
   }
-}
 
   void _cancelSearch() {
     setState(() {
@@ -173,7 +174,7 @@ class _ExercisesPageState extends State<ExercisesPage> {
       ),
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 0, horizontal: 16),
+          padding: const EdgeInsets.symmetric(vertical: 0, horizontal: 5),
           child: _isSearching
               ? _searchResults.isEmpty
                   ? _buildNoResultsWidget() // Виджет для пустого результата
@@ -246,19 +247,20 @@ class _ExercisesPageState extends State<ExercisesPage> {
 
   Widget _buildSearchResults() {
     return ListView.builder(
-      padding: const EdgeInsets.all(8),
+      padding: const EdgeInsets.all(8), // Добавляем отступы по краям
       itemCount: _searchResults.length,
       itemBuilder: (context, index) {
         final exercise = _searchResults[index];
         return Padding(
-          padding: const EdgeInsets.symmetric(vertical: 4),
+          padding: const EdgeInsets.symmetric(
+              vertical: 4), // Отступы между карточками
           child: Card(
-            color: Colors.white,
+            color: Colors.white, // Цвет фона карточки
             shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(10),
+              borderRadius: BorderRadius.circular(10), // Закругленные углы
             ),
-            elevation: 1,
-            margin: EdgeInsets.zero,
+            elevation: 1, // Уменьшаем тень
+            margin: EdgeInsets.zero, // Убираем отступы
             child: InkWell(
               onTap: () {
                 Navigator.push(
@@ -272,11 +274,12 @@ class _ExercisesPageState extends State<ExercisesPage> {
               child: Row(
                 children: [
                   ClipRRect(
-                    borderRadius: BorderRadius.circular(10),
+                    borderRadius: BorderRadius.circular(
+                        10), // Закругленные углы изображения
                     child: Image.network(
                       exercise['imageUrl'],
-                      width: 120,
-                      height: 120,
+                      width: 100,
+                      height: 100,
                       fit: BoxFit.cover,
                       errorBuilder: (context, error, stackTrace) {
                         return Image.asset(

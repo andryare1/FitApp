@@ -34,15 +34,21 @@ class _ProfilePageState extends State<ProfilePage> {
       final storedAvatarBytes =
           await _authService.getAvatarFromServer(); // Берем URL с сервера
 
-      setState(() {
-        username = storedUsername;
-        avatarBytes = storedAvatarBytes; // Устанавливаем аватар с сервера
-      });
+      if (mounted) {
+        setState(() {
+          username = storedUsername;
+          avatarBytes = storedAvatarBytes; // Устанавливаем аватар с сервера
+        });
+      }
     } catch (e) {
-      setState(() => avatarBytes =
-          Uint8List(0)); // Если ошибка - показываем дефолтный аватар
+      if (mounted) {
+        setState(() => avatarBytes =
+            Uint8List(0)); // Если ошибка - показываем дефолтный аватар
+      }
     } finally {
-      setState(() => _isLoading = false);
+      if (mounted) {
+        setState(() => _isLoading = false);
+      }
     }
   }
 
@@ -152,15 +158,15 @@ class _ProfilePageState extends State<ProfilePage> {
             ),
             CupertinoActionSheetAction(
               onPressed: () async {
-              Navigator.pop(context);
-                  bool success = await _authService.deleteAvatar();
+                Navigator.pop(context);
+                bool success = await _authService.deleteAvatar();
 
-                   if (success) {
-                      setState(() {
-                        avatarBytes = null;
-                      });
-                  }
-                    },
+                if (success) {
+                  setState(() {
+                    avatarBytes = null;
+                  });
+                }
+              },
               child: const Text("Удалить фото"),
             )
           ],
@@ -188,16 +194,15 @@ class _ProfilePageState extends State<ProfilePage> {
         ],
       ),
       body: Padding(
-        padding: const EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(1.0),
         child: _isLoading
-            ? const Center(
-                child: CircularProgressIndicator())
+            ? const Center(child: CircularProgressIndicator())
             : Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Center(
                     child: CircleAvatar(
-                      radius: 60,
+                      radius: 45,
                       backgroundColor: avatarBytes == null
                           ? Colors.grey[300]
                           : Colors.transparent,
@@ -206,24 +211,21 @@ class _ProfilePageState extends State<ProfilePage> {
                               child: Image.memory(
                                 avatarBytes!,
                                 fit: BoxFit.cover,
-                                width: 120,
-                                height: 120,
+                                width: 100,
+                                height: 100,
                                 errorBuilder: (context, error, stackTrace) {
-                                  return Image.asset(
-                                      'assets/error.png');
+                                  return Image.asset('assets/error.png');
                                 },
                               ),
                             )
                           : const Icon(Icons.person,
-                              size: 60,
-                              color: Colors.white),
+                              size: 60, color: Colors.white),
                     ),
                   ),
                   TextButton(
                     onPressed: _showPhotoOptions,
                     style: TextButton.styleFrom(
                       foregroundColor: Colors.black,
-                      
                     ),
                     child: const Text('Изменить фото'),
                   ),

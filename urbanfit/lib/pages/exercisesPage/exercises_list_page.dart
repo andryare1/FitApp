@@ -117,8 +117,8 @@ class _ExerciseListPageState extends State<ExerciseListPage> {
                               10), // Закругленные углы изображения
                           child: Image.network(
                             exercise['imageUrl'],
-                            width: 120,
-                            height: 120,
+                            width: 100,
+                            height: 100,
                             fit: BoxFit.cover,
                             errorBuilder: (context, error, stackTrace) {
                               return Image.asset(
@@ -144,21 +144,6 @@ class _ExerciseListPageState extends State<ExerciseListPage> {
                                   ),
                                 ),
                                 const SizedBox(height: 5),
-                                Row(
-                                  children: [
-                                    const Icon(Icons.fitness_center,
-                                        size: 16, color: Colors.purple),
-                                    const SizedBox(width: 5),
-                                    Text(
-                                      getMuscleGroupName(
-                                          exercise["muscleGroup"]),
-                                      style: const TextStyle(
-                                        fontSize: 14,
-                                        color: Colors.purple,
-                                      ),
-                                    ),
-                                  ],
-                                ),
                               ],
                             ),
                           ),
