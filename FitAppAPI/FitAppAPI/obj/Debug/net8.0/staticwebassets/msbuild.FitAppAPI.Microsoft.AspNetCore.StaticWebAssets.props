@@ -72,6 +72,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\avatars\396ac8e5-5b5a-4132-b34c-1d179e89f223.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\avatars\959eb308-b44c-4944-9d25-d73bae54ec0b.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>FitAppAPI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FitAppAPI</BasePath>
+      <RelativePath>avatars/959eb308-b44c-4944-9d25-d73bae54ec0b.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>8pgaw2fkob</Fingerprint>
+      <Integrity>9DT8pyp5fIP5PrUSUDdQKI46atYc67TFCye3jtvWvyQ=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\avatars\959eb308-b44c-4944-9d25-d73bae54ec0b.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\avatars\acfe8da4-4ea5-4366-85ef-c7ebe674a748.png'))">
       <SourceType>Package</SourceType>
       <SourceId>FitAppAPI</SourceId>

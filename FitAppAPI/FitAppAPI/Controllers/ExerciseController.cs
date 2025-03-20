@@ -35,7 +35,7 @@ public class ExerciseController : ControllerBase
 
     // 2. Получение упражнений по группе мышц
     [HttpGet("group/{muscleGroup}")]
-    public async Task<ActionResult<IEnumerable<Exercise>>> GetExercisesByGroup(string muscleGroup)
+    public async Task<ActionResult<IEnumerable<object>>> GetExercisesByGroup(string muscleGroup)
     {
         // Преобразование строки в соответствующий enum
         if (!Enum.TryParse(muscleGroup, true, out MuscleGroup muscleGroupEnum))
@@ -45,6 +45,13 @@ public class ExerciseController : ControllerBase
 
         var results = await _context.Exercises
             .Where(e => e.MuscleGroup == muscleGroupEnum)
+            .Select(e => new
+            {
+                e.Id,
+                e.Name,
+                e.MuscleGroup,
+                ImageUrl = Url.Content($"~/wwwroot/{e.ImageUrl}")
+            })
             .ToListAsync();
 
         if (results.Count == 0)

@@ -21,47 +21,44 @@ class _ExerciseListPageState extends State<ExerciseListPage> {
         _exerciseService.getExercisesByMuscleGroup(widget.muscleGroup);
   }
 
-String getMuscleGroupName(dynamic muscleGroup) {
-  if (muscleGroup is String) {
-    // Если передана строка на английском
-    switch (muscleGroup) {
-      case 'Chest':
-        return 'Грудь';
-      case 'Back':
-        return 'Спина';
-      case 'Shoulders':
-        return 'Плечи';
-      case 'Arms':
-        return 'Руки';
-      case 'Legs':
-        return 'Ноги';
-      case 'Abs':
-        return 'Пресс';
-      default:
-        return 'Неизвестная группа';
+  String getMuscleGroupName(dynamic muscleGroup) {
+    if (muscleGroup is String) {
+      switch (muscleGroup) {
+        case 'Chest':
+          return 'Грудь';
+        case 'Back':
+          return 'Спина';
+        case 'Shoulders':
+          return 'Плечи';
+        case 'Arms':
+          return 'Руки';
+        case 'Legs':
+          return 'Ноги';
+        case 'Abs':
+          return 'Пресс';
+        default:
+          return 'Неизвестная группа';
+      }
+    } else if (muscleGroup is int) {
+      switch (muscleGroup) {
+        case 0:
+          return 'Грудь';
+        case 1:
+          return 'Спина';
+        case 2:
+          return 'Плечи';
+        case 3:
+          return 'Руки';
+        case 4:
+          return 'Ноги';
+        case 5:
+          return 'Пресс';
+        default:
+          return 'Неизвестная группа';
+      }
     }
-  } else if (muscleGroup is int) {
-    // Если передан ID группы
-    switch (muscleGroup) {
-      case 0:
-        return 'Грудь';
-      case 1:
-        return 'Спина';
-      case 2:
-        return 'Плечи';
-      case 3:
-        return 'Руки';
-      case 4:
-        return 'Ноги';
-      case 5:
-        return 'Пресс';
-      default:
-        return 'Неизвестная группа';
-    }
+    return 'Неизвестная группа';
   }
-  return 'Неизвестная группа'; // на случай, если тип не соответствует
-}
-
 
   @override
   Widget build(BuildContext context) {
@@ -71,7 +68,7 @@ String getMuscleGroupName(dynamic muscleGroup) {
         leading: IconButton(
           icon: const Icon(Icons.arrow_back),
           onPressed: () {
-            Navigator.pop(context); // Вернуться назад
+            Navigator.pop(context);
           },
         ),
       ),
@@ -88,52 +85,51 @@ String getMuscleGroupName(dynamic muscleGroup) {
 
           final exercises = snapshot.data!;
           return ListView.builder(
-            padding: const EdgeInsets.all(16),
+            padding: const EdgeInsets.all(8), // Добавляем отступы по краям
             itemCount: exercises.length,
             itemBuilder: (context, index) {
               final exercise = exercises[index];
               return Padding(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                padding: const EdgeInsets.symmetric(
+                    vertical: 4), // Отступы между карточками
                 child: Card(
+                  color: Colors.white, // Цвет фона карточки
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10),
+                    borderRadius:
+                        BorderRadius.circular(10), // Закругленные углы
                   ),
-                  elevation: 5,
+                  elevation: 1, // Уменьшаем тень
+                  margin: EdgeInsets.zero, // Убираем отступы
                   child: InkWell(
                     onTap: () {
-                      // Переход на страницу деталей
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => ExerciseDetailPage(exercise: exercise),
+                          builder: (context) =>
+                              ExerciseDetailPage(exercise: exercise),
                         ),
                       );
                     },
                     child: Row(
                       children: [
-                        // Изображение упражнения с логикой ошибки
                         ClipRRect(
-                          borderRadius: const BorderRadius.only(
-                            topLeft: Radius.circular(10),
-                            bottomLeft: Radius.circular(10),
-                          ),
-                          child: Image.asset(
-                            'assets/exercises/${exercise['image']}',
-                            width: 100,
-                            height: 100,
+                          borderRadius: BorderRadius.circular(
+                              10), // Закругленные углы изображения
+                          child: Image.network(
+                            exercise['imageUrl'],
+                            width: 120,
+                            height: 120,
                             fit: BoxFit.cover,
                             errorBuilder: (context, error, stackTrace) {
                               return Image.asset(
                                 'assets/error.png',
-                                width: 100,
-                                height: 100,
+                                width: 120,
+                                height: 120,
                                 fit: BoxFit.cover,
                               );
                             },
                           ),
                         ),
-                        // Текстовое описание
                         Expanded(
                           child: Padding(
                             padding: const EdgeInsets.all(10),
@@ -166,6 +162,11 @@ String getMuscleGroupName(dynamic muscleGroup) {
                               ],
                             ),
                           ),
+                        ),
+                        const Padding(
+                          padding: EdgeInsets.all(8.0),
+                          child:
+                              Icon(Icons.arrow_forward_ios, color: Colors.grey),
                         ),
                       ],
                     ),
