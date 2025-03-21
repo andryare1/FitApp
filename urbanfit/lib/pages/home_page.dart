@@ -3,7 +3,7 @@ import 'package:urbanfit/pages/exercisesPage/exercises_page.dart';
 import 'package:urbanfit/pages/main_page.dart';
 import 'package:urbanfit/pages/profile_page.dart';
 import 'package:urbanfit/pages/trainings_pade.dart';
-import 'authorization/login_page.dart'; // Импортируем страницу входа
+import 'authorization/login_page.dart'; 
 
 class HomePage extends StatefulWidget {
   final String? token;

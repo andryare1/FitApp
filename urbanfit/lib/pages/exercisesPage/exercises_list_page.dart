@@ -85,21 +85,21 @@ class _ExerciseListPageState extends State<ExerciseListPage> {
 
           final exercises = snapshot.data!;
           return ListView.builder(
-            padding: const EdgeInsets.all(8), // Добавляем отступы по краям
+            padding: const EdgeInsets.all(8), 
             itemCount: exercises.length,
             itemBuilder: (context, index) {
               final exercise = exercises[index];
               return Padding(
                 padding: const EdgeInsets.symmetric(
-                    vertical: 4), // Отступы между карточками
+                    vertical: 4), 
                 child: Card(
-                  color: Colors.white, // Цвет фона карточки
+                  color: Colors.white, 
                   shape: RoundedRectangleBorder(
                     borderRadius:
-                        BorderRadius.circular(10), // Закругленные углы
+                        BorderRadius.circular(10), 
                   ),
-                  elevation: 1, // Уменьшаем тень
-                  margin: EdgeInsets.zero, // Убираем отступы
+                  elevation: 1, 
+                  margin: EdgeInsets.zero, 
                   child: InkWell(
                     onTap: () {
                       Navigator.push(
@@ -114,7 +114,7 @@ class _ExerciseListPageState extends State<ExerciseListPage> {
                       children: [
                         ClipRRect(
                           borderRadius: BorderRadius.circular(
-                              10), // Закругленные углы изображения
+                              10), 
                           child: Image.network(
                             exercise['imageUrl'],
                             width: 100,
@@ -123,8 +123,8 @@ class _ExerciseListPageState extends State<ExerciseListPage> {
                             errorBuilder: (context, error, stackTrace) {
                               return Image.asset(
                                 'assets/error.png',
-                                width: 120,
-                                height: 120,
+                                width: 100,
+                                height: 100,
                                 fit: BoxFit.cover,
                               );
                             },

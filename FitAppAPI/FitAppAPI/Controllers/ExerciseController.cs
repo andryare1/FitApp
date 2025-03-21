@@ -50,7 +50,7 @@ public class ExerciseController : ControllerBase
                 e.Id,
                 e.Name,
                 e.MuscleGroup,
-                ImageUrl = Url.Content($"~/wwwroot/{e.ImageUrl}")
+                ImageUrl = Url.Content($"~{e.ImageUrl}")
             })
             .ToListAsync();
 

@@ -103,7 +103,7 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                       elevation: 5,
                       minimumSize: const Size(
-                          double.infinity, 0.1), // Делаем ширину фиксированной
+                          double.infinity, 0.1), 
                     ),
                     onPressed: _login,
                     child: const Text(

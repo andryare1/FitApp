@@ -1,8 +1,8 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 
-const baseUrl = 'http://192.168.31.85:5016'; // для макбука
-//const baseUrl = 'http://192.168.31.142:5016/api';   // для ПК
+//const baseUrl = 'http://192.168.31.85:5016'; // для макбука
+const baseUrl = 'http://192.168.31.142:5016';   // для ПК
 
 class ExerciseService {
   Future<List<Map<String, dynamic>>> getExercisesByMuscleGroup(

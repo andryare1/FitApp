@@ -16,7 +16,7 @@ class _RegisterPageState extends State<RegisterPage> {
   final AuthService _authService = AuthService();
 
   bool _isLoading = false;
-  bool _isPasswordVisible = false; // Переменная для показа/скрытия пароля
+  bool _isPasswordVisible = false; 
 
   bool _isUsernameValid(String username) {
     return username.length >= 5;
@@ -138,7 +138,7 @@ class _RegisterPageState extends State<RegisterPage> {
             const SizedBox(height: 20),
             TextField(
               controller: _passwordController,
-              obscureText: !_isPasswordVisible, // Меняем видимость пароля
+              obscureText: !_isPasswordVisible, 
               decoration: InputDecoration(
                 labelText: 'Пароль',
                 prefixIcon: const Icon(Icons.lock),
@@ -154,7 +154,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   onPressed: () {
                     setState(() {
                       _isPasswordVisible =
-                          !_isPasswordVisible; // Меняем состояние
+                          !_isPasswordVisible; 
                     });
                   },
                 ),

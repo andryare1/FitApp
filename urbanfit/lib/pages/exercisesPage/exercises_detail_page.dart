@@ -61,7 +61,7 @@ class ExerciseDetailPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Изображение упражнения
+            // Изображение упражнения -- пока как заглушка - будет видео!
             ClipRRect(
               borderRadius: BorderRadius.circular(12),
               child: Image.asset(
@@ -80,8 +80,6 @@ class ExerciseDetailPage extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 16),
-
-            // Группа мышц
             Text(
               'Группа мышц:',
               style: Theme.of(context).textTheme.titleMedium,
@@ -92,8 +90,6 @@ class ExerciseDetailPage extends StatelessWidget {
               style: Theme.of(context).textTheme.bodyLarge,
             ),
             const SizedBox(height: 16),
-
-            // Описание
             Text(
               'Описание:',
               style: Theme.of(context).textTheme.titleMedium,

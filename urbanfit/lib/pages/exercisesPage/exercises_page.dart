@@ -57,7 +57,7 @@ class _ExercisesPageState extends State<ExercisesPage> {
     if (query.isEmpty) {
       setState(() {
         _searchResults
-            .clear(); // Очищаем результаты, но остаемся в режиме поиска
+            .clear(); 
       });
       return;
     }
@@ -73,7 +73,7 @@ class _ExercisesPageState extends State<ExercisesPage> {
       });
     } catch (e) {
       setState(() {
-        _searchResults = []; // Очищаем результаты при ошибке
+        _searchResults = [];
       });
     }
   }
@@ -177,7 +177,7 @@ class _ExercisesPageState extends State<ExercisesPage> {
           padding: const EdgeInsets.symmetric(vertical: 0, horizontal: 5),
           child: _isSearching
               ? _searchResults.isEmpty
-                  ? _buildNoResultsWidget() // Виджет для пустого результата
+                  ? _buildNoResultsWidget() 
                   : _buildSearchResults()
               : GridView.builder(
                   gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
@@ -247,20 +247,20 @@ class _ExercisesPageState extends State<ExercisesPage> {
 
   Widget _buildSearchResults() {
     return ListView.builder(
-      padding: const EdgeInsets.all(8), // Добавляем отступы по краям
+      padding: const EdgeInsets.all(8), 
       itemCount: _searchResults.length,
       itemBuilder: (context, index) {
         final exercise = _searchResults[index];
         return Padding(
           padding: const EdgeInsets.symmetric(
-              vertical: 4), // Отступы между карточками
+              vertical: 4), 
           child: Card(
-            color: Colors.white, // Цвет фона карточки
+            color: Colors.white, 
             shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(10), // Закругленные углы
+              borderRadius: BorderRadius.circular(10), 
             ),
-            elevation: 1, // Уменьшаем тень
-            margin: EdgeInsets.zero, // Убираем отступы
+            elevation: 1, 
+            margin: EdgeInsets.zero, 
             child: InkWell(
               onTap: () {
                 Navigator.push(
@@ -275,7 +275,7 @@ class _ExercisesPageState extends State<ExercisesPage> {
                 children: [
                   ClipRRect(
                     borderRadius: BorderRadius.circular(
-                        10), // Закругленные углы изображения
+                        10), 
                     child: Image.network(
                       exercise['imageUrl'],
                       width: 100,
@@ -284,8 +284,8 @@ class _ExercisesPageState extends State<ExercisesPage> {
                       errorBuilder: (context, error, stackTrace) {
                         return Image.asset(
                           'assets/error.png',
-                          width: 120,
-                          height: 120,
+                          width: 100,
+                          height: 100,
                           fit: BoxFit.cover,
                         );
                       },

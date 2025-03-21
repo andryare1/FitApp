@@ -32,18 +32,18 @@ class _ProfilePageState extends State<ProfilePage> {
     try {
       final storedUsername = await _authService.getUsername();
       final storedAvatarBytes =
-          await _authService.getAvatarFromServer(); // Берем URL с сервера
+          await _authService.getAvatarFromServer();
 
       if (mounted) {
         setState(() {
           username = storedUsername;
-          avatarBytes = storedAvatarBytes; // Устанавливаем аватар с сервера
+          avatarBytes = storedAvatarBytes; 
         });
       }
     } catch (e) {
       if (mounted) {
         setState(() => avatarBytes =
-            Uint8List(0)); // Если ошибка - показываем дефолтный аватар
+            Uint8List(0)); 
       }
     } finally {
       if (mounted) {
@@ -52,7 +52,7 @@ class _ProfilePageState extends State<ProfilePage> {
     }
   }
 
-  /// Загружает новое изображение и отправляет на сервер
+  // Загружает новое изображение и отправляет на сервер
   Future<void> _pickImage(ImageSource source) async {
     try {
       final XFile? pickedFile = await _picker.pickImage(source: source);
@@ -71,7 +71,7 @@ class _ProfilePageState extends State<ProfilePage> {
     try {
       final success = await _authService.uploadAvatar(image);
       if (success) {
-        _loadUserData(); // Перезагружаем данные пользователя, чтобы обновить аватар
+        _loadUserData(); 
       } else {
         _showErrorDialog('Ошибка загрузки аватара. Попробуйте снова.');
       }
@@ -134,7 +134,7 @@ class _ProfilePageState extends State<ProfilePage> {
     }
   }
 
-  /// Показывает диалог выбора фото
+  // Показывает диалог выбора фото
   void _showPhotoOptions() {
     showCupertinoModalPopup(
       context: context,

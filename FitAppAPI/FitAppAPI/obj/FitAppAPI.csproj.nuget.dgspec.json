@@ -1,26 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/FitAppAPI.csproj": {}
+    "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\FitAppAPI.csproj": {}
   },
   "projects": {
-    "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/FitAppAPI.csproj": {
+    "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\FitAppAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/FitAppAPI.csproj",
+        "projectUniqueName": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\FitAppAPI.csproj",
         "projectName": "FitAppAPI",
-        "projectPath": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/FitAppAPI.csproj",
-        "packagesPath": "/Users/andryare/.nuget/packages/",
-        "outputPath": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/obj/",
+        "projectPath": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\FitAppAPI.csproj",
+        "packagesPath": "C:\\Users\\Андрей Ярема\\.nuget\\packages\\",
+        "outputPath": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/andryare/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Андрей Ярема\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -93,7 +98,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
