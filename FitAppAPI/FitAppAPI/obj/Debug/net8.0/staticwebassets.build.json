@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "iT5avGxilhnOW7L3PPGo4sNAdGO+TDWvLRgQayvKENA=",
+  "Hash": "xNjDF7NyXSdBY8OF8yP6k6sl4g9zqBcOP0B2qG16vTo=",
   "Source": "FitAppAPI",
   "BasePath": "_content/FitAppAPI",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "FitAppAPI\\wwwroot",
       "Source": "FitAppAPI",
-      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\085edd4e-5e1f-4bca-a355-cf37857487c3.jpg",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\085edd4e-5e1f-4bca-a355-cf37857487c3.jpg",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "avatars/085edd4e-5e1f-4bca-a355-cf37857487c3#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -38,10 +38,10 @@
       "OriginalItemSpec": "wwwroot\\avatars\\085edd4e-5e1f-4bca-a355-cf37857487c3.jpg"
     },
     {
-      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\18f9ab88-f8da-47c9-a231-6340684f2f0a.jpg",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\18f9ab88-f8da-47c9-a231-6340684f2f0a.jpg",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "avatars/18f9ab88-f8da-47c9-a231-6340684f2f0a#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -59,10 +59,10 @@
       "OriginalItemSpec": "wwwroot\\avatars\\18f9ab88-f8da-47c9-a231-6340684f2f0a.jpg"
     },
     {
-      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\32e6f3bc-070d-435a-a026-6c3289b9c5b4.jpeg",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\32e6f3bc-070d-435a-a026-6c3289b9c5b4.jpeg",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "avatars/32e6f3bc-070d-435a-a026-6c3289b9c5b4#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
@@ -80,10 +80,10 @@
       "OriginalItemSpec": "wwwroot\\avatars\\32e6f3bc-070d-435a-a026-6c3289b9c5b4.jpeg"
     },
     {
-      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\396ac8e5-5b5a-4132-b34c-1d179e89f223.jpg",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\396ac8e5-5b5a-4132-b34c-1d179e89f223.jpg",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "avatars/396ac8e5-5b5a-4132-b34c-1d179e89f223#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -101,10 +101,10 @@
       "OriginalItemSpec": "wwwroot\\avatars\\396ac8e5-5b5a-4132-b34c-1d179e89f223.jpg"
     },
     {
-      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\959eb308-b44c-4944-9d25-d73bae54ec0b.jpg",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\959eb308-b44c-4944-9d25-d73bae54ec0b.jpg",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "avatars/959eb308-b44c-4944-9d25-d73bae54ec0b#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -122,10 +122,10 @@
       "OriginalItemSpec": "wwwroot\\avatars\\959eb308-b44c-4944-9d25-d73bae54ec0b.jpg"
     },
     {
-      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\acfe8da4-4ea5-4366-85ef-c7ebe674a748.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\acfe8da4-4ea5-4366-85ef-c7ebe674a748.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "avatars/acfe8da4-4ea5-4366-85ef-c7ebe674a748#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -143,10 +143,10 @@
       "OriginalItemSpec": "wwwroot\\avatars\\acfe8da4-4ea5-4366-85ef-c7ebe674a748.png"
     },
     {
-      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\ad168a1b-cd18-4d22-8222-8432ff298567.jpg",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\ad168a1b-cd18-4d22-8222-8432ff298567.jpg",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "avatars/ad168a1b-cd18-4d22-8222-8432ff298567#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -164,10 +164,10 @@
       "OriginalItemSpec": "wwwroot\\avatars\\ad168a1b-cd18-4d22-8222-8432ff298567.jpg"
     },
     {
-      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\b3c91469-d489-4a0c-8e7b-722234234eb7.jpg",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\b3c91469-d489-4a0c-8e7b-722234234eb7.jpg",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "avatars/b3c91469-d489-4a0c-8e7b-722234234eb7#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -185,10 +185,10 @@
       "OriginalItemSpec": "wwwroot\\avatars\\b3c91469-d489-4a0c-8e7b-722234234eb7.jpg"
     },
     {
-      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\b9778e18-7996-4aaf-b246-6c163eea76d0.jpg",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\b9778e18-7996-4aaf-b246-6c163eea76d0.jpg",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "avatars/b9778e18-7996-4aaf-b246-6c163eea76d0#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -206,10 +206,10 @@
       "OriginalItemSpec": "wwwroot\\avatars\\b9778e18-7996-4aaf-b246-6c163eea76d0.jpg"
     },
     {
-      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\e2e52983-6cd4-421b-b54c-39bba91619c8.jpg",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\e2e52983-6cd4-421b-b54c-39bba91619c8.jpg",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "avatars/e2e52983-6cd4-421b-b54c-39bba91619c8#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -227,12 +227,12 @@
       "OriginalItemSpec": "wwwroot\\avatars\\e2e52983-6cd4-421b-b54c-39bba91619c8.jpg"
     },
     {
-      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\fe62742a-a06f-47ec-a2e7-e267b6b6adf3.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\ab_wheel.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
-      "RelativePath": "avatars/fe62742a-a06f-47ec-a2e7-e267b6b6adf3#[.{fingerprint}]?.png",
+      "RelativePath": "exercises/ab_wheel#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -241,17 +241,206 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "f3sjumsgaj",
-      "Integrity": "BTW3urMLRpOUVBGlhMdjrk8MqTWEtSqFeaCmSQx7/zg=",
+      "Fingerprint": "rnyajl96x5",
+      "Integrity": "Cbu/o30sKTKIhM1BclxvmAIjEQav/gEZVQHJCK8Vr10=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\avatars\\fe62742a-a06f-47ec-a2e7-e267b6b6adf3.png"
+      "OriginalItemSpec": "wwwroot\\exercises\\ab_wheel.png"
     },
     {
-      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\crossover.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\arnold_press.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/arnold_press#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8gjh1ggk3o",
+      "Integrity": "uF3RliwQv/1rLSxrnAyFTeS+Q2b67n16PCskhQ2zJsw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\exercises\\arnold_press.png"
+    },
+    {
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\barbell_curl.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/barbell_curl#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "m0rptf4hol",
+      "Integrity": "+lEcnrOwvS6fP3bQbJJ5t+cdskf9dmAp14yxvsBH05Q=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\exercises\\barbell_curl.png"
+    },
+    {
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\barbell_row.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/barbell_row#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3jeeg0g2ey",
+      "Integrity": "8S6IA68uXYXWGDshFVrrjk6d/VPKoNIHmBDqCQ/XpEM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\exercises\\barbell_row.png"
+    },
+    {
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\behind_neck_press.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/behind_neck_press#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "26wmq1hgjb",
+      "Integrity": "pqWH+vdX9UOnvz4xDzMAgfpoKM6aGZNlscHMLSnZHmk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\exercises\\behind_neck_press.png"
+    },
+    {
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\bench_press.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/bench_press#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tqf2eu4uyx",
+      "Integrity": "y30qg44489zB3HAe44iTQLL7MSPXzznbZt9M+k+XgQg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\exercises\\bench_press.png"
+    },
+    {
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\cable_crunch.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/cable_crunch#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "furb1pykxz",
+      "Integrity": "tybWLDgiCOdraJek/SjEG+bqq3klKkFcPDwZZ5HBUEQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\exercises\\cable_crunch.png"
+    },
+    {
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\calf_raise.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/calf_raise#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "gk3kxwvh9m",
+      "Integrity": "8D+ZXKo6U8SpEUhoWFH0mbY/BZAh9gxUY6TbNO+Y1Ho=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\exercises\\calf_raise.png"
+    },
+    {
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\close_grip_pushup.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/close_grip_pushup#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7jj9pfva1q",
+      "Integrity": "3W9usJqP9qjnLtrrn/1zmTS/yNWDR7KhkS3IQfBqKbg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\exercises\\close_grip_pushup.png"
+    },
+    {
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\concentration_curl.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/concentration_curl#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "95clvf8tak",
+      "Integrity": "vQt5sgkileAq6+6F0cpcR5Z1e/6M1W655OzO0BVqYYc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\exercises\\concentration_curl.png"
+    },
+    {
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\crossover.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "exercises/crossover#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -269,10 +458,52 @@
       "OriginalItemSpec": "wwwroot\\exercises\\crossover.png"
     },
     {
-      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\dips.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\crunches.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/crunches#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "88q6ewin0g",
+      "Integrity": "SPjWXeYgNS0goiJ42Z1ECd+YoEE84aKt0+WE1g93m58=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\exercises\\crunches.png"
+    },
+    {
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\deadlift.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/deadlift#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0wlztin4wg",
+      "Integrity": "cHEMB018y+Ckcr6ocjG2rHhE+5nCArLZyoXKzAltIRc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\exercises\\deadlift.png"
+    },
+    {
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\dips.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "exercises/dips#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -290,10 +521,10 @@
       "OriginalItemSpec": "wwwroot\\exercises\\dips.png"
     },
     {
-      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\dumbbell_fly.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\dumbbell_fly.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "exercises/dumbbell_fly#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -311,10 +542,157 @@
       "OriginalItemSpec": "wwwroot\\exercises\\dumbbell_fly.png"
     },
     {
-      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\incline_dumbbell_press.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\dumbbell_press.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/dumbbell_press#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "p5p3c3ehio",
+      "Integrity": "HTptGBWuIvwOWzuBPrPQ0D/Oi3l8RCJONH5SLqIab2A=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\exercises\\dumbbell_press.png"
+    },
+    {
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\dumbbell_row.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/dumbbell_row#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "a57n2nle4n",
+      "Integrity": "7lF8Tc02xURGsg3s5ZGqaKAQ3+KN1V+R5fNYwn7NbgE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\exercises\\dumbbell_row.png"
+    },
+    {
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\french_press.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/french_press#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "kgkt3or6j1",
+      "Integrity": "LIBrjoYQ6tqY1epmbNtAv7CRH0ythf3SYlEIpqNLo20=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\exercises\\french_press.png"
+    },
+    {
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\front_raises.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/front_raises#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "v9qdegoi9c",
+      "Integrity": "vSsy73zTc6X9dyRRtr/bkDsiKN03ppAuvvNLZbB0HYc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\exercises\\front_raises.png"
+    },
+    {
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\hack_squat.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/hack_squat#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5sqx6ta791",
+      "Integrity": "1b8NIPgIIaBVV5s7LW1wKVMvNWjZS97wqXHoR6/rP/U=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\exercises\\hack_squat.png"
+    },
+    {
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\hammer_curl.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/hammer_curl#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "q6ohdi19px",
+      "Integrity": "TmYaUWFa2I28Ds3HeOgAyvA2MNq0MYdmN4JTxQEGFb8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\exercises\\hammer_curl.png"
+    },
+    {
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\hyperextensions.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/hyperextensions#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "32ey83tbpw",
+      "Integrity": "q//v/qaY1DE4cuIggJFTffe060VdK9TQCQkZpk1lksM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\exercises\\hyperextensions.png"
+    },
+    {
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\incline_dumbbell_press.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "exercises/incline_dumbbell_press#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -332,10 +710,178 @@
       "OriginalItemSpec": "wwwroot\\exercises\\incline_dumbbell_press.png"
     },
     {
-      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\pec_deck.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\lat_pulldown.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/lat_pulldown#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0qq3ue10yj",
+      "Integrity": "+G9qMpppk+edB4cdSKk7hWgKmup/P6eADfeAaMawEwA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\exercises\\lat_pulldown.png"
+    },
+    {
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\lateral_raises.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/lateral_raises#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "za9z53vlod",
+      "Integrity": "JaWMAKOjVpXvgOq1wzUNMt12pR9Ywe8wrZ+MuGSL+bs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\exercises\\lateral_raises.png"
+    },
+    {
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\leg_curl.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/leg_curl#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "exaasb8m8x",
+      "Integrity": "0v0ndGSr9CEw34A1O/mdus7OiuldMvs2THgs6/pxphE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\exercises\\leg_curl.png"
+    },
+    {
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\leg_extension.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/leg_extension#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "zfovz1oqqf",
+      "Integrity": "gcuL57ZszqWjGfYTGHWaadOBed+rz1EzAibB7EjGoqw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\exercises\\leg_extension.png"
+    },
+    {
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\leg_press.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/leg_press#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "9aa3ckbeap",
+      "Integrity": "0eI1f9zf9QdzzdX4zTgWFIW5Lh+g03rykPjyv9xygbo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\exercises\\leg_press.png"
+    },
+    {
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\leg_raises.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/leg_raises#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "jjg9anxdi8",
+      "Integrity": "/xE4BLSDtD0I9rF0tGIjZWrWEo7Rx0IBn+ujcQE/57U=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\exercises\\leg_raises.png"
+    },
+    {
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\lunges.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/lunges#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5d445rffh4",
+      "Integrity": "GRBbX/JHmQR/KWusZbKiOV220hOU/zKdjXAxYCH+Bug=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\exercises\\lunges.png"
+    },
+    {
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\overhead_triceps_extension.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/overhead_triceps_extension#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "nmt226vta1",
+      "Integrity": "gbMcR7rCXuzB90LxkjWCaodiiaTfEa3E+rsuWK1ulo8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\exercises\\overhead_triceps_extension.png"
+    },
+    {
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\pec_deck.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "exercises/pec_deck#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -353,10 +899,73 @@
       "OriginalItemSpec": "wwwroot\\exercises\\pec_deck.png"
     },
     {
-      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\pushups.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\plank.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/plank#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rcwlcs6rn1",
+      "Integrity": "9cwsqEApi/zREbei0tfaxwJy/9UT8d756KfI+ldw6uk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\exercises\\plank.png"
+    },
+    {
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\plie_squat.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/plie_squat#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qfpe2tsls6",
+      "Integrity": "Rk53oVh03IsHHI9ZcWYrPGOs2urn2icfLLnUi64QW78=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\exercises\\plie_squat.png"
+    },
+    {
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\pull_ups.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/pull_ups#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "k2ga3bf9lx",
+      "Integrity": "3I50oicSDrU6lEnB4hhZgnorwHBPp4rkuevj80Cf2qQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\exercises\\pull_ups.png"
+    },
+    {
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\pushups.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "exercises/pushups#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -374,10 +983,157 @@
       "OriginalItemSpec": "wwwroot\\exercises\\pushups.png"
     },
     {
-      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\smith_machine_press.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\rear_delt_fly.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/rear_delt_fly#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "9zzbqit7t9",
+      "Integrity": "5fw7GxPjUkMlVGuu8+yHazJ07N3uuH8O5j39tMP8qTA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\exercises\\rear_delt_fly.png"
+    },
+    {
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\rear_delt_machine.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/rear_delt_machine#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tj1kwx1b94",
+      "Integrity": "J6dJFW/p9MLJM5gma20s4qencw+u7R4CjiExaylSaGc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\exercises\\rear_delt_machine.png"
+    },
+    {
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\roman_chair_situp.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/roman_chair_situp#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6wmf7qq604",
+      "Integrity": "plCAT7eHzYthbsOa+vabqVSr864R3hymNhzdXmcqLAs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\exercises\\roman_chair_situp.png"
+    },
+    {
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\russian_twist.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/russian_twist#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "w3gpj3rpzi",
+      "Integrity": "NBOBlykY4GWt4e4h8ccQGyKlSs+zixWciAj5ye98tF0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\exercises\\russian_twist.png"
+    },
+    {
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\scott_curl.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/scott_curl#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "saoa52x5rc",
+      "Integrity": "hFZAzmGDLCJKv9RvHUfn478ikOn15cm9ZMEajJK1gKE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\exercises\\scott_curl.png"
+    },
+    {
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\seated_row.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/seated_row#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xa2546u4gi",
+      "Integrity": "6dauSqIbH4JNn1FnOUsBFW/Rqj+hAP9J5NCqRDLHbh4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\exercises\\seated_row.png"
+    },
+    {
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\side_plank.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/side_plank#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7bdl6l0l4i",
+      "Integrity": "XU/A7W2IRv3ZwQJbcGT2NFi/9lAJZu9IejJy7N9FVXs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\exercises\\side_plank.png"
+    },
+    {
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\smith_machine_press.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "exercises/smith_machine_press#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -393,12 +1149,96 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\exercises\\smith_machine_press.png"
+    },
+    {
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\squat.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/squat#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1cz807htxo",
+      "Integrity": "4TBvdrb/SSUCohnlaTLe9XjMPTVbaL6+tmd8TgHc9Cg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\exercises\\squat.png"
+    },
+    {
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\t_bar_row.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/t_bar_row#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bv2agg4nnb",
+      "Integrity": "+YI9zY5k4aXYOdXyx3B0rFYJPNGQuClky2o1rMEwCl0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\exercises\\t_bar_row.png"
+    },
+    {
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\triceps_pushdown.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/triceps_pushdown#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fnf8y4n7k7",
+      "Integrity": "OyP2hvm17thPiSuaZ+IB9YqltuMv4LcM4Sy9Vh+yVuk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\exercises\\triceps_pushdown.png"
+    },
+    {
+      "Identity": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\upright_row.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/upright_row#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "b2ma41erei",
+      "Integrity": "zam9GvKXAGuJbtSjDsRczt38Jk+6eaV+IMyx4iqqkUg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\exercises\\upright_row.png"
     }
   ],
   "Endpoints": [
     {
       "Route": "avatars/085edd4e-5e1f-4bca-a355-cf37857487c3.43i7u08swk.jpg",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\085edd4e-5e1f-4bca-a355-cf37857487c3.jpg",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\085edd4e-5e1f-4bca-a355-cf37857487c3.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -419,7 +1259,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -443,7 +1283,7 @@
     },
     {
       "Route": "avatars/085edd4e-5e1f-4bca-a355-cf37857487c3.jpg",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\085edd4e-5e1f-4bca-a355-cf37857487c3.jpg",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\085edd4e-5e1f-4bca-a355-cf37857487c3.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -464,7 +1304,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -480,7 +1320,7 @@
     },
     {
       "Route": "avatars/18f9ab88-f8da-47c9-a231-6340684f2f0a.h8s8syp9pd.jpg",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\18f9ab88-f8da-47c9-a231-6340684f2f0a.jpg",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\18f9ab88-f8da-47c9-a231-6340684f2f0a.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -501,7 +1341,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -525,7 +1365,7 @@
     },
     {
       "Route": "avatars/18f9ab88-f8da-47c9-a231-6340684f2f0a.jpg",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\18f9ab88-f8da-47c9-a231-6340684f2f0a.jpg",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\18f9ab88-f8da-47c9-a231-6340684f2f0a.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -546,7 +1386,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -562,7 +1402,7 @@
     },
     {
       "Route": "avatars/32e6f3bc-070d-435a-a026-6c3289b9c5b4.jpeg",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\32e6f3bc-070d-435a-a026-6c3289b9c5b4.jpeg",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\32e6f3bc-070d-435a-a026-6c3289b9c5b4.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -583,7 +1423,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -599,7 +1439,7 @@
     },
     {
       "Route": "avatars/32e6f3bc-070d-435a-a026-6c3289b9c5b4.r410w99l63.jpeg",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\32e6f3bc-070d-435a-a026-6c3289b9c5b4.jpeg",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\32e6f3bc-070d-435a-a026-6c3289b9c5b4.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -620,7 +1460,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -644,7 +1484,7 @@
     },
     {
       "Route": "avatars/396ac8e5-5b5a-4132-b34c-1d179e89f223.dbxhvjd30j.jpg",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\396ac8e5-5b5a-4132-b34c-1d179e89f223.jpg",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\396ac8e5-5b5a-4132-b34c-1d179e89f223.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -665,7 +1505,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -689,7 +1529,7 @@
     },
     {
       "Route": "avatars/396ac8e5-5b5a-4132-b34c-1d179e89f223.jpg",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\396ac8e5-5b5a-4132-b34c-1d179e89f223.jpg",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\396ac8e5-5b5a-4132-b34c-1d179e89f223.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -710,7 +1550,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -726,7 +1566,7 @@
     },
     {
       "Route": "avatars/959eb308-b44c-4944-9d25-d73bae54ec0b.8pgaw2fkob.jpg",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\959eb308-b44c-4944-9d25-d73bae54ec0b.jpg",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\959eb308-b44c-4944-9d25-d73bae54ec0b.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -747,7 +1587,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -771,7 +1611,7 @@
     },
     {
       "Route": "avatars/959eb308-b44c-4944-9d25-d73bae54ec0b.jpg",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\959eb308-b44c-4944-9d25-d73bae54ec0b.jpg",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\959eb308-b44c-4944-9d25-d73bae54ec0b.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -792,7 +1632,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -808,7 +1648,7 @@
     },
     {
       "Route": "avatars/acfe8da4-4ea5-4366-85ef-c7ebe674a748.png",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\acfe8da4-4ea5-4366-85ef-c7ebe674a748.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\acfe8da4-4ea5-4366-85ef-c7ebe674a748.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -829,7 +1669,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -845,7 +1685,7 @@
     },
     {
       "Route": "avatars/acfe8da4-4ea5-4366-85ef-c7ebe674a748.wnk5zoopog.png",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\acfe8da4-4ea5-4366-85ef-c7ebe674a748.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\acfe8da4-4ea5-4366-85ef-c7ebe674a748.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -866,7 +1706,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -890,7 +1730,7 @@
     },
     {
       "Route": "avatars/ad168a1b-cd18-4d22-8222-8432ff298567.8pgaw2fkob.jpg",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\ad168a1b-cd18-4d22-8222-8432ff298567.jpg",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\ad168a1b-cd18-4d22-8222-8432ff298567.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -911,7 +1751,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -935,7 +1775,7 @@
     },
     {
       "Route": "avatars/ad168a1b-cd18-4d22-8222-8432ff298567.jpg",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\ad168a1b-cd18-4d22-8222-8432ff298567.jpg",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\ad168a1b-cd18-4d22-8222-8432ff298567.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -956,7 +1796,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -972,7 +1812,7 @@
     },
     {
       "Route": "avatars/b3c91469-d489-4a0c-8e7b-722234234eb7.hbcc6az60b.jpg",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\b3c91469-d489-4a0c-8e7b-722234234eb7.jpg",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\b3c91469-d489-4a0c-8e7b-722234234eb7.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -993,7 +1833,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1017,7 +1857,7 @@
     },
     {
       "Route": "avatars/b3c91469-d489-4a0c-8e7b-722234234eb7.jpg",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\b3c91469-d489-4a0c-8e7b-722234234eb7.jpg",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\b3c91469-d489-4a0c-8e7b-722234234eb7.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1038,7 +1878,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1054,7 +1894,7 @@
     },
     {
       "Route": "avatars/b9778e18-7996-4aaf-b246-6c163eea76d0.jpg",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\b9778e18-7996-4aaf-b246-6c163eea76d0.jpg",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\b9778e18-7996-4aaf-b246-6c163eea76d0.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1075,7 +1915,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1091,7 +1931,7 @@
     },
     {
       "Route": "avatars/b9778e18-7996-4aaf-b246-6c163eea76d0.r76hxkehgs.jpg",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\b9778e18-7996-4aaf-b246-6c163eea76d0.jpg",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\b9778e18-7996-4aaf-b246-6c163eea76d0.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1112,7 +1952,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1136,7 +1976,7 @@
     },
     {
       "Route": "avatars/e2e52983-6cd4-421b-b54c-39bba91619c8.az2vb4cvqe.jpg",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\e2e52983-6cd4-421b-b54c-39bba91619c8.jpg",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\e2e52983-6cd4-421b-b54c-39bba91619c8.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1157,7 +1997,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1181,7 +2021,7 @@
     },
     {
       "Route": "avatars/e2e52983-6cd4-421b-b54c-39bba91619c8.jpg",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\e2e52983-6cd4-421b-b54c-39bba91619c8.jpg",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\e2e52983-6cd4-421b-b54c-39bba91619c8.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1202,7 +2042,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1217,8 +2057,8 @@
       ]
     },
     {
-      "Route": "avatars/fe62742a-a06f-47ec-a2e7-e267b6b6adf3.f3sjumsgaj.png",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\fe62742a-a06f-47ec-a2e7-e267b6b6adf3.png",
+      "Route": "exercises/ab_wheel.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\ab_wheel.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1227,7 +2067,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "41941"
+          "Value": "29094"
         },
         {
           "Name": "Content-Type",
@@ -1235,56 +2075,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"BTW3urMLRpOUVBGlhMdjrk8MqTWEtSqFeaCmSQx7/zg=\""
+          "Value": "\"Cbu/o30sKTKIhM1BclxvmAIjEQav/gEZVQHJCK8Vr10=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:48:57 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "f3sjumsgaj"
-        },
-        {
-          "Name": "label",
-          "Value": "avatars/fe62742a-a06f-47ec-a2e7-e267b6b6adf3.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-BTW3urMLRpOUVBGlhMdjrk8MqTWEtSqFeaCmSQx7/zg="
-        }
-      ]
-    },
-    {
-      "Route": "avatars/fe62742a-a06f-47ec-a2e7-e267b6b6adf3.png",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\fe62742a-a06f-47ec-a2e7-e267b6b6adf3.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "41941"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"BTW3urMLRpOUVBGlhMdjrk8MqTWEtSqFeaCmSQx7/zg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:48:57 GMT"
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1294,13 +2089,796 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-BTW3urMLRpOUVBGlhMdjrk8MqTWEtSqFeaCmSQx7/zg="
+          "Value": "sha256-Cbu/o30sKTKIhM1BclxvmAIjEQav/gEZVQHJCK8Vr10="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/ab_wheel.rnyajl96x5.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\ab_wheel.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29094"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Cbu/o30sKTKIhM1BclxvmAIjEQav/gEZVQHJCK8Vr10=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rnyajl96x5"
+        },
+        {
+          "Name": "label",
+          "Value": "exercises/ab_wheel.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Cbu/o30sKTKIhM1BclxvmAIjEQav/gEZVQHJCK8Vr10="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/arnold_press.8gjh1ggk3o.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\arnold_press.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "47328"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uF3RliwQv/1rLSxrnAyFTeS+Q2b67n16PCskhQ2zJsw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8gjh1ggk3o"
+        },
+        {
+          "Name": "label",
+          "Value": "exercises/arnold_press.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-uF3RliwQv/1rLSxrnAyFTeS+Q2b67n16PCskhQ2zJsw="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/arnold_press.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\arnold_press.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "47328"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uF3RliwQv/1rLSxrnAyFTeS+Q2b67n16PCskhQ2zJsw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-uF3RliwQv/1rLSxrnAyFTeS+Q2b67n16PCskhQ2zJsw="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/barbell_curl.m0rptf4hol.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\barbell_curl.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "45304"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+lEcnrOwvS6fP3bQbJJ5t+cdskf9dmAp14yxvsBH05Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m0rptf4hol"
+        },
+        {
+          "Name": "label",
+          "Value": "exercises/barbell_curl.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+lEcnrOwvS6fP3bQbJJ5t+cdskf9dmAp14yxvsBH05Q="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/barbell_curl.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\barbell_curl.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "45304"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+lEcnrOwvS6fP3bQbJJ5t+cdskf9dmAp14yxvsBH05Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+lEcnrOwvS6fP3bQbJJ5t+cdskf9dmAp14yxvsBH05Q="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/barbell_row.3jeeg0g2ey.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\barbell_row.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30461"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8S6IA68uXYXWGDshFVrrjk6d/VPKoNIHmBDqCQ/XpEM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3jeeg0g2ey"
+        },
+        {
+          "Name": "label",
+          "Value": "exercises/barbell_row.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8S6IA68uXYXWGDshFVrrjk6d/VPKoNIHmBDqCQ/XpEM="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/barbell_row.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\barbell_row.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30461"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8S6IA68uXYXWGDshFVrrjk6d/VPKoNIHmBDqCQ/XpEM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8S6IA68uXYXWGDshFVrrjk6d/VPKoNIHmBDqCQ/XpEM="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/behind_neck_press.26wmq1hgjb.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\behind_neck_press.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29293"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pqWH+vdX9UOnvz4xDzMAgfpoKM6aGZNlscHMLSnZHmk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "26wmq1hgjb"
+        },
+        {
+          "Name": "label",
+          "Value": "exercises/behind_neck_press.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pqWH+vdX9UOnvz4xDzMAgfpoKM6aGZNlscHMLSnZHmk="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/behind_neck_press.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\behind_neck_press.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29293"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pqWH+vdX9UOnvz4xDzMAgfpoKM6aGZNlscHMLSnZHmk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-pqWH+vdX9UOnvz4xDzMAgfpoKM6aGZNlscHMLSnZHmk="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/bench_press.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\bench_press.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35678"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"y30qg44489zB3HAe44iTQLL7MSPXzznbZt9M+k+XgQg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-y30qg44489zB3HAe44iTQLL7MSPXzznbZt9M+k+XgQg="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/bench_press.tqf2eu4uyx.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\bench_press.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35678"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"y30qg44489zB3HAe44iTQLL7MSPXzznbZt9M+k+XgQg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tqf2eu4uyx"
+        },
+        {
+          "Name": "label",
+          "Value": "exercises/bench_press.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-y30qg44489zB3HAe44iTQLL7MSPXzznbZt9M+k+XgQg="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/cable_crunch.furb1pykxz.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\cable_crunch.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "39605"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tybWLDgiCOdraJek/SjEG+bqq3klKkFcPDwZZ5HBUEQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "furb1pykxz"
+        },
+        {
+          "Name": "label",
+          "Value": "exercises/cable_crunch.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tybWLDgiCOdraJek/SjEG+bqq3klKkFcPDwZZ5HBUEQ="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/cable_crunch.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\cable_crunch.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "39605"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tybWLDgiCOdraJek/SjEG+bqq3klKkFcPDwZZ5HBUEQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tybWLDgiCOdraJek/SjEG+bqq3klKkFcPDwZZ5HBUEQ="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/calf_raise.gk3kxwvh9m.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\calf_raise.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "65796"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8D+ZXKo6U8SpEUhoWFH0mbY/BZAh9gxUY6TbNO+Y1Ho=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gk3kxwvh9m"
+        },
+        {
+          "Name": "label",
+          "Value": "exercises/calf_raise.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8D+ZXKo6U8SpEUhoWFH0mbY/BZAh9gxUY6TbNO+Y1Ho="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/calf_raise.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\calf_raise.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "65796"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8D+ZXKo6U8SpEUhoWFH0mbY/BZAh9gxUY6TbNO+Y1Ho=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8D+ZXKo6U8SpEUhoWFH0mbY/BZAh9gxUY6TbNO+Y1Ho="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/close_grip_pushup.7jj9pfva1q.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\close_grip_pushup.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24544"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3W9usJqP9qjnLtrrn/1zmTS/yNWDR7KhkS3IQfBqKbg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7jj9pfva1q"
+        },
+        {
+          "Name": "label",
+          "Value": "exercises/close_grip_pushup.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3W9usJqP9qjnLtrrn/1zmTS/yNWDR7KhkS3IQfBqKbg="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/close_grip_pushup.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\close_grip_pushup.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24544"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3W9usJqP9qjnLtrrn/1zmTS/yNWDR7KhkS3IQfBqKbg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3W9usJqP9qjnLtrrn/1zmTS/yNWDR7KhkS3IQfBqKbg="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/concentration_curl.95clvf8tak.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\concentration_curl.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "57539"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vQt5sgkileAq6+6F0cpcR5Z1e/6M1W655OzO0BVqYYc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "95clvf8tak"
+        },
+        {
+          "Name": "label",
+          "Value": "exercises/concentration_curl.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vQt5sgkileAq6+6F0cpcR5Z1e/6M1W655OzO0BVqYYc="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/concentration_curl.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\concentration_curl.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "57539"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vQt5sgkileAq6+6F0cpcR5Z1e/6M1W655OzO0BVqYYc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vQt5sgkileAq6+6F0cpcR5Z1e/6M1W655OzO0BVqYYc="
         }
       ]
     },
     {
       "Route": "exercises/crossover.png",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\crossover.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\crossover.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1321,7 +2899,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1337,7 +2915,7 @@
     },
     {
       "Route": "exercises/crossover.z2xd840px8.png",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\crossover.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\crossover.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1358,7 +2936,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1381,8 +2959,172 @@
       ]
     },
     {
+      "Route": "exercises/crunches.88q6ewin0g.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\crunches.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "28702"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SPjWXeYgNS0goiJ42Z1ECd+YoEE84aKt0+WE1g93m58=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "88q6ewin0g"
+        },
+        {
+          "Name": "label",
+          "Value": "exercises/crunches.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SPjWXeYgNS0goiJ42Z1ECd+YoEE84aKt0+WE1g93m58="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/crunches.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\crunches.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "28702"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SPjWXeYgNS0goiJ42Z1ECd+YoEE84aKt0+WE1g93m58=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SPjWXeYgNS0goiJ42Z1ECd+YoEE84aKt0+WE1g93m58="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/deadlift.0wlztin4wg.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\deadlift.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35244"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cHEMB018y+Ckcr6ocjG2rHhE+5nCArLZyoXKzAltIRc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0wlztin4wg"
+        },
+        {
+          "Name": "label",
+          "Value": "exercises/deadlift.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-cHEMB018y+Ckcr6ocjG2rHhE+5nCArLZyoXKzAltIRc="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/deadlift.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\deadlift.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35244"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cHEMB018y+Ckcr6ocjG2rHhE+5nCArLZyoXKzAltIRc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cHEMB018y+Ckcr6ocjG2rHhE+5nCArLZyoXKzAltIRc="
+        }
+      ]
+    },
+    {
       "Route": "exercises/dips.png",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\dips.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\dips.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1403,7 +3145,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1419,7 +3161,7 @@
     },
     {
       "Route": "exercises/dips.ys6mnxaraf.png",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\dips.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\dips.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1440,7 +3182,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1464,7 +3206,7 @@
     },
     {
       "Route": "exercises/dumbbell_fly.pggvvwa1cz.png",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\dumbbell_fly.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\dumbbell_fly.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1485,7 +3227,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1509,7 +3251,7 @@
     },
     {
       "Route": "exercises/dumbbell_fly.png",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\dumbbell_fly.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\dumbbell_fly.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1530,7 +3272,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1545,8 +3287,582 @@
       ]
     },
     {
+      "Route": "exercises/dumbbell_press.p5p3c3ehio.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\dumbbell_press.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "50711"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HTptGBWuIvwOWzuBPrPQ0D/Oi3l8RCJONH5SLqIab2A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "p5p3c3ehio"
+        },
+        {
+          "Name": "label",
+          "Value": "exercises/dumbbell_press.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HTptGBWuIvwOWzuBPrPQ0D/Oi3l8RCJONH5SLqIab2A="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/dumbbell_press.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\dumbbell_press.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "50711"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HTptGBWuIvwOWzuBPrPQ0D/Oi3l8RCJONH5SLqIab2A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HTptGBWuIvwOWzuBPrPQ0D/Oi3l8RCJONH5SLqIab2A="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/dumbbell_row.a57n2nle4n.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\dumbbell_row.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "51667"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7lF8Tc02xURGsg3s5ZGqaKAQ3+KN1V+R5fNYwn7NbgE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "a57n2nle4n"
+        },
+        {
+          "Name": "label",
+          "Value": "exercises/dumbbell_row.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7lF8Tc02xURGsg3s5ZGqaKAQ3+KN1V+R5fNYwn7NbgE="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/dumbbell_row.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\dumbbell_row.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "51667"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7lF8Tc02xURGsg3s5ZGqaKAQ3+KN1V+R5fNYwn7NbgE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-7lF8Tc02xURGsg3s5ZGqaKAQ3+KN1V+R5fNYwn7NbgE="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/french_press.kgkt3or6j1.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\french_press.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "39412"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LIBrjoYQ6tqY1epmbNtAv7CRH0ythf3SYlEIpqNLo20=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kgkt3or6j1"
+        },
+        {
+          "Name": "label",
+          "Value": "exercises/french_press.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LIBrjoYQ6tqY1epmbNtAv7CRH0ythf3SYlEIpqNLo20="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/french_press.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\french_press.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "39412"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LIBrjoYQ6tqY1epmbNtAv7CRH0ythf3SYlEIpqNLo20=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LIBrjoYQ6tqY1epmbNtAv7CRH0ythf3SYlEIpqNLo20="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/front_raises.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\front_raises.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "50622"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vSsy73zTc6X9dyRRtr/bkDsiKN03ppAuvvNLZbB0HYc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vSsy73zTc6X9dyRRtr/bkDsiKN03ppAuvvNLZbB0HYc="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/front_raises.v9qdegoi9c.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\front_raises.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "50622"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vSsy73zTc6X9dyRRtr/bkDsiKN03ppAuvvNLZbB0HYc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "v9qdegoi9c"
+        },
+        {
+          "Name": "label",
+          "Value": "exercises/front_raises.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vSsy73zTc6X9dyRRtr/bkDsiKN03ppAuvvNLZbB0HYc="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/hack_squat.5sqx6ta791.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\hack_squat.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38692"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1b8NIPgIIaBVV5s7LW1wKVMvNWjZS97wqXHoR6/rP/U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5sqx6ta791"
+        },
+        {
+          "Name": "label",
+          "Value": "exercises/hack_squat.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1b8NIPgIIaBVV5s7LW1wKVMvNWjZS97wqXHoR6/rP/U="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/hack_squat.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\hack_squat.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38692"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1b8NIPgIIaBVV5s7LW1wKVMvNWjZS97wqXHoR6/rP/U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1b8NIPgIIaBVV5s7LW1wKVMvNWjZS97wqXHoR6/rP/U="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/hammer_curl.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\hammer_curl.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "45127"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TmYaUWFa2I28Ds3HeOgAyvA2MNq0MYdmN4JTxQEGFb8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-TmYaUWFa2I28Ds3HeOgAyvA2MNq0MYdmN4JTxQEGFb8="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/hammer_curl.q6ohdi19px.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\hammer_curl.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "45127"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TmYaUWFa2I28Ds3HeOgAyvA2MNq0MYdmN4JTxQEGFb8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "q6ohdi19px"
+        },
+        {
+          "Name": "label",
+          "Value": "exercises/hammer_curl.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TmYaUWFa2I28Ds3HeOgAyvA2MNq0MYdmN4JTxQEGFb8="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/hyperextensions.32ey83tbpw.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\hyperextensions.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "31208"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"q//v/qaY1DE4cuIggJFTffe060VdK9TQCQkZpk1lksM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "32ey83tbpw"
+        },
+        {
+          "Name": "label",
+          "Value": "exercises/hyperextensions.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-q//v/qaY1DE4cuIggJFTffe060VdK9TQCQkZpk1lksM="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/hyperextensions.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\hyperextensions.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "31208"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"q//v/qaY1DE4cuIggJFTffe060VdK9TQCQkZpk1lksM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-q//v/qaY1DE4cuIggJFTffe060VdK9TQCQkZpk1lksM="
+        }
+      ]
+    },
+    {
       "Route": "exercises/incline_dumbbell_press.l4s4kunwax.png",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\incline_dumbbell_press.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\incline_dumbbell_press.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1567,7 +3883,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1591,7 +3907,7 @@
     },
     {
       "Route": "exercises/incline_dumbbell_press.png",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\incline_dumbbell_press.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\incline_dumbbell_press.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1612,7 +3928,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1627,8 +3943,664 @@
       ]
     },
     {
+      "Route": "exercises/lat_pulldown.0qq3ue10yj.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\lat_pulldown.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "55207"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+G9qMpppk+edB4cdSKk7hWgKmup/P6eADfeAaMawEwA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0qq3ue10yj"
+        },
+        {
+          "Name": "label",
+          "Value": "exercises/lat_pulldown.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+G9qMpppk+edB4cdSKk7hWgKmup/P6eADfeAaMawEwA="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/lat_pulldown.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\lat_pulldown.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "55207"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+G9qMpppk+edB4cdSKk7hWgKmup/P6eADfeAaMawEwA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+G9qMpppk+edB4cdSKk7hWgKmup/P6eADfeAaMawEwA="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/lateral_raises.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\lateral_raises.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36473"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JaWMAKOjVpXvgOq1wzUNMt12pR9Ywe8wrZ+MuGSL+bs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JaWMAKOjVpXvgOq1wzUNMt12pR9Ywe8wrZ+MuGSL+bs="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/lateral_raises.za9z53vlod.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\lateral_raises.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36473"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JaWMAKOjVpXvgOq1wzUNMt12pR9Ywe8wrZ+MuGSL+bs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "za9z53vlod"
+        },
+        {
+          "Name": "label",
+          "Value": "exercises/lateral_raises.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JaWMAKOjVpXvgOq1wzUNMt12pR9Ywe8wrZ+MuGSL+bs="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/leg_curl.exaasb8m8x.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\leg_curl.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "48437"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0v0ndGSr9CEw34A1O/mdus7OiuldMvs2THgs6/pxphE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "exaasb8m8x"
+        },
+        {
+          "Name": "label",
+          "Value": "exercises/leg_curl.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0v0ndGSr9CEw34A1O/mdus7OiuldMvs2THgs6/pxphE="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/leg_curl.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\leg_curl.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "48437"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0v0ndGSr9CEw34A1O/mdus7OiuldMvs2THgs6/pxphE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0v0ndGSr9CEw34A1O/mdus7OiuldMvs2THgs6/pxphE="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/leg_extension.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\leg_extension.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "60363"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gcuL57ZszqWjGfYTGHWaadOBed+rz1EzAibB7EjGoqw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gcuL57ZszqWjGfYTGHWaadOBed+rz1EzAibB7EjGoqw="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/leg_extension.zfovz1oqqf.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\leg_extension.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "60363"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gcuL57ZszqWjGfYTGHWaadOBed+rz1EzAibB7EjGoqw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zfovz1oqqf"
+        },
+        {
+          "Name": "label",
+          "Value": "exercises/leg_extension.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gcuL57ZszqWjGfYTGHWaadOBed+rz1EzAibB7EjGoqw="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/leg_press.9aa3ckbeap.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\leg_press.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "40501"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0eI1f9zf9QdzzdX4zTgWFIW5Lh+g03rykPjyv9xygbo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9aa3ckbeap"
+        },
+        {
+          "Name": "label",
+          "Value": "exercises/leg_press.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0eI1f9zf9QdzzdX4zTgWFIW5Lh+g03rykPjyv9xygbo="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/leg_press.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\leg_press.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "40501"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0eI1f9zf9QdzzdX4zTgWFIW5Lh+g03rykPjyv9xygbo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0eI1f9zf9QdzzdX4zTgWFIW5Lh+g03rykPjyv9xygbo="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/leg_raises.jjg9anxdi8.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\leg_raises.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "59858"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/xE4BLSDtD0I9rF0tGIjZWrWEo7Rx0IBn+ujcQE/57U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jjg9anxdi8"
+        },
+        {
+          "Name": "label",
+          "Value": "exercises/leg_raises.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/xE4BLSDtD0I9rF0tGIjZWrWEo7Rx0IBn+ujcQE/57U="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/leg_raises.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\leg_raises.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "59858"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/xE4BLSDtD0I9rF0tGIjZWrWEo7Rx0IBn+ujcQE/57U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/xE4BLSDtD0I9rF0tGIjZWrWEo7Rx0IBn+ujcQE/57U="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/lunges.5d445rffh4.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\lunges.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "37843"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GRBbX/JHmQR/KWusZbKiOV220hOU/zKdjXAxYCH+Bug=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5d445rffh4"
+        },
+        {
+          "Name": "label",
+          "Value": "exercises/lunges.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GRBbX/JHmQR/KWusZbKiOV220hOU/zKdjXAxYCH+Bug="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/lunges.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\lunges.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "37843"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GRBbX/JHmQR/KWusZbKiOV220hOU/zKdjXAxYCH+Bug=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GRBbX/JHmQR/KWusZbKiOV220hOU/zKdjXAxYCH+Bug="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/overhead_triceps_extension.nmt226vta1.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\overhead_triceps_extension.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "39499"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gbMcR7rCXuzB90LxkjWCaodiiaTfEa3E+rsuWK1ulo8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nmt226vta1"
+        },
+        {
+          "Name": "label",
+          "Value": "exercises/overhead_triceps_extension.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gbMcR7rCXuzB90LxkjWCaodiiaTfEa3E+rsuWK1ulo8="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/overhead_triceps_extension.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\overhead_triceps_extension.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "39499"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gbMcR7rCXuzB90LxkjWCaodiiaTfEa3E+rsuWK1ulo8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gbMcR7rCXuzB90LxkjWCaodiiaTfEa3E+rsuWK1ulo8="
+        }
+      ]
+    },
+    {
       "Route": "exercises/pec_deck.8bvukp96p5.png",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\pec_deck.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\pec_deck.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1649,7 +4621,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1673,7 +4645,7 @@
     },
     {
       "Route": "exercises/pec_deck.png",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\pec_deck.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\pec_deck.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1694,7 +4666,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1709,8 +4681,254 @@
       ]
     },
     {
+      "Route": "exercises/plank.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\plank.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "27662"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9cwsqEApi/zREbei0tfaxwJy/9UT8d756KfI+ldw6uk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9cwsqEApi/zREbei0tfaxwJy/9UT8d756KfI+ldw6uk="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/plank.rcwlcs6rn1.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\plank.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "27662"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9cwsqEApi/zREbei0tfaxwJy/9UT8d756KfI+ldw6uk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rcwlcs6rn1"
+        },
+        {
+          "Name": "label",
+          "Value": "exercises/plank.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9cwsqEApi/zREbei0tfaxwJy/9UT8d756KfI+ldw6uk="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/plie_squat.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\plie_squat.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "32090"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Rk53oVh03IsHHI9ZcWYrPGOs2urn2icfLLnUi64QW78=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Rk53oVh03IsHHI9ZcWYrPGOs2urn2icfLLnUi64QW78="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/plie_squat.qfpe2tsls6.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\plie_squat.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "32090"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Rk53oVh03IsHHI9ZcWYrPGOs2urn2icfLLnUi64QW78=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qfpe2tsls6"
+        },
+        {
+          "Name": "label",
+          "Value": "exercises/plie_squat.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Rk53oVh03IsHHI9ZcWYrPGOs2urn2icfLLnUi64QW78="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/pull_ups.k2ga3bf9lx.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\pull_ups.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41031"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3I50oicSDrU6lEnB4hhZgnorwHBPp4rkuevj80Cf2qQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "k2ga3bf9lx"
+        },
+        {
+          "Name": "label",
+          "Value": "exercises/pull_ups.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3I50oicSDrU6lEnB4hhZgnorwHBPp4rkuevj80Cf2qQ="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/pull_ups.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\pull_ups.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41031"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3I50oicSDrU6lEnB4hhZgnorwHBPp4rkuevj80Cf2qQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3I50oicSDrU6lEnB4hhZgnorwHBPp4rkuevj80Cf2qQ="
+        }
+      ]
+    },
+    {
       "Route": "exercises/pushups.jvkv3b2uk7.png",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\pushups.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\pushups.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1731,7 +4949,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1755,7 +4973,7 @@
     },
     {
       "Route": "exercises/pushups.png",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\pushups.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\pushups.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1776,7 +4994,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1791,8 +5009,582 @@
       ]
     },
     {
+      "Route": "exercises/rear_delt_fly.9zzbqit7t9.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\rear_delt_fly.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "37610"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5fw7GxPjUkMlVGuu8+yHazJ07N3uuH8O5j39tMP8qTA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9zzbqit7t9"
+        },
+        {
+          "Name": "label",
+          "Value": "exercises/rear_delt_fly.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-5fw7GxPjUkMlVGuu8+yHazJ07N3uuH8O5j39tMP8qTA="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/rear_delt_fly.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\rear_delt_fly.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "37610"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5fw7GxPjUkMlVGuu8+yHazJ07N3uuH8O5j39tMP8qTA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-5fw7GxPjUkMlVGuu8+yHazJ07N3uuH8O5j39tMP8qTA="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/rear_delt_machine.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\rear_delt_machine.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "45971"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"J6dJFW/p9MLJM5gma20s4qencw+u7R4CjiExaylSaGc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-J6dJFW/p9MLJM5gma20s4qencw+u7R4CjiExaylSaGc="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/rear_delt_machine.tj1kwx1b94.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\rear_delt_machine.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "45971"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"J6dJFW/p9MLJM5gma20s4qencw+u7R4CjiExaylSaGc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tj1kwx1b94"
+        },
+        {
+          "Name": "label",
+          "Value": "exercises/rear_delt_machine.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-J6dJFW/p9MLJM5gma20s4qencw+u7R4CjiExaylSaGc="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/roman_chair_situp.6wmf7qq604.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\roman_chair_situp.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38112"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"plCAT7eHzYthbsOa+vabqVSr864R3hymNhzdXmcqLAs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6wmf7qq604"
+        },
+        {
+          "Name": "label",
+          "Value": "exercises/roman_chair_situp.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-plCAT7eHzYthbsOa+vabqVSr864R3hymNhzdXmcqLAs="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/roman_chair_situp.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\roman_chair_situp.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38112"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"plCAT7eHzYthbsOa+vabqVSr864R3hymNhzdXmcqLAs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-plCAT7eHzYthbsOa+vabqVSr864R3hymNhzdXmcqLAs="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/russian_twist.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\russian_twist.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25945"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NBOBlykY4GWt4e4h8ccQGyKlSs+zixWciAj5ye98tF0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-NBOBlykY4GWt4e4h8ccQGyKlSs+zixWciAj5ye98tF0="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/russian_twist.w3gpj3rpzi.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\russian_twist.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25945"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NBOBlykY4GWt4e4h8ccQGyKlSs+zixWciAj5ye98tF0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "w3gpj3rpzi"
+        },
+        {
+          "Name": "label",
+          "Value": "exercises/russian_twist.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NBOBlykY4GWt4e4h8ccQGyKlSs+zixWciAj5ye98tF0="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/scott_curl.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\scott_curl.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41543"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hFZAzmGDLCJKv9RvHUfn478ikOn15cm9ZMEajJK1gKE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hFZAzmGDLCJKv9RvHUfn478ikOn15cm9ZMEajJK1gKE="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/scott_curl.saoa52x5rc.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\scott_curl.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "41543"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hFZAzmGDLCJKv9RvHUfn478ikOn15cm9ZMEajJK1gKE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "saoa52x5rc"
+        },
+        {
+          "Name": "label",
+          "Value": "exercises/scott_curl.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hFZAzmGDLCJKv9RvHUfn478ikOn15cm9ZMEajJK1gKE="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/seated_row.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\seated_row.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "46475"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6dauSqIbH4JNn1FnOUsBFW/Rqj+hAP9J5NCqRDLHbh4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6dauSqIbH4JNn1FnOUsBFW/Rqj+hAP9J5NCqRDLHbh4="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/seated_row.xa2546u4gi.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\seated_row.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "46475"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6dauSqIbH4JNn1FnOUsBFW/Rqj+hAP9J5NCqRDLHbh4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xa2546u4gi"
+        },
+        {
+          "Name": "label",
+          "Value": "exercises/seated_row.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6dauSqIbH4JNn1FnOUsBFW/Rqj+hAP9J5NCqRDLHbh4="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/side_plank.7bdl6l0l4i.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\side_plank.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "32611"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XU/A7W2IRv3ZwQJbcGT2NFi/9lAJZu9IejJy7N9FVXs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7bdl6l0l4i"
+        },
+        {
+          "Name": "label",
+          "Value": "exercises/side_plank.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-XU/A7W2IRv3ZwQJbcGT2NFi/9lAJZu9IejJy7N9FVXs="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/side_plank.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\side_plank.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "32611"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XU/A7W2IRv3ZwQJbcGT2NFi/9lAJZu9IejJy7N9FVXs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XU/A7W2IRv3ZwQJbcGT2NFi/9lAJZu9IejJy7N9FVXs="
+        }
+      ]
+    },
+    {
       "Route": "exercises/smith_machine_press.b69y26ytty.png",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\smith_machine_press.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\smith_machine_press.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1813,7 +5605,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1837,7 +5629,7 @@
     },
     {
       "Route": "exercises/smith_machine_press.png",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\smith_machine_press.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\smith_machine_press.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1858,7 +5650,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1869,6 +5661,334 @@
         {
           "Name": "integrity",
           "Value": "sha256-89x9N7e+ntsWy8gWXHHqizUhoCHf5V5cDHWlBDEQ+KA="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/squat.1cz807htxo.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\squat.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "27544"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4TBvdrb/SSUCohnlaTLe9XjMPTVbaL6+tmd8TgHc9Cg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1cz807htxo"
+        },
+        {
+          "Name": "label",
+          "Value": "exercises/squat.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4TBvdrb/SSUCohnlaTLe9XjMPTVbaL6+tmd8TgHc9Cg="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/squat.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\squat.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "27544"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4TBvdrb/SSUCohnlaTLe9XjMPTVbaL6+tmd8TgHc9Cg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4TBvdrb/SSUCohnlaTLe9XjMPTVbaL6+tmd8TgHc9Cg="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/t_bar_row.bv2agg4nnb.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\t_bar_row.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "32147"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+YI9zY5k4aXYOdXyx3B0rFYJPNGQuClky2o1rMEwCl0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bv2agg4nnb"
+        },
+        {
+          "Name": "label",
+          "Value": "exercises/t_bar_row.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+YI9zY5k4aXYOdXyx3B0rFYJPNGQuClky2o1rMEwCl0="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/t_bar_row.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\t_bar_row.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "32147"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+YI9zY5k4aXYOdXyx3B0rFYJPNGQuClky2o1rMEwCl0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+YI9zY5k4aXYOdXyx3B0rFYJPNGQuClky2o1rMEwCl0="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/triceps_pushdown.fnf8y4n7k7.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\triceps_pushdown.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "50804"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OyP2hvm17thPiSuaZ+IB9YqltuMv4LcM4Sy9Vh+yVuk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fnf8y4n7k7"
+        },
+        {
+          "Name": "label",
+          "Value": "exercises/triceps_pushdown.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OyP2hvm17thPiSuaZ+IB9YqltuMv4LcM4Sy9Vh+yVuk="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/triceps_pushdown.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\triceps_pushdown.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "50804"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OyP2hvm17thPiSuaZ+IB9YqltuMv4LcM4Sy9Vh+yVuk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OyP2hvm17thPiSuaZ+IB9YqltuMv4LcM4Sy9Vh+yVuk="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/upright_row.b2ma41erei.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\upright_row.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "50882"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zam9GvKXAGuJbtSjDsRczt38Jk+6eaV+IMyx4iqqkUg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "b2ma41erei"
+        },
+        {
+          "Name": "label",
+          "Value": "exercises/upright_row.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zam9GvKXAGuJbtSjDsRczt38Jk+6eaV+IMyx4iqqkUg="
+        }
+      ]
+    },
+    {
+      "Route": "exercises/upright_row.png",
+      "AssetFile": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\upright_row.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "50882"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zam9GvKXAGuJbtSjDsRczt38Jk+6eaV+IMyx4iqqkUg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 30 Mar 2025 18:32:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zam9GvKXAGuJbtSjDsRczt38Jk+6eaV+IMyx4iqqkUg="
         }
       ]
     }

@@ -11,6 +11,7 @@ namespace FitAppAPI.Controllers
 {
     [Route("api/avatar")]
     [ApiController]
+    [Authorize]
     public class AvatarController : ControllerBase
     {
         private readonly AppDbContext _context;

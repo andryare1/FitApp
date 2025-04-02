@@ -4897,11 +4897,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\FitAppAPI.csproj",
+      "projectUniqueName": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\FitAppAPI.csproj",
       "projectName": "FitAppAPI",
-      "projectPath": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\FitAppAPI.csproj",
+      "projectPath": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\FitAppAPI.csproj",
       "packagesPath": "C:\\Users\\Андрей Ярема\\.nuget\\packages\\",
-      "outputPath": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\obj\\",
+      "outputPath": "C:\\myData\\Knowledge\\Projects\\pythonProject\\FitApp\\FitAppAPI\\FitAppAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -9,5 +9,8 @@ namespace FitAppAPI.Data
 
         public DbSet<User> Users { get; set; }
         public DbSet<Exercise> Exercises { get; set; }
+        public DbSet<Training> Trainings { get; set; }
+        public DbSet<TrainingExercise> TrainingExercises { get; set; }
+
     }
 }

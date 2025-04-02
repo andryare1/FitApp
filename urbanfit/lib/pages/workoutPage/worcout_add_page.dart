@@ -1,38 +1,37 @@
 import 'package:flutter/material.dart';
-import 'package:urbanfit/pages/exercisesPage/exercises_detail_page.dart';
 import 'package:urbanfit/services/auth_service.dart';
 import 'package:urbanfit/services/exercise_service.dart';
 
-class ExerciseListPage extends StatefulWidget {
+class ExerciseAddPage extends StatefulWidget {
   final String muscleGroup;
-  const ExerciseListPage({super.key, required this.muscleGroup});
+  const ExerciseAddPage({super.key, required this.muscleGroup});
 
   @override
   _ExerciseListPageState createState() => _ExerciseListPageState();
 }
 
-class _ExerciseListPageState extends State<ExerciseListPage> {
+class _ExerciseListPageState extends State<ExerciseAddPage> {
   final ExerciseService _exerciseService = ExerciseService();
   final AuthService _authService = AuthService();
   late Future<List<Map<String, dynamic>>> _exercisesFuture;
-  
 
-Future<void> _loadExercises() async {
-  final token = await _authService.getToken();
-  if (token != null) {
-    setState(() {
-      _exercisesFuture =
-          _exerciseService.getExercisesByMuscleGroup(widget.muscleGroup, token);
-    });
-  } else {
-    print("Ошибка: токен не найден");
+  Future<void> _loadExercises() async {
+    final token = await _authService.getToken();
+    if (token != null) {
+      setState(() {
+        _exercisesFuture =
+            _exerciseService.getExercisesByMuscleGroup(widget.muscleGroup, token);
+      });
+    } else {
+      print("Ошибка: токен не найден");
+    }
   }
-}
+
   @override
   void initState() {
     super.initState();
-     _exercisesFuture = Future.value([]);
-  _loadExercises();
+    _exercisesFuture = Future.value([]); // Инициализация
+    _loadExercises();
   }
 
   String getMuscleGroupName(dynamic muscleGroup) {
@@ -82,11 +81,11 @@ Future<void> _loadExercises() async {
         leading: IconButton(
           icon: const Icon(Icons.arrow_back),
           onPressed: () {
-            Navigator.pop(context);
+            Navigator.pop(context); // Возвращаемся без изменений
           },
         ),
       ),
-      body: FutureBuilder<List<Map<String, dynamic>>>(
+      body: FutureBuilder<List<Map<String, dynamic>>>( 
         future: _exercisesFuture,
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
@@ -98,37 +97,30 @@ Future<void> _loadExercises() async {
           }
 
           final exercises = snapshot.data!;
+
           return ListView.builder(
-            padding: const EdgeInsets.all(8), 
+            padding: const EdgeInsets.all(8),
             itemCount: exercises.length,
             itemBuilder: (context, index) {
               final exercise = exercises[index];
               return Padding(
-                padding: const EdgeInsets.symmetric(
-                    vertical: 4), 
+                padding: const EdgeInsets.symmetric(vertical: 4),
                 child: Card(
-                  color: Colors.white, 
+                  color: Colors.white,
                   shape: RoundedRectangleBorder(
-                    borderRadius:
-                        BorderRadius.circular(10), 
+                    borderRadius: BorderRadius.circular(10),
                   ),
-                  elevation: 1, 
-                  margin: EdgeInsets.zero, 
+                  elevation: 1,
+                  margin: EdgeInsets.zero,
                   child: InkWell(
                     onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) =>
-                              ExerciseDetailPage(exercise: exercise),
-                        ),
-                      );
+                      // Добавляем упражнение в тренировку и возвращаемся
+                      Navigator.pop(context, [exercise]); 
                     },
                     child: Row(
                       children: [
                         ClipRRect(
-                          borderRadius: BorderRadius.circular(
-                              10), 
+                          borderRadius: BorderRadius.circular(10),
                           child: Image.network(
                             exercise['imageUrl'],
                             width: 100,
@@ -164,8 +156,7 @@ Future<void> _loadExercises() async {
                         ),
                         const Padding(
                           padding: EdgeInsets.all(8.0),
-                          child:
-                              Icon(Icons.arrow_forward_ios, color: Colors.grey),
+                          child: Icon(Icons.arrow_forward_ios, color: Colors.grey),
                         ),
                       ],
                     ),

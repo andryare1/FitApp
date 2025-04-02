@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:urbanfit/pages/exercisesPage/exercises_detail_page.dart';
 import 'package:urbanfit/pages/exercisesPage/exercises_list_page.dart';
-import 'dart:convert';
-import 'package:http/http.dart' as http;
 import 'package:urbanfit/services/exercise_service.dart';
 
 final Map<String, String> muscleGroupMapping = {

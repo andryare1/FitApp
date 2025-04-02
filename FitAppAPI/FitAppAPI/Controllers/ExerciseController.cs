@@ -2,9 +2,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using FitAppAPI.Data;
 using FitAppAPI.Models;
+using Microsoft.AspNetCore.Authorization;
 
 [Route("api/exercises")]
 [ApiController]
+[Authorize]
 public class ExerciseController : ControllerBase
 {
     private readonly AppDbContext _context;
@@ -50,6 +52,7 @@ public class ExerciseController : ControllerBase
                 e.Id,
                 e.Name,
                 e.MuscleGroup,
+                e.Description,
                 ImageUrl = Url.Content($"~{e.ImageUrl}")
             })
             .ToListAsync();
