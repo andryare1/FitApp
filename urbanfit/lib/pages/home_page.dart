@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:urbanfit/pages/exercisesPage/exercises_page.dart';
 import 'package:urbanfit/pages/main_page.dart';
 import 'package:urbanfit/pages/profile_page.dart';
-import 'package:urbanfit/pages/workoutPage/workout_page.dart';
+import 'package:urbanfit/pages/trainingsPage/trainings_page.dart';
 import 'authorization/login_page.dart'; 
 
 class HomePage extends StatefulWidget {
@@ -19,7 +19,7 @@ class _HomePageState extends State<HomePage> {
 
   final List<Widget> _pages = [
     const MainPage(), // Главная страница
-    WorkoutPage(), // Тренировки
+    const TrainingsPage(), // Тренировки
     const ExercisesPage(), // Упражнения
     const ProfilePage(), // Страница профиля
   ];
