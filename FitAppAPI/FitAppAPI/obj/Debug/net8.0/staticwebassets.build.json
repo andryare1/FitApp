@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "iT5avGxilhnOW7L3PPGo4sNAdGO+TDWvLRgQayvKENA=",
+  "Hash": "E6oVlIv5UoLjMYKkN3xIvJysXboHEozK57tyTrapvZo=",
   "Source": "FitAppAPI",
   "BasePath": "_content/FitAppAPI",
   "Mode": "Default",
@@ -8,1869 +8,1115 @@
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
-      "Name": "FitAppAPI\\wwwroot",
+      "Name": "FitAppAPI/wwwroot",
       "Source": "FitAppAPI",
-      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
       "BasePath": "_content/FitAppAPI",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\085edd4e-5e1f-4bca-a355-cf37857487c3.jpg",
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/085edd4e-5e1f-4bca-a355-cf37857487c3.jpg",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
       "BasePath": "_content/FitAppAPI",
-      "RelativePath": "avatars/085edd4e-5e1f-4bca-a355-cf37857487c3#[.{fingerprint}]?.jpg",
+      "RelativePath": "avatars/085edd4e-5e1f-4bca-a355-cf37857487c3.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "43i7u08swk",
-      "Integrity": "ULWdu4i0l+p+ICJrx7qn5HZ34dATijnChUfaqBAwtSg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\avatars\\085edd4e-5e1f-4bca-a355-cf37857487c3.jpg"
+      "OriginalItemSpec": "wwwroot/avatars/085edd4e-5e1f-4bca-a355-cf37857487c3.jpg"
     },
     {
-      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\18f9ab88-f8da-47c9-a231-6340684f2f0a.jpg",
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/18f9ab88-f8da-47c9-a231-6340684f2f0a.jpg",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
       "BasePath": "_content/FitAppAPI",
-      "RelativePath": "avatars/18f9ab88-f8da-47c9-a231-6340684f2f0a#[.{fingerprint}]?.jpg",
+      "RelativePath": "avatars/18f9ab88-f8da-47c9-a231-6340684f2f0a.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "h8s8syp9pd",
-      "Integrity": "8XQDUj2otoZ3OBPyLicZBPlPI11H/H5dj8Z0CuwkQbA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\avatars\\18f9ab88-f8da-47c9-a231-6340684f2f0a.jpg"
+      "OriginalItemSpec": "wwwroot/avatars/18f9ab88-f8da-47c9-a231-6340684f2f0a.jpg"
     },
     {
-      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\32e6f3bc-070d-435a-a026-6c3289b9c5b4.jpeg",
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/32e6f3bc-070d-435a-a026-6c3289b9c5b4.jpeg",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
       "BasePath": "_content/FitAppAPI",
-      "RelativePath": "avatars/32e6f3bc-070d-435a-a026-6c3289b9c5b4#[.{fingerprint}]?.jpeg",
+      "RelativePath": "avatars/32e6f3bc-070d-435a-a026-6c3289b9c5b4.jpeg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "r410w99l63",
-      "Integrity": "u7lo8BOR1cdwXcBjJ9DwcD9sdSHuyS/PAsfhU2sF8T0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\avatars\\32e6f3bc-070d-435a-a026-6c3289b9c5b4.jpeg"
+      "OriginalItemSpec": "wwwroot/avatars/32e6f3bc-070d-435a-a026-6c3289b9c5b4.jpeg"
     },
     {
-      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\396ac8e5-5b5a-4132-b34c-1d179e89f223.jpg",
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/396ac8e5-5b5a-4132-b34c-1d179e89f223.jpg",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
       "BasePath": "_content/FitAppAPI",
-      "RelativePath": "avatars/396ac8e5-5b5a-4132-b34c-1d179e89f223#[.{fingerprint}]?.jpg",
+      "RelativePath": "avatars/396ac8e5-5b5a-4132-b34c-1d179e89f223.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "dbxhvjd30j",
-      "Integrity": "6f1rbWUO6yk8hm0shCcnPTqzsZ2QGP46zSI/MD82pOU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\avatars\\396ac8e5-5b5a-4132-b34c-1d179e89f223.jpg"
+      "OriginalItemSpec": "wwwroot/avatars/396ac8e5-5b5a-4132-b34c-1d179e89f223.jpg"
     },
     {
-      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\959eb308-b44c-4944-9d25-d73bae54ec0b.jpg",
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/959eb308-b44c-4944-9d25-d73bae54ec0b.jpg",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
       "BasePath": "_content/FitAppAPI",
-      "RelativePath": "avatars/959eb308-b44c-4944-9d25-d73bae54ec0b#[.{fingerprint}]?.jpg",
+      "RelativePath": "avatars/959eb308-b44c-4944-9d25-d73bae54ec0b.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "8pgaw2fkob",
-      "Integrity": "9DT8pyp5fIP5PrUSUDdQKI46atYc67TFCye3jtvWvyQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\avatars\\959eb308-b44c-4944-9d25-d73bae54ec0b.jpg"
+      "OriginalItemSpec": "wwwroot/avatars/959eb308-b44c-4944-9d25-d73bae54ec0b.jpg"
     },
     {
-      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\acfe8da4-4ea5-4366-85ef-c7ebe674a748.png",
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/acfe8da4-4ea5-4366-85ef-c7ebe674a748.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
       "BasePath": "_content/FitAppAPI",
-      "RelativePath": "avatars/acfe8da4-4ea5-4366-85ef-c7ebe674a748#[.{fingerprint}]?.png",
+      "RelativePath": "avatars/acfe8da4-4ea5-4366-85ef-c7ebe674a748.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "wnk5zoopog",
-      "Integrity": "3BoqEf+hULsrZ9Y7gz50qllgqD3qrh7pvX3U+aGaOUs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\avatars\\acfe8da4-4ea5-4366-85ef-c7ebe674a748.png"
+      "OriginalItemSpec": "wwwroot/avatars/acfe8da4-4ea5-4366-85ef-c7ebe674a748.png"
     },
     {
-      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\ad168a1b-cd18-4d22-8222-8432ff298567.jpg",
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/ad168a1b-cd18-4d22-8222-8432ff298567.jpg",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
       "BasePath": "_content/FitAppAPI",
-      "RelativePath": "avatars/ad168a1b-cd18-4d22-8222-8432ff298567#[.{fingerprint}]?.jpg",
+      "RelativePath": "avatars/ad168a1b-cd18-4d22-8222-8432ff298567.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "8pgaw2fkob",
-      "Integrity": "9DT8pyp5fIP5PrUSUDdQKI46atYc67TFCye3jtvWvyQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\avatars\\ad168a1b-cd18-4d22-8222-8432ff298567.jpg"
+      "OriginalItemSpec": "wwwroot/avatars/ad168a1b-cd18-4d22-8222-8432ff298567.jpg"
     },
     {
-      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\b3c91469-d489-4a0c-8e7b-722234234eb7.jpg",
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/b3c91469-d489-4a0c-8e7b-722234234eb7.jpg",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
       "BasePath": "_content/FitAppAPI",
-      "RelativePath": "avatars/b3c91469-d489-4a0c-8e7b-722234234eb7#[.{fingerprint}]?.jpg",
+      "RelativePath": "avatars/b3c91469-d489-4a0c-8e7b-722234234eb7.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "hbcc6az60b",
-      "Integrity": "o1gysXpAqr2/23j0Ni/HrZnP3bSq01S8dCP/vkdud9Y=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\avatars\\b3c91469-d489-4a0c-8e7b-722234234eb7.jpg"
+      "OriginalItemSpec": "wwwroot/avatars/b3c91469-d489-4a0c-8e7b-722234234eb7.jpg"
     },
     {
-      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\b9778e18-7996-4aaf-b246-6c163eea76d0.jpg",
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/b9778e18-7996-4aaf-b246-6c163eea76d0.jpg",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
       "BasePath": "_content/FitAppAPI",
-      "RelativePath": "avatars/b9778e18-7996-4aaf-b246-6c163eea76d0#[.{fingerprint}]?.jpg",
+      "RelativePath": "avatars/b9778e18-7996-4aaf-b246-6c163eea76d0.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "r76hxkehgs",
-      "Integrity": "t+rjv0ti3u5xDts5ER4eK6vfY4ShkMXwkcczacC6nbM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\avatars\\b9778e18-7996-4aaf-b246-6c163eea76d0.jpg"
+      "OriginalItemSpec": "wwwroot/avatars/b9778e18-7996-4aaf-b246-6c163eea76d0.jpg"
     },
     {
-      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\e2e52983-6cd4-421b-b54c-39bba91619c8.jpg",
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/e2e52983-6cd4-421b-b54c-39bba91619c8.jpg",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
       "BasePath": "_content/FitAppAPI",
-      "RelativePath": "avatars/e2e52983-6cd4-421b-b54c-39bba91619c8#[.{fingerprint}]?.jpg",
+      "RelativePath": "avatars/e2e52983-6cd4-421b-b54c-39bba91619c8.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "az2vb4cvqe",
-      "Integrity": "1hu7uFN4hJ1khjEYwHSgGkKhXs2K1H64ic9puY+aB/k=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\avatars\\e2e52983-6cd4-421b-b54c-39bba91619c8.jpg"
+      "OriginalItemSpec": "wwwroot/avatars/e2e52983-6cd4-421b-b54c-39bba91619c8.jpg"
     },
     {
-      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\fe62742a-a06f-47ec-a2e7-e267b6b6adf3.png",
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/ab_wheel.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
       "BasePath": "_content/FitAppAPI",
-      "RelativePath": "avatars/fe62742a-a06f-47ec-a2e7-e267b6b6adf3#[.{fingerprint}]?.png",
+      "RelativePath": "exercises/ab_wheel.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "f3sjumsgaj",
-      "Integrity": "BTW3urMLRpOUVBGlhMdjrk8MqTWEtSqFeaCmSQx7/zg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\avatars\\fe62742a-a06f-47ec-a2e7-e267b6b6adf3.png"
+      "OriginalItemSpec": "wwwroot/exercises/ab_wheel.png"
     },
     {
-      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\crossover.png",
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/arnold_press.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
       "BasePath": "_content/FitAppAPI",
-      "RelativePath": "exercises/crossover#[.{fingerprint}]?.png",
+      "RelativePath": "exercises/arnold_press.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "z2xd840px8",
-      "Integrity": "u8B2ENsvDFxVSnl4/XsSAPkHwLGGRCzD9DG6OuSUN2k=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\exercises\\crossover.png"
+      "OriginalItemSpec": "wwwroot/exercises/arnold_press.png"
     },
     {
-      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\dips.png",
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/barbell_curl.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
       "BasePath": "_content/FitAppAPI",
-      "RelativePath": "exercises/dips#[.{fingerprint}]?.png",
+      "RelativePath": "exercises/barbell_curl.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "ys6mnxaraf",
-      "Integrity": "DjlGFaOJlBvFrrdYRwbul0iPvIo/wFIjwO6awNRL5lA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\exercises\\dips.png"
+      "OriginalItemSpec": "wwwroot/exercises/barbell_curl.png"
     },
     {
-      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\dumbbell_fly.png",
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/barbell_row.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
       "BasePath": "_content/FitAppAPI",
-      "RelativePath": "exercises/dumbbell_fly#[.{fingerprint}]?.png",
+      "RelativePath": "exercises/barbell_row.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "pggvvwa1cz",
-      "Integrity": "GURi6EqTLaw6Bj2mH4cK2T1qpnD5NJdHcIlwjCOW7MY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\exercises\\dumbbell_fly.png"
+      "OriginalItemSpec": "wwwroot/exercises/barbell_row.png"
     },
     {
-      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\incline_dumbbell_press.png",
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/behind_neck_press.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
       "BasePath": "_content/FitAppAPI",
-      "RelativePath": "exercises/incline_dumbbell_press#[.{fingerprint}]?.png",
+      "RelativePath": "exercises/behind_neck_press.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "l4s4kunwax",
-      "Integrity": "m1w8j1/norfmGYhqvTPF3sd2iEm4X3RqCpIZkQT8lI4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\exercises\\incline_dumbbell_press.png"
+      "OriginalItemSpec": "wwwroot/exercises/behind_neck_press.png"
     },
     {
-      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\pec_deck.png",
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/bench_press.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
       "BasePath": "_content/FitAppAPI",
-      "RelativePath": "exercises/pec_deck#[.{fingerprint}]?.png",
+      "RelativePath": "exercises/bench_press.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "8bvukp96p5",
-      "Integrity": "BKIKb1fK0Ok7fvmgjxajM/ziNapWRAeDKQPrgSYcbIE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\exercises\\pec_deck.png"
+      "OriginalItemSpec": "wwwroot/exercises/bench_press.png"
     },
     {
-      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\pushups.png",
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/cable_crunch.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
       "BasePath": "_content/FitAppAPI",
-      "RelativePath": "exercises/pushups#[.{fingerprint}]?.png",
+      "RelativePath": "exercises/cable_crunch.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "jvkv3b2uk7",
-      "Integrity": "bwrC1AoRlHhP2itMvA9RhrX1eM8BNY7VrfTWOBmZTU8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\exercises\\pushups.png"
+      "OriginalItemSpec": "wwwroot/exercises/cable_crunch.png"
     },
     {
-      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\smith_machine_press.png",
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/calf_raise.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
       "BasePath": "_content/FitAppAPI",
-      "RelativePath": "exercises/smith_machine_press#[.{fingerprint}]?.png",
+      "RelativePath": "exercises/calf_raise.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "b69y26ytty",
-      "Integrity": "89x9N7e+ntsWy8gWXHHqizUhoCHf5V5cDHWlBDEQ+KA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\exercises\\smith_machine_press.png"
-    }
-  ],
-  "Endpoints": [
-    {
-      "Route": "avatars/085edd4e-5e1f-4bca-a355-cf37857487c3.43i7u08swk.jpg",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\085edd4e-5e1f-4bca-a355-cf37857487c3.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2677591"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ULWdu4i0l+p+ICJrx7qn5HZ34dATijnChUfaqBAwtSg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "43i7u08swk"
-        },
-        {
-          "Name": "label",
-          "Value": "avatars/085edd4e-5e1f-4bca-a355-cf37857487c3.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-ULWdu4i0l+p+ICJrx7qn5HZ34dATijnChUfaqBAwtSg="
-        }
-      ]
+      "OriginalItemSpec": "wwwroot/exercises/calf_raise.png"
     },
     {
-      "Route": "avatars/085edd4e-5e1f-4bca-a355-cf37857487c3.jpg",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\085edd4e-5e1f-4bca-a355-cf37857487c3.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2677591"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ULWdu4i0l+p+ICJrx7qn5HZ34dATijnChUfaqBAwtSg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-ULWdu4i0l+p+ICJrx7qn5HZ34dATijnChUfaqBAwtSg="
-        }
-      ]
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/close_grip_pushup.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/close_grip_pushup.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/exercises/close_grip_pushup.png"
     },
     {
-      "Route": "avatars/18f9ab88-f8da-47c9-a231-6340684f2f0a.h8s8syp9pd.jpg",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\18f9ab88-f8da-47c9-a231-6340684f2f0a.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2708952"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"8XQDUj2otoZ3OBPyLicZBPlPI11H/H5dj8Z0CuwkQbA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "h8s8syp9pd"
-        },
-        {
-          "Name": "label",
-          "Value": "avatars/18f9ab88-f8da-47c9-a231-6340684f2f0a.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-8XQDUj2otoZ3OBPyLicZBPlPI11H/H5dj8Z0CuwkQbA="
-        }
-      ]
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/concentration_curl.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/concentration_curl.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/exercises/concentration_curl.png"
     },
     {
-      "Route": "avatars/18f9ab88-f8da-47c9-a231-6340684f2f0a.jpg",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\18f9ab88-f8da-47c9-a231-6340684f2f0a.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2708952"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"8XQDUj2otoZ3OBPyLicZBPlPI11H/H5dj8Z0CuwkQbA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-8XQDUj2otoZ3OBPyLicZBPlPI11H/H5dj8Z0CuwkQbA="
-        }
-      ]
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/crossover.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/crossover.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/exercises/crossover.png"
     },
     {
-      "Route": "avatars/32e6f3bc-070d-435a-a026-6c3289b9c5b4.jpeg",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\32e6f3bc-070d-435a-a026-6c3289b9c5b4.jpeg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "308764"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"u7lo8BOR1cdwXcBjJ9DwcD9sdSHuyS/PAsfhU2sF8T0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-u7lo8BOR1cdwXcBjJ9DwcD9sdSHuyS/PAsfhU2sF8T0="
-        }
-      ]
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/crunches.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/crunches.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/exercises/crunches.png"
     },
     {
-      "Route": "avatars/32e6f3bc-070d-435a-a026-6c3289b9c5b4.r410w99l63.jpeg",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\32e6f3bc-070d-435a-a026-6c3289b9c5b4.jpeg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "308764"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"u7lo8BOR1cdwXcBjJ9DwcD9sdSHuyS/PAsfhU2sF8T0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "r410w99l63"
-        },
-        {
-          "Name": "label",
-          "Value": "avatars/32e6f3bc-070d-435a-a026-6c3289b9c5b4.jpeg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-u7lo8BOR1cdwXcBjJ9DwcD9sdSHuyS/PAsfhU2sF8T0="
-        }
-      ]
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/deadlift.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/deadlift.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/exercises/deadlift.png"
     },
     {
-      "Route": "avatars/396ac8e5-5b5a-4132-b34c-1d179e89f223.dbxhvjd30j.jpg",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\396ac8e5-5b5a-4132-b34c-1d179e89f223.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "9166"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"6f1rbWUO6yk8hm0shCcnPTqzsZ2QGP46zSI/MD82pOU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "dbxhvjd30j"
-        },
-        {
-          "Name": "label",
-          "Value": "avatars/396ac8e5-5b5a-4132-b34c-1d179e89f223.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-6f1rbWUO6yk8hm0shCcnPTqzsZ2QGP46zSI/MD82pOU="
-        }
-      ]
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/dips.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/dips.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/exercises/dips.png"
     },
     {
-      "Route": "avatars/396ac8e5-5b5a-4132-b34c-1d179e89f223.jpg",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\396ac8e5-5b5a-4132-b34c-1d179e89f223.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "9166"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"6f1rbWUO6yk8hm0shCcnPTqzsZ2QGP46zSI/MD82pOU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-6f1rbWUO6yk8hm0shCcnPTqzsZ2QGP46zSI/MD82pOU="
-        }
-      ]
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/dumbbell_fly.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/dumbbell_fly.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/exercises/dumbbell_fly.png"
     },
     {
-      "Route": "avatars/959eb308-b44c-4944-9d25-d73bae54ec0b.8pgaw2fkob.jpg",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\959eb308-b44c-4944-9d25-d73bae54ec0b.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1483890"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"9DT8pyp5fIP5PrUSUDdQKI46atYc67TFCye3jtvWvyQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "8pgaw2fkob"
-        },
-        {
-          "Name": "label",
-          "Value": "avatars/959eb308-b44c-4944-9d25-d73bae54ec0b.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-9DT8pyp5fIP5PrUSUDdQKI46atYc67TFCye3jtvWvyQ="
-        }
-      ]
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/dumbbell_press.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/dumbbell_press.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/exercises/dumbbell_press.png"
     },
     {
-      "Route": "avatars/959eb308-b44c-4944-9d25-d73bae54ec0b.jpg",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\959eb308-b44c-4944-9d25-d73bae54ec0b.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1483890"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"9DT8pyp5fIP5PrUSUDdQKI46atYc67TFCye3jtvWvyQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-9DT8pyp5fIP5PrUSUDdQKI46atYc67TFCye3jtvWvyQ="
-        }
-      ]
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/dumbbell_row.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/dumbbell_row.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/exercises/dumbbell_row.png"
     },
     {
-      "Route": "avatars/acfe8da4-4ea5-4366-85ef-c7ebe674a748.png",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\acfe8da4-4ea5-4366-85ef-c7ebe674a748.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "15429"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"3BoqEf+hULsrZ9Y7gz50qllgqD3qrh7pvX3U+aGaOUs=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-3BoqEf+hULsrZ9Y7gz50qllgqD3qrh7pvX3U+aGaOUs="
-        }
-      ]
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/french_press.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/french_press.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/exercises/french_press.png"
     },
     {
-      "Route": "avatars/acfe8da4-4ea5-4366-85ef-c7ebe674a748.wnk5zoopog.png",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\acfe8da4-4ea5-4366-85ef-c7ebe674a748.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "15429"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"3BoqEf+hULsrZ9Y7gz50qllgqD3qrh7pvX3U+aGaOUs=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "wnk5zoopog"
-        },
-        {
-          "Name": "label",
-          "Value": "avatars/acfe8da4-4ea5-4366-85ef-c7ebe674a748.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-3BoqEf+hULsrZ9Y7gz50qllgqD3qrh7pvX3U+aGaOUs="
-        }
-      ]
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/front_raises.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/front_raises.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/exercises/front_raises.png"
     },
     {
-      "Route": "avatars/ad168a1b-cd18-4d22-8222-8432ff298567.8pgaw2fkob.jpg",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\ad168a1b-cd18-4d22-8222-8432ff298567.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1483890"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"9DT8pyp5fIP5PrUSUDdQKI46atYc67TFCye3jtvWvyQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "8pgaw2fkob"
-        },
-        {
-          "Name": "label",
-          "Value": "avatars/ad168a1b-cd18-4d22-8222-8432ff298567.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-9DT8pyp5fIP5PrUSUDdQKI46atYc67TFCye3jtvWvyQ="
-        }
-      ]
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/hack_squat.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/hack_squat.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/exercises/hack_squat.png"
     },
     {
-      "Route": "avatars/ad168a1b-cd18-4d22-8222-8432ff298567.jpg",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\ad168a1b-cd18-4d22-8222-8432ff298567.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1483890"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"9DT8pyp5fIP5PrUSUDdQKI46atYc67TFCye3jtvWvyQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-9DT8pyp5fIP5PrUSUDdQKI46atYc67TFCye3jtvWvyQ="
-        }
-      ]
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/hammer_curl.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/hammer_curl.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/exercises/hammer_curl.png"
     },
     {
-      "Route": "avatars/b3c91469-d489-4a0c-8e7b-722234234eb7.hbcc6az60b.jpg",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\b3c91469-d489-4a0c-8e7b-722234234eb7.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "41891"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"o1gysXpAqr2/23j0Ni/HrZnP3bSq01S8dCP/vkdud9Y=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "hbcc6az60b"
-        },
-        {
-          "Name": "label",
-          "Value": "avatars/b3c91469-d489-4a0c-8e7b-722234234eb7.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-o1gysXpAqr2/23j0Ni/HrZnP3bSq01S8dCP/vkdud9Y="
-        }
-      ]
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/hyperextensions.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/hyperextensions.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/exercises/hyperextensions.png"
     },
     {
-      "Route": "avatars/b3c91469-d489-4a0c-8e7b-722234234eb7.jpg",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\b3c91469-d489-4a0c-8e7b-722234234eb7.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "41891"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"o1gysXpAqr2/23j0Ni/HrZnP3bSq01S8dCP/vkdud9Y=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-o1gysXpAqr2/23j0Ni/HrZnP3bSq01S8dCP/vkdud9Y="
-        }
-      ]
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/incline_dumbbell_press.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/incline_dumbbell_press.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/exercises/incline_dumbbell_press.png"
     },
     {
-      "Route": "avatars/b9778e18-7996-4aaf-b246-6c163eea76d0.jpg",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\b9778e18-7996-4aaf-b246-6c163eea76d0.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2564066"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"t+rjv0ti3u5xDts5ER4eK6vfY4ShkMXwkcczacC6nbM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-t+rjv0ti3u5xDts5ER4eK6vfY4ShkMXwkcczacC6nbM="
-        }
-      ]
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/lat_pulldown.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/lat_pulldown.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/exercises/lat_pulldown.png"
     },
     {
-      "Route": "avatars/b9778e18-7996-4aaf-b246-6c163eea76d0.r76hxkehgs.jpg",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\b9778e18-7996-4aaf-b246-6c163eea76d0.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2564066"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"t+rjv0ti3u5xDts5ER4eK6vfY4ShkMXwkcczacC6nbM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "r76hxkehgs"
-        },
-        {
-          "Name": "label",
-          "Value": "avatars/b9778e18-7996-4aaf-b246-6c163eea76d0.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-t+rjv0ti3u5xDts5ER4eK6vfY4ShkMXwkcczacC6nbM="
-        }
-      ]
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/lateral_raises.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/lateral_raises.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/exercises/lateral_raises.png"
     },
     {
-      "Route": "avatars/e2e52983-6cd4-421b-b54c-39bba91619c8.az2vb4cvqe.jpg",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\e2e52983-6cd4-421b-b54c-39bba91619c8.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "4750336"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"1hu7uFN4hJ1khjEYwHSgGkKhXs2K1H64ic9puY+aB/k=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "az2vb4cvqe"
-        },
-        {
-          "Name": "label",
-          "Value": "avatars/e2e52983-6cd4-421b-b54c-39bba91619c8.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-1hu7uFN4hJ1khjEYwHSgGkKhXs2K1H64ic9puY+aB/k="
-        }
-      ]
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/leg_curl.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/leg_curl.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/exercises/leg_curl.png"
     },
     {
-      "Route": "avatars/e2e52983-6cd4-421b-b54c-39bba91619c8.jpg",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\e2e52983-6cd4-421b-b54c-39bba91619c8.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "4750336"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"1hu7uFN4hJ1khjEYwHSgGkKhXs2K1H64ic9puY+aB/k=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-1hu7uFN4hJ1khjEYwHSgGkKhXs2K1H64ic9puY+aB/k="
-        }
-      ]
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/leg_extension.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/leg_extension.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/exercises/leg_extension.png"
     },
     {
-      "Route": "avatars/fe62742a-a06f-47ec-a2e7-e267b6b6adf3.f3sjumsgaj.png",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\fe62742a-a06f-47ec-a2e7-e267b6b6adf3.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "41941"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"BTW3urMLRpOUVBGlhMdjrk8MqTWEtSqFeaCmSQx7/zg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:48:57 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "f3sjumsgaj"
-        },
-        {
-          "Name": "label",
-          "Value": "avatars/fe62742a-a06f-47ec-a2e7-e267b6b6adf3.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-BTW3urMLRpOUVBGlhMdjrk8MqTWEtSqFeaCmSQx7/zg="
-        }
-      ]
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/leg_press.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/leg_press.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/exercises/leg_press.png"
     },
     {
-      "Route": "avatars/fe62742a-a06f-47ec-a2e7-e267b6b6adf3.png",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\fe62742a-a06f-47ec-a2e7-e267b6b6adf3.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "41941"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"BTW3urMLRpOUVBGlhMdjrk8MqTWEtSqFeaCmSQx7/zg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:48:57 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-BTW3urMLRpOUVBGlhMdjrk8MqTWEtSqFeaCmSQx7/zg="
-        }
-      ]
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/leg_raises.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/leg_raises.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/exercises/leg_raises.png"
     },
     {
-      "Route": "exercises/crossover.png",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\crossover.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "52990"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"u8B2ENsvDFxVSnl4/XsSAPkHwLGGRCzD9DG6OuSUN2k=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-u8B2ENsvDFxVSnl4/XsSAPkHwLGGRCzD9DG6OuSUN2k="
-        }
-      ]
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/lunges.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/lunges.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/exercises/lunges.png"
     },
     {
-      "Route": "exercises/crossover.z2xd840px8.png",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\crossover.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "52990"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"u8B2ENsvDFxVSnl4/XsSAPkHwLGGRCzD9DG6OuSUN2k=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "z2xd840px8"
-        },
-        {
-          "Name": "label",
-          "Value": "exercises/crossover.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-u8B2ENsvDFxVSnl4/XsSAPkHwLGGRCzD9DG6OuSUN2k="
-        }
-      ]
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/overhead_triceps_extension.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/overhead_triceps_extension.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/exercises/overhead_triceps_extension.png"
     },
     {
-      "Route": "exercises/dips.png",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\dips.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "32620"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"DjlGFaOJlBvFrrdYRwbul0iPvIo/wFIjwO6awNRL5lA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-DjlGFaOJlBvFrrdYRwbul0iPvIo/wFIjwO6awNRL5lA="
-        }
-      ]
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/pec_deck.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/pec_deck.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/exercises/pec_deck.png"
     },
     {
-      "Route": "exercises/dips.ys6mnxaraf.png",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\dips.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "32620"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"DjlGFaOJlBvFrrdYRwbul0iPvIo/wFIjwO6awNRL5lA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "ys6mnxaraf"
-        },
-        {
-          "Name": "label",
-          "Value": "exercises/dips.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-DjlGFaOJlBvFrrdYRwbul0iPvIo/wFIjwO6awNRL5lA="
-        }
-      ]
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/plank.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/plank.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/exercises/plank.png"
     },
     {
-      "Route": "exercises/dumbbell_fly.pggvvwa1cz.png",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\dumbbell_fly.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "32764"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"GURi6EqTLaw6Bj2mH4cK2T1qpnD5NJdHcIlwjCOW7MY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "pggvvwa1cz"
-        },
-        {
-          "Name": "label",
-          "Value": "exercises/dumbbell_fly.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-GURi6EqTLaw6Bj2mH4cK2T1qpnD5NJdHcIlwjCOW7MY="
-        }
-      ]
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/plie_squat.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/plie_squat.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/exercises/plie_squat.png"
     },
     {
-      "Route": "exercises/dumbbell_fly.png",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\dumbbell_fly.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "32764"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"GURi6EqTLaw6Bj2mH4cK2T1qpnD5NJdHcIlwjCOW7MY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-GURi6EqTLaw6Bj2mH4cK2T1qpnD5NJdHcIlwjCOW7MY="
-        }
-      ]
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/pull_ups.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/pull_ups.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/exercises/pull_ups.png"
     },
     {
-      "Route": "exercises/incline_dumbbell_press.l4s4kunwax.png",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\incline_dumbbell_press.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "53279"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"m1w8j1/norfmGYhqvTPF3sd2iEm4X3RqCpIZkQT8lI4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "l4s4kunwax"
-        },
-        {
-          "Name": "label",
-          "Value": "exercises/incline_dumbbell_press.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-m1w8j1/norfmGYhqvTPF3sd2iEm4X3RqCpIZkQT8lI4="
-        }
-      ]
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/pushups.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/pushups.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/exercises/pushups.png"
     },
     {
-      "Route": "exercises/incline_dumbbell_press.png",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\incline_dumbbell_press.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "53279"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"m1w8j1/norfmGYhqvTPF3sd2iEm4X3RqCpIZkQT8lI4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-m1w8j1/norfmGYhqvTPF3sd2iEm4X3RqCpIZkQT8lI4="
-        }
-      ]
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/rear_delt_fly.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/rear_delt_fly.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/exercises/rear_delt_fly.png"
     },
     {
-      "Route": "exercises/pec_deck.8bvukp96p5.png",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\pec_deck.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "51972"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"BKIKb1fK0Ok7fvmgjxajM/ziNapWRAeDKQPrgSYcbIE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "8bvukp96p5"
-        },
-        {
-          "Name": "label",
-          "Value": "exercises/pec_deck.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-BKIKb1fK0Ok7fvmgjxajM/ziNapWRAeDKQPrgSYcbIE="
-        }
-      ]
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/rear_delt_machine.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/rear_delt_machine.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/exercises/rear_delt_machine.png"
     },
     {
-      "Route": "exercises/pec_deck.png",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\pec_deck.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "51972"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"BKIKb1fK0Ok7fvmgjxajM/ziNapWRAeDKQPrgSYcbIE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-BKIKb1fK0Ok7fvmgjxajM/ziNapWRAeDKQPrgSYcbIE="
-        }
-      ]
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/roman_chair_situp.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/roman_chair_situp.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/exercises/roman_chair_situp.png"
     },
     {
-      "Route": "exercises/pushups.jvkv3b2uk7.png",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\pushups.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "26981"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"bwrC1AoRlHhP2itMvA9RhrX1eM8BNY7VrfTWOBmZTU8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "jvkv3b2uk7"
-        },
-        {
-          "Name": "label",
-          "Value": "exercises/pushups.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-bwrC1AoRlHhP2itMvA9RhrX1eM8BNY7VrfTWOBmZTU8="
-        }
-      ]
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/russian_twist.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/russian_twist.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/exercises/russian_twist.png"
     },
     {
-      "Route": "exercises/pushups.png",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\pushups.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "26981"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"bwrC1AoRlHhP2itMvA9RhrX1eM8BNY7VrfTWOBmZTU8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-bwrC1AoRlHhP2itMvA9RhrX1eM8BNY7VrfTWOBmZTU8="
-        }
-      ]
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/scott_curl.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/scott_curl.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/exercises/scott_curl.png"
     },
     {
-      "Route": "exercises/smith_machine_press.b69y26ytty.png",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\smith_machine_press.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "44260"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"89x9N7e+ntsWy8gWXHHqizUhoCHf5V5cDHWlBDEQ+KA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "b69y26ytty"
-        },
-        {
-          "Name": "label",
-          "Value": "exercises/smith_machine_press.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-89x9N7e+ntsWy8gWXHHqizUhoCHf5V5cDHWlBDEQ+KA="
-        }
-      ]
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/seated_row.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/seated_row.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/exercises/seated_row.png"
     },
     {
-      "Route": "exercises/smith_machine_press.png",
-      "AssetFile": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\smith_machine_press.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "44260"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"89x9N7e+ntsWy8gWXHHqizUhoCHf5V5cDHWlBDEQ+KA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 20:35:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-89x9N7e+ntsWy8gWXHHqizUhoCHf5V5cDHWlBDEQ+KA="
-        }
-      ]
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/side_plank.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/side_plank.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/exercises/side_plank.png"
+    },
+    {
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/smith_machine_press.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/smith_machine_press.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/exercises/smith_machine_press.png"
+    },
+    {
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/squat.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/squat.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/exercises/squat.png"
+    },
+    {
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/t_bar_row.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/t_bar_row.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/exercises/t_bar_row.png"
+    },
+    {
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/triceps_pushdown.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/triceps_pushdown.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/exercises/triceps_pushdown.png"
+    },
+    {
+      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/upright_row.png",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "exercises/upright_row.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/exercises/upright_row.png"
     }
   ]
 }
