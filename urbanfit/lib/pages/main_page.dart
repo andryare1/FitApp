@@ -12,7 +12,7 @@ class MainPage extends StatelessWidget {
       )),
       body: const Center(
         child: Text(
-          'Здесь будет отображаться главная страница!',
+          'Здесь будет отображаться главная!',
           style: TextStyle(fontSize: 18),
         ),
       ),
