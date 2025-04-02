@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:urbanfit/pages/exercisesPage/exercises_page.dart';
 import 'package:urbanfit/pages/main_page.dart';
 import 'package:urbanfit/pages/profile_page.dart';
-import 'package:urbanfit/pages/trainings_pade.dart';
 import 'package:urbanfit/pages/workoutPage/workout_page.dart';
 import 'authorization/login_page.dart'; 
 

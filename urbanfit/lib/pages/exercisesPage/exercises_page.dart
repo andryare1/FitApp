@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:urbanfit/pages/exercisesPage/exercises_detail_page.dart';
 import 'package:urbanfit/pages/exercisesPage/exercises_list_page.dart';
+import 'package:urbanfit/services/auth_service.dart';
 import 'package:urbanfit/services/exercise_service.dart';
 
 final Map<String, String> muscleGroupMapping = {
@@ -22,6 +23,7 @@ class ExercisesPage extends StatefulWidget {
 class _ExercisesPageState extends State<ExercisesPage> {
   final ExerciseService _exerciseService = ExerciseService();
   final TextEditingController _searchController = TextEditingController();
+    final AuthService _authService = AuthService();
   bool _isSearching = false;
   List<Map<String, dynamic>> _searchResults = [];
   final List<Map<String, String>> muscleGroups = [
@@ -64,8 +66,18 @@ class _ExercisesPageState extends State<ExercisesPage> {
       _isSearching = true;
     });
 
+    final token = await _authService.getToken();
+
+    if (token == null) {
+    setState(() {
+      _isSearching = false;
+      _searchResults = [];
+    });
+    print("Ошибка: токен не найден");
+    return;
+  }
     try {
-      final results = await _exerciseService.searchExercises(query);
+      final results = await _exerciseService.searchExercises(query, token);
       setState(() {
         _searchResults = results;
       });
