@@ -16,6 +16,8 @@ namespace FitAppAPI.Models
         
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
+        public bool IsDraft { get; set; } = true; // Новое поле
+
         public List<TrainingExercise> TrainingExercises { get; set; } = new();
     }
 
