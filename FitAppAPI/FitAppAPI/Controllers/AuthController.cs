@@ -4,6 +4,7 @@ using FitAppAPI.Services;
 using FitAppAPI.Data;
 using System.Security.Cryptography;
 using System.Text;
+using Microsoft.EntityFrameworkCore;
 
 namespace FitAppAPI.Controllers
 {
@@ -20,19 +21,19 @@ namespace FitAppAPI.Controllers
             _context = context;
         }
         [HttpPost("register")]
-        public IActionResult Register([FromBody] UserRegisterDto model)
+        public async Task <IActionResult> Register([FromBody] UserRegisterDto model)
         {
             if (string.IsNullOrWhiteSpace(model.Username) || string.IsNullOrWhiteSpace(model.Email) || string.IsNullOrWhiteSpace(model.Password))
             {
                 return BadRequest(new { message = "Все поля обязательны для заполнения." });
             }
 
-            if (_context.Users.Any(u => u.Username == model.Username))
+            if (await _context.Users.AnyAsync(u => u.Username == model.Username))
             {
                 return BadRequest(new { message = "Пользователь с таким именем уже существует." });
             }
 
-            if (_context.Users.Any(u => u.Email == model.Email))
+            if (await _context.Users.AnyAsync(u => u.Email == model.Email))
             {
                 return BadRequest(new { message = "Пользователь с таким Email уже существует." });
             }
@@ -44,17 +45,17 @@ namespace FitAppAPI.Controllers
                 PasswordHash = HashPassword(model.Password)
             };
 
-            _context.Users.Add(user);
-            _context.SaveChanges();
+            await _context.Users.AddAsync(user);
+            await _context.SaveChangesAsync();
 
             return Ok(new { message = "Регистрация успешна!" });
         }
 
 
         [HttpPost("login")]
-        public IActionResult Login([FromBody] UserLoginDto model)
+        public async Task<IActionResult> Login([FromBody] UserLoginDto model)
         {
-            var user = _context.Users.SingleOrDefault(u => u.Username == model.Username);
+            var user = await _context.Users.SingleOrDefaultAsync(u => u.Username == model.Username);
             if (user == null || !VerifyPassword(model.Password, user.PasswordHash))
             {
                 return Unauthorized(new { message = "Неверный логин или пароль." });
