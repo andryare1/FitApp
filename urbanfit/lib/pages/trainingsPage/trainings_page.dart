@@ -91,15 +91,45 @@ class _TrainingsPageState extends State<TrainingsPage> {
       itemCount: trainings.length,
       itemBuilder: (context, index) {
         final training = trainings[index];
-        return Card(
-          margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-          child: ListTile(
-            title: Text(training.name),
-            subtitle: Text(
-              _formatDate(training.createdAt),
+        return Dismissible(
+          key: ValueKey(training.id),
+          direction: DismissDirection.endToStart,
+          background: Container(
+            margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+            decoration: BoxDecoration(
+              color: Colors.red,
+              borderRadius: BorderRadius.circular(12),
             ),
-            trailing: const Icon(Icons.chevron_right),
-            onTap: () => _navigateToTrainingDetails(context, training.id),
+            alignment: Alignment.centerRight,
+            padding: const EdgeInsets.symmetric(horizontal: 20),
+            child: const Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Icon(Icons.delete, color: Colors.white),
+                SizedBox(width: 8),
+                Text(
+                  'Удалить',
+                  style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+                ),
+              ],
+            ),
+          ),
+          onDismissed: (direction) {
+            _deleteTraining(training.id);
+          },
+          child: Card(
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(12),
+            ),
+            margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+            child: ListTile(
+              title: Text(training.name),
+              subtitle: Text(
+                _formatDate(training.createdAt),
+              ),
+              trailing: const Icon(Icons.chevron_right),
+              onTap: () => _navigateToTrainingDetails(context, training.id),
+            ),
           ),
         );
       },
@@ -122,5 +152,16 @@ class _TrainingsPageState extends State<TrainingsPage> {
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(content: Text('Открываем тренировку $trainingId')),
     );
+  }
+
+  void _deleteTraining(int trainingId) async {
+    try {
+      await _trainingService.deleteTraining(trainingId);
+      _loadTrainings();
+    } catch (e) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Ошибка при удалении: $e')),
+      );
+    }
   }
 }

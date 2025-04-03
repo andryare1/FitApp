@@ -5,58 +5,59 @@ import 'package:urbanfit/models/training_exercise.dart';
 import 'package:urbanfit/services/auth_service.dart';
 
 class TrainingService {
-  static const _baseUrl = 'http://192.168.31.142:5016/api';
+  //static const _baseUrl = 'http://192.168.31.142:5016/api'; // для ПК
+  static const _baseUrl = 'http://192.168.31.65:5016/api'; // для макбука
   final AuthService _authService = AuthService();
 
- Future<List<Training>> getUserTrainings() async {
-  final token = await _authService.getToken();
-  final response = await http.get(
-    Uri.parse('$_baseUrl/trainings'),
-    headers: _getHeaders(token),
-  );
+  Future<List<Training>> getUserTrainings() async {
+    final token = await _authService.getToken();
+    final response = await http.get(
+      Uri.parse('$_baseUrl/trainings'),
+      headers: _getHeaders(token),
+    );
 
-  return _handleResponse<List<Training>>(
-    response,
-    (body) {
-      // Если сервер возвращает список напрямую
-      if (body is List) {
-        return body.map((e) => Training.fromJson(e)).toList();
-      }
-      // Если сервер возвращает объект с полем 'data' или 'trainings'
-      else if (body is Map<String, dynamic>) {
-        final data = body['data'] ?? body['trainings'] ?? body['items'];
-        if (data is List) {
-          return data.map((e) => Training.fromJson(e)).toList();
+    return _handleResponse<List<Training>>(
+      response,
+      (body) {
+        // Если сервер возвращает список напрямую
+        if (body is List) {
+          return body.map((e) => Training.fromJson(e)).toList();
         }
-      }
-      throw Exception('Неверный формат данных от сервера');
-    },
-  );
-}
+        // Если сервер возвращает объект с полем 'data' или 'trainings'
+        else if (body is Map<String, dynamic>) {
+          final data = body['data'] ?? body['trainings'] ?? body['items'];
+          if (data is List) {
+            return data.map((e) => Training.fromJson(e)).toList();
+          }
+        }
+        throw Exception('Неверный формат данных от сервера');
+      },
+    );
+  }
 
-Future<Training> createTrainingWithExercises({
-  required String name,
-  required List<TrainingExercise> exercises,
-}) async {
-  final token = await _authService.getToken();
-  
-  // Подготовка данных для отправки
-  final requestData = {
-    'name': name,
-    'exercises': exercises.map((e) => e.toJson()).toList(),
-  };
+  Future<Training> createTrainingWithExercises({
+    required String name,
+    required List<TrainingExercise> exercises,
+  }) async {
+    final token = await _authService.getToken();
 
-  final response = await http.post(
-    Uri.parse('$_baseUrl/trainings/create-full'),
-    headers: _getHeaders(token),
-    body: jsonEncode(requestData),
-  );
+    // Подготовка данных для отправки
+    final requestData = {
+      'name': name,
+      'exercises': exercises.map((e) => e.toJson()).toList(),
+    };
 
-  return _handleResponse<Training>(
-    response,
-    (body) => Training.fromJson(body),
-  );
-}
+    final response = await http.post(
+      Uri.parse('$_baseUrl/trainings/create-full'),
+      headers: _getHeaders(token),
+      body: jsonEncode(requestData),
+    );
+
+    return _handleResponse<Training>(
+      response,
+      (body) => Training.fromJson(body),
+    );
+  }
 
   Future<void> updateTrainingExercises({
     required int trainingId,
@@ -81,6 +82,9 @@ Future<Training> createTrainingWithExercises({
       headers: _getHeaders(token),
     );
 
+    if (response.statusCode == 204) {
+      return; // Успешное удаление, просто выходим
+    }
     _handleResponse<void>(response, (_) => null);
   }
 

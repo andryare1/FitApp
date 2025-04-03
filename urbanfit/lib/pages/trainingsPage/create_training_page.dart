@@ -4,8 +4,6 @@ import 'package:urbanfit/pages/trainingsPage/exerciseScreens/exercise_params_dia
 import 'package:urbanfit/pages/trainingsPage/exerciseScreens/muscle_group_selection_page.dart';
 import 'package:urbanfit/services/training_service.dart';
 
-
-
 class CreateTrainingPage extends StatefulWidget {
   const CreateTrainingPage({Key? key}) : super(key: key);
 
@@ -17,7 +15,7 @@ class _CreateTrainingPageState extends State<CreateTrainingPage> {
   final _formKey = GlobalKey<FormState>();
   final _nameController = TextEditingController();
   final _trainingService = TrainingService();
-  List<Map<String, dynamic>> _selectedExercises = [];
+  final _selectedExercises = [];
   bool _isSaving = false;
 
   @override
@@ -33,7 +31,7 @@ class _CreateTrainingPageState extends State<CreateTrainingPage> {
         title: const Text('Новая тренировка'),
         actions: [
           IconButton(
-            icon: _isSaving 
+            icon: _isSaving
                 ? const CircularProgressIndicator()
                 : const Icon(Icons.save),
             onPressed: _isSaving ? null : _saveTraining,
@@ -101,16 +99,15 @@ class _CreateTrainingPageState extends State<CreateTrainingPage> {
             },
             onReorder: (oldIndex, newIndex) {
               setState(() {
-                 if (newIndex > oldIndex) newIndex--;
-    
-    final item = _selectedExercises.removeAt(oldIndex);
-    _selectedExercises.insert(newIndex, item);
-    
-    // Обновляем orderIndex для всех упражнений
-    for (var i = 0; i < _selectedExercises.length; i++) {
-      _selectedExercises[i]['orderIndex'] = i;
-    }
-                });
+                if (newIndex > oldIndex) newIndex--;
+
+                final item = _selectedExercises.removeAt(oldIndex);
+                _selectedExercises.insert(newIndex, item);
+
+                for (var i = 0; i < _selectedExercises.length; i++) {
+                  _selectedExercises[i]['orderIndex'] = i;
+                }
+              });
             },
           ),
         ),
@@ -118,9 +115,35 @@ class _CreateTrainingPageState extends State<CreateTrainingPage> {
     );
   }
 
-  Widget _buildExerciseCard(Map<String, dynamic> exercise, int index) {
-    return Card(
-      key: Key('${exercise['id']}_$index'),
+ Widget _buildExerciseCard(Map<String, dynamic> exercise, int index) {
+  return Dismissible(
+    key: ValueKey(exercise['id']),
+    direction: DismissDirection.endToStart,
+    background: Container(
+      margin: const EdgeInsets.symmetric(vertical: 4),
+      decoration: BoxDecoration(
+        color: Colors.red,
+        borderRadius: BorderRadius.circular(12),
+      ),
+      alignment: Alignment.centerRight,
+      padding: const EdgeInsets.symmetric(horizontal: 20),
+      child: const Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Icon(Icons.delete, color: Colors.white),
+          SizedBox(width: 8),
+          Text(
+            'Удалить',
+            style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+          ),
+        ],
+      ),
+    ),
+    onDismissed: (direction) {
+      _removeExercise(exercise); // Удаление упражнения
+    },
+    child: Card(
+      key: ValueKey(exercise['id']),
       margin: const EdgeInsets.symmetric(vertical: 4),
       child: ListTile(
         title: Text(exercise['name']),
@@ -141,15 +164,16 @@ class _CreateTrainingPageState extends State<CreateTrainingPage> {
               icon: const Icon(Icons.edit),
               onPressed: () => _editExerciseParams(context, exercise),
             ),
-            IconButton(
-              icon: const Icon(Icons.delete, color: Colors.red),
-              onPressed: () => _removeExercise(exercise),
+            ReorderableDragStartListener(
+              index: index,
+              child: const Icon(Icons.drag_handle, color: Colors.grey),
             ),
           ],
         ),
       ),
-    );
-  }
+    ),
+  );
+}
 
   Future<void> _navigateToExerciseGroups(BuildContext context) async {
     final selectedExercises = await Navigator.push<List<Map<String, dynamic>>>(
@@ -161,22 +185,24 @@ class _CreateTrainingPageState extends State<CreateTrainingPage> {
 
     if (selectedExercises != null && selectedExercises.isNotEmpty) {
       setState(() {
-        final newExercises = selectedExercises.where(
-          (ex) => !_selectedExercises.any((e) => e['id'] == ex['id']),
-        ).toList();
-        
-        // Добавляем дефолтные параметры для новых упражнений
+        final newExercises = selectedExercises
+            .where(
+              (ex) => !_selectedExercises.any((e) => e['id'] == ex['id']),
+            )
+            .toList();
+
         _selectedExercises.addAll(newExercises.map((e) => {
-          ...e,
-          'sets': 3,
-          'reps': 10,
-          'weight': 0.0,
-        }));
+              ...e,
+              'sets': 3,
+              'reps': 10,
+              'weight': 0.0,
+            }));
       });
     }
   }
 
-  Future<void> _editExerciseParams(BuildContext context, Map<String, dynamic> exercise) async {
+  Future<void> _editExerciseParams(
+      BuildContext context, Map<String, dynamic> exercise) async {
     final updatedExercise = await showDialog<Map<String, dynamic>>(
       context: context,
       builder: (context) => ExerciseParamsDialog(exercise: exercise),
@@ -184,7 +210,8 @@ class _CreateTrainingPageState extends State<CreateTrainingPage> {
 
     if (updatedExercise != null) {
       setState(() {
-        final index = _selectedExercises.indexWhere((e) => e['id'] == exercise['id']);
+        final index =
+            _selectedExercises.indexWhere((e) => e['id'] == exercise['id']);
         if (index != -1) {
           _selectedExercises[index] = updatedExercise;
         }
@@ -198,46 +225,48 @@ class _CreateTrainingPageState extends State<CreateTrainingPage> {
     });
   }
 
- Future<void> _saveTraining() async {
-  if (!_formKey.currentState!.validate()) return;
+  Future<void> _saveTraining() async {
+    if (!_formKey.currentState!.validate()) return;
 
-  if (_selectedExercises.isEmpty) {
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(content: Text('Добавьте хотя бы одно упражнение')),
-    );
-    return;
-  }
+    if (_selectedExercises.isEmpty) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Добавьте хотя бы одно упражнение')),
+      );
+      return;
+    }
 
-  setState(() => _isSaving = true);
+    setState(() => _isSaving = true);
 
-  try {
-    final exercises = _selectedExercises.map((e) => TrainingExercise(
-      id: 0,
-      exerciseId: e['id'],
-      exerciseName: e['name'],
-      sets: e['sets'] ?? 3,
-      reps: e['reps'] ?? 10,
-      weight: (e['weight'] as num?)?.toDouble() ?? 0.0,
-      orderIndex: _selectedExercises.indexOf(e), // Сохраняем порядок
-      comment: e['comment'],
-    )).toList();
+    try {
+      final exercises = _selectedExercises
+          .map((e) => TrainingExercise(
+                id: 0,
+                exerciseId: e['id'],
+                exerciseName: e['name'],
+                sets: e['sets'] ?? 3,
+                reps: e['reps'] ?? 10,
+                weight: (e['weight'] as num?)?.toDouble() ?? 0.0,
+                orderIndex: _selectedExercises.indexOf(e), // Сохраняем порядок
+                comment: e['comment'],
+              ))
+          .toList();
 
-    await _trainingService.createTrainingWithExercises(
-      name: _nameController.text,
-      exercises: exercises,
-    );
+      await _trainingService.createTrainingWithExercises(
+        name: _nameController.text,
+        exercises: exercises,
+      );
 
-    if (!mounted) return;
-    Navigator.pop(context, true);
-  } catch (e) {
-    if (!mounted) return;
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(content: Text('Ошибка сохранения: ${e.toString()}')),
-    );
-  } finally {
-    if (mounted) {
-      setState(() => _isSaving = false);
+      if (!mounted) return;
+      Navigator.pop(context, true);
+    } catch (e) {
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Ошибка сохранения: ${e.toString()}')),
+      );
+    } finally {
+      if (mounted) {
+        setState(() => _isSaving = false);
+      }
     }
   }
-}
 }

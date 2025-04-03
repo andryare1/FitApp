@@ -95,7 +95,7 @@ class _ExerciseListPageState extends State<ExerciseListPageForTrainings> {
               onPressed: _confirmSelection,
               child: Text(
                 'Готово (${_selectedExercises.length})',
-                style: const TextStyle(color: Colors.white),
+                style: const TextStyle(color: Colors.purple, fontWeight: FontWeight.bold),
               ),
             ),
         ],

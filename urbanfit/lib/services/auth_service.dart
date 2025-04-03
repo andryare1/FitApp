@@ -6,8 +6,8 @@ import 'dart:convert';
 import 'dart:io';
 import 'package:http_parser/http_parser.dart';
 
-//const baseUrl = 'http://192.168.31.85:5016'; // для макбука
-const baseUrl = 'http://192.168.31.142:5016';   // для ПК
+const baseUrl = 'http://192.168.31.65:5016'; // для макбука
+//const baseUrl = 'http://192.168.31.142:5016';   // для ПК
 
 class AuthService {
   Future<void> saveUsername(String username) async {
