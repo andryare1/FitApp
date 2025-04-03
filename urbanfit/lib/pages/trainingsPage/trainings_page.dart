@@ -86,59 +86,90 @@ class _TrainingsPageState extends State<TrainingsPage> {
     );
   }
 
-  Widget _buildTrainingsList(List<Training> trainings) {
-    return ListView.builder(
-      itemCount: trainings.length,
-      itemBuilder: (context, index) {
-        final training = trainings[index];
-        return Dismissible(
-          key: ValueKey(training.id),
-          direction: DismissDirection.endToStart,
-          background: Container(
-            margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-            decoration: BoxDecoration(
+ Widget _buildTrainingsList(List<Training> trainings) {
+  return ListView.separated( // Используем ListView.separated вместо builder
+    padding: const EdgeInsets.symmetric(vertical: 8),
+    itemCount: trainings.length,
+    separatorBuilder: (context, index) => const SizedBox(height: 8), // Отступ между элементами
+    itemBuilder: (context, index) {
+      final training = trainings[index];
+      return Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 16),
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(12),
+          child: Dismissible(
+            key: ValueKey(training.id),
+            direction: DismissDirection.endToStart,
+            background: Container(
               color: Colors.red,
-              borderRadius: BorderRadius.circular(12),
-            ),
-            alignment: Alignment.centerRight,
-            padding: const EdgeInsets.symmetric(horizontal: 20),
-            child: const Row(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Icon(Icons.delete, color: Colors.white),
-                SizedBox(width: 8),
-                Text(
-                  'Удалить',
-                  style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
-                ),
-              ],
-            ),
-          ),
-          onDismissed: (direction) {
-            _deleteTraining(training.id);
-          },
-          child: Card(
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(12),
-            ),
-            margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-            child: ListTile(
-              title: Text(training.name),
-              subtitle: Text(
-                _formatDate(training.createdAt),
+              alignment: Alignment.centerRight,
+              padding: const EdgeInsets.only(right: 20),
+              child: const Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Icon(Icons.delete, color: Colors.white, size: 24),
+                  SizedBox(width: 8),
+                  Text(
+                    'Удалить',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 16,
+                    ),
+                  ),
+                ],
               ),
-              trailing: const Icon(Icons.chevron_right),
-              onTap: () => _navigateToTrainingDetails(context, training.id),
+            ),
+            onDismissed: (direction) => _deleteTraining(training.id),
+            child: Card(
+              margin: EdgeInsets.zero,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(12),
+              ),
+              elevation: 2, // Легкая тень для глубины
+              child: InkWell( // Добавляем эффект нажатия
+                borderRadius: BorderRadius.circular(12),
+                onTap: () => _navigateToTrainingDetails(context, training.id),
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 12),
+                  child: ListTile(
+                    contentPadding: const EdgeInsets.symmetric(horizontal: 16),
+                    title: Text(
+                      training.name,
+                      style: const TextStyle(
+                        fontWeight: FontWeight.w500,
+                        fontSize: 16,
+                      ),
+                    ),
+                    subtitle: Padding(
+                      padding: const EdgeInsets.only(top: 4),
+                      child: Text(
+                        _formatDate(training.createdAt),
+                        style: TextStyle(
+                          color: Colors.grey[600],
+                          fontSize: 14,
+                        ),
+                      ),
+                    ),
+                    trailing: Icon(
+                      Icons.chevron_right,
+                      color: Theme.of(context).primaryColor,
+                      size: 28,
+                    ),
+                  ),
+                ),
+              ),
             ),
           ),
-        );
-      },
-    );
-  }
+        ),
+      );
+    },
+  );
+}
 
-  String _formatDate(DateTime date) {
-    return '${date.day}.${date.month}.${date.year}';
-  }
+ String _formatDate(DateTime date) {
+  return '${date.day.toString().padLeft(2, '0')}.${date.month.toString().padLeft(2, '0')}.${date.year}';
+}
 
   void _navigateToCreateTraining(BuildContext context) {
     Navigator.push(

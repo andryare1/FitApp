@@ -27,30 +27,39 @@ class _ProfilePageState extends State<ProfilePage> {
   }
 
   Future<void> _loadUserData() async {
-    setState(() => _isLoading = true);
+  final token = await _authService.getToken();
+  
+  if (token == null) {
+    print("Ошибка: токен не найден");
+    if (mounted) {
+      setState(() => _isLoading = false);
+    }
+    return;
+  }
 
-    try {
-      final storedUsername = await _authService.getUsername();
-      final storedAvatarBytes =
-          await _authService.getAvatarFromServer();
+  setState(() => _isLoading = true);
 
-      if (mounted) {
-        setState(() {
-          username = storedUsername;
-          avatarBytes = storedAvatarBytes; 
-        });
-      }
-    } catch (e) {
-      if (mounted) {
-        setState(() => avatarBytes =
-            Uint8List(0)); 
-      }
-    } finally {
-      if (mounted) {
-        setState(() => _isLoading = false);
-      }
+  try {
+    final storedUsername = await _authService.getUsername();
+    final storedAvatarBytes = await _authService.getAvatarFromServer(token);
+
+    if (mounted) {
+      setState(() {
+        username = storedUsername;
+        avatarBytes = storedAvatarBytes;
+      });
+    }
+  } catch (e) {
+    print("Ошибка при загрузке данных пользователя: $e");
+    if (mounted) {
+      setState(() => avatarBytes = null);
+    }
+  } finally {
+    if (mounted) {
+      setState(() => _isLoading = false);
     }
   }
+}
 
   // Загружает новое изображение и отправляет на сервер
   Future<void> _pickImage(ImageSource source) async {

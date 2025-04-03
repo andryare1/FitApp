@@ -6,8 +6,8 @@ import 'dart:convert';
 import 'dart:io';
 import 'package:http_parser/http_parser.dart';
 
-const baseUrl = 'http://192.168.31.65:5016'; // для макбука
-//const baseUrl = 'http://192.168.31.142:5016';   // для ПК
+//const baseUrl = 'http://192.168.31.65:5016'; // для макбука
+const baseUrl = 'http://192.168.31.142:5016';   // для ПК
 
 class AuthService {
   Future<void> saveUsername(String username) async {
@@ -76,7 +76,7 @@ class AuthService {
     await prefs.remove('username');
   }
 
-  Future<Uint8List?> getAvatarFromServer() async {
+  Future<Uint8List?> getAvatarFromServer(String token) async {
     // Получаем userId текущего пользователя (например, из SharedPreferences или токена)
     final userId =
         await getUserId(); // Замените на реальный способ получения userId
@@ -85,7 +85,7 @@ class AuthService {
     final url = '$baseUrl/api/avatar/$userId';
 
     // Запрос аватарки с сервера
-    final response = await http.get(Uri.parse(url));
+    final response = await http.get(Uri.parse(url) , headers: {'Authorization': 'Bearer $token'});
 
     if (response.statusCode == 200) {
       // Сервер возвращает успешный ответ, можем обработать данные
