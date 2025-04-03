@@ -224,25 +224,122 @@
       }
     },
     "/api/trainings": {
+      "get": {
+        "tags": [
+          "Trainings"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TrainingDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TrainingDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TrainingDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/trainings/create-full": {
       "post": {
         "tags": [
-          "Training"
+          "Trainings"
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Training"
+                "$ref": "#/components/schemas/CreateTrainingDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Training"
+                "$ref": "#/components/schemas/CreateTrainingDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Training"
+                "$ref": "#/components/schemas/CreateTrainingDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TrainingDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TrainingDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TrainingDto"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/trainings/{trainingId}/exercises": {
+      "put": {
+        "tags": [
+          "Trainings"
+        ],
+        "parameters": [
+          {
+            "name": "trainingId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTrainingExercisesDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTrainingExercisesDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTrainingExercisesDto"
               }
             }
           }
@@ -252,26 +349,16 @@
             "description": "OK"
           }
         }
-      },
-      "get": {
-        "tags": [
-          "Training"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
       }
     },
-    "/api/trainings/{id}": {
-      "get": {
+    "/api/trainings/{trainingId}": {
+      "delete": {
         "tags": [
-          "Training"
+          "Trainings"
         ],
         "parameters": [
           {
-            "name": "id",
+            "name": "trainingId",
             "in": "path",
             "required": true,
             "schema": {
@@ -285,72 +372,72 @@
             "description": "OK"
           }
         }
-      },
-      "put": {
-        "tags": [
-          "Training"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string",
-              "format": "uuid"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Training"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Training"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/Training"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
-      "delete": {
-        "tags": [
-          "Training"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string",
-              "format": "uuid"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
       }
     }
   },
   "components": {
     "schemas": {
+      "CreateTrainingDto": {
+        "required": [
+          "exercises",
+          "name"
+        ],
+        "type": "object",
+        "properties": {
+          "name": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "exercises": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CreateTrainingExerciseDto"
+            }
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateTrainingExerciseDto": {
+        "required": [
+          "exerciseId"
+        ],
+        "type": "object",
+        "properties": {
+          "exerciseId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "sets": {
+            "maximum": 20,
+            "minimum": 1,
+            "type": "integer",
+            "format": "int32"
+          },
+          "reps": {
+            "maximum": 50,
+            "minimum": 1,
+            "type": "integer",
+            "format": "int32"
+          },
+          "weight": {
+            "maximum": 500,
+            "minimum": 0,
+            "type": "number",
+            "format": "double"
+          },
+          "orderIndex": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "comment": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "Exercise": {
         "required": [
           "description",
@@ -396,11 +483,7 @@
         "type": "integer",
         "format": "int32"
       },
-      "Training": {
-        "required": [
-          "name",
-          "userId"
-        ],
+      "TrainingDto": {
         "type": "object",
         "properties": {
           "id": {
@@ -408,53 +491,37 @@
             "format": "int32"
           },
           "name": {
-            "minLength": 1,
-            "type": "string"
-          },
-          "userId": {
             "type": "string",
-            "format": "uuid"
+            "nullable": true
           },
           "createdAt": {
             "type": "string",
             "format": "date-time"
           },
-          "trainingExercises": {
+          "exercises": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/TrainingExercise"
+              "$ref": "#/components/schemas/TrainingExerciseDto"
             },
             "nullable": true
           }
         },
         "additionalProperties": false
       },
-      "TrainingExercise": {
-        "required": [
-          "exerciseId",
-          "reps",
-          "sets",
-          "trainingId"
-        ],
+      "TrainingExerciseDto": {
         "type": "object",
         "properties": {
           "id": {
             "type": "integer",
             "format": "int32"
           },
-          "trainingId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "training": {
-            "$ref": "#/components/schemas/Training"
-          },
           "exerciseId": {
             "type": "integer",
             "format": "int32"
           },
-          "exercise": {
-            "$ref": "#/components/schemas/Exercise"
+          "exerciseName": {
+            "type": "string",
+            "nullable": true
           },
           "sets": {
             "type": "integer",
@@ -466,15 +533,70 @@
           },
           "weight": {
             "type": "number",
-            "format": "float"
+            "format": "double"
+          },
+          "orderIndex": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateTrainingExerciseDto": {
+        "required": [
+          "exerciseId"
+        ],
+        "type": "object",
+        "properties": {
+          "exerciseId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "sets": {
+            "maximum": 20,
+            "minimum": 1,
+            "type": "integer",
+            "format": "int32"
+          },
+          "reps": {
+            "maximum": 50,
+            "minimum": 1,
+            "type": "integer",
+            "format": "int32"
+          },
+          "weight": {
+            "maximum": 500,
+            "minimum": 0,
+            "type": "number",
+            "format": "double"
+          },
+          "orderIndex": {
+            "type": "integer",
+            "format": "int32"
           },
           "comment": {
             "type": "string",
             "nullable": true
           },
-          "orderIndex": {
+          "id": {
             "type": "integer",
             "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateTrainingExercisesDto": {
+        "required": [
+          "exercises"
+        ],
+        "type": "object",
+        "properties": {
+          "exercises": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/UpdateTrainingExerciseDto"
+            }
           }
         },
         "additionalProperties": false

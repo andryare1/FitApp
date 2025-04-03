@@ -126,41 +126,35 @@
     ]
   },
   {
-    "ContainingType": "FitAppAPI.Controllers.TrainingController",
-    "Method": "CreateTraining",
-    "RelativePath": "api/trainings",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "training",
-        "Type": "FitAppAPI.Models.Training",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "FitAppAPI.Controllers.TrainingController",
-    "Method": "GetUserTrainings",
+    "ContainingType": "FitAppAPI.Controllers.TrainingsController",
+    "Method": "GetTrainings",
     "RelativePath": "api/trainings",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[TrainingDto, FitAppAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
-    "ContainingType": "FitAppAPI.Controllers.TrainingController",
-    "Method": "GetTraining",
-    "RelativePath": "api/trainings/{id}",
-    "HttpMethod": "GET",
+    "ContainingType": "FitAppAPI.Controllers.TrainingsController",
+    "Method": "DeleteTraining",
+    "RelativePath": "api/trainings/{trainingId}",
+    "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
+        "Name": "trainingId",
         "Type": "System.Int32",
         "IsRequired": true
       }
@@ -168,40 +162,50 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "FitAppAPI.Controllers.TrainingController",
-    "Method": "UpdateTraining",
-    "RelativePath": "api/trainings/{id}",
+    "ContainingType": "FitAppAPI.Controllers.TrainingsController",
+    "Method": "UpdateTrainingExercises",
+    "RelativePath": "api/trainings/{trainingId}/exercises",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
-        "Type": "System.Guid",
+        "Name": "trainingId",
+        "Type": "System.Int32",
         "IsRequired": true
       },
       {
-        "Name": "updatedTraining",
-        "Type": "FitAppAPI.Models.Training",
+        "Name": "dto",
+        "Type": "UpdateTrainingExercisesDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "FitAppAPI.Controllers.TrainingController",
-    "Method": "DeleteTraining",
-    "RelativePath": "api/trainings/{id}",
-    "HttpMethod": "DELETE",
+    "ContainingType": "FitAppAPI.Controllers.TrainingsController",
+    "Method": "CreateTrainingWithExercises",
+    "RelativePath": "api/trainings/create-full",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
-        "Type": "System.Guid",
+        "Name": "dto",
+        "Type": "CreateTrainingDto",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "TrainingDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]

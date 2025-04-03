@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "IoIhnpKtlPdQUA0+NS/mDsfh1SKQbMIIwIYQSWm8bqg=",
+  "Hash": "g4tYHazprEk5F+u+ELu5oDLZtQWR20sJ3o7R2OjA0ec=",
   "Source": "FitAppAPI",
   "BasePath": "_content/FitAppAPI",
   "Mode": "Default",
@@ -8,19 +8,19 @@
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
-      "Name": "FitAppAPI/wwwroot",
+      "Name": "FitAppAPI\\wwwroot",
       "Source": "FitAppAPI",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/085edd4e-5e1f-4bca-a355-cf37857487c3.jpg",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\085edd4e-5e1f-4bca-a355-cf37857487c3.jpg",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "avatars/085edd4e-5e1f-4bca-a355-cf37857487c3.jpg",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/avatars/085edd4e-5e1f-4bca-a355-cf37857487c3.jpg"
+      "OriginalItemSpec": "wwwroot\\avatars\\085edd4e-5e1f-4bca-a355-cf37857487c3.jpg"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/18f9ab88-f8da-47c9-a231-6340684f2f0a.jpg",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\18f9ab88-f8da-47c9-a231-6340684f2f0a.jpg",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "avatars/18f9ab88-f8da-47c9-a231-6340684f2f0a.jpg",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/avatars/18f9ab88-f8da-47c9-a231-6340684f2f0a.jpg"
+      "OriginalItemSpec": "wwwroot\\avatars\\18f9ab88-f8da-47c9-a231-6340684f2f0a.jpg"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/32e6f3bc-070d-435a-a026-6c3289b9c5b4.jpeg",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\32e6f3bc-070d-435a-a026-6c3289b9c5b4.jpeg",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "avatars/32e6f3bc-070d-435a-a026-6c3289b9c5b4.jpeg",
       "AssetKind": "All",
@@ -71,13 +71,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/avatars/32e6f3bc-070d-435a-a026-6c3289b9c5b4.jpeg"
+      "OriginalItemSpec": "wwwroot\\avatars\\32e6f3bc-070d-435a-a026-6c3289b9c5b4.jpeg"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/396ac8e5-5b5a-4132-b34c-1d179e89f223.jpg",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\396ac8e5-5b5a-4132-b34c-1d179e89f223.jpg",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "avatars/396ac8e5-5b5a-4132-b34c-1d179e89f223.jpg",
       "AssetKind": "All",
@@ -90,13 +90,32 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/avatars/396ac8e5-5b5a-4132-b34c-1d179e89f223.jpg"
+      "OriginalItemSpec": "wwwroot\\avatars\\396ac8e5-5b5a-4132-b34c-1d179e89f223.jpg"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/959eb308-b44c-4944-9d25-d73bae54ec0b.jpg",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\52f4fda0-26ba-4566-9b76-5ff74383213e.jpg",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
+      "BasePath": "_content/FitAppAPI",
+      "RelativePath": "avatars/52f4fda0-26ba-4566-9b76-5ff74383213e.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\avatars\\52f4fda0-26ba-4566-9b76-5ff74383213e.jpg"
+    },
+    {
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\959eb308-b44c-4944-9d25-d73bae54ec0b.jpg",
+      "SourceId": "FitAppAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "avatars/959eb308-b44c-4944-9d25-d73bae54ec0b.jpg",
       "AssetKind": "All",
@@ -109,13 +128,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/avatars/959eb308-b44c-4944-9d25-d73bae54ec0b.jpg"
+      "OriginalItemSpec": "wwwroot\\avatars\\959eb308-b44c-4944-9d25-d73bae54ec0b.jpg"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/972d3b20-955e-44f5-843f-6c8dce78836d.jpg",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\972d3b20-955e-44f5-843f-6c8dce78836d.jpg",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "avatars/972d3b20-955e-44f5-843f-6c8dce78836d.jpg",
       "AssetKind": "All",
@@ -128,13 +147,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/avatars/972d3b20-955e-44f5-843f-6c8dce78836d.jpg"
+      "OriginalItemSpec": "wwwroot\\avatars\\972d3b20-955e-44f5-843f-6c8dce78836d.jpg"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/acfe8da4-4ea5-4366-85ef-c7ebe674a748.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\acfe8da4-4ea5-4366-85ef-c7ebe674a748.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "avatars/acfe8da4-4ea5-4366-85ef-c7ebe674a748.png",
       "AssetKind": "All",
@@ -147,13 +166,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/avatars/acfe8da4-4ea5-4366-85ef-c7ebe674a748.png"
+      "OriginalItemSpec": "wwwroot\\avatars\\acfe8da4-4ea5-4366-85ef-c7ebe674a748.png"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/ad168a1b-cd18-4d22-8222-8432ff298567.jpg",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\ad168a1b-cd18-4d22-8222-8432ff298567.jpg",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "avatars/ad168a1b-cd18-4d22-8222-8432ff298567.jpg",
       "AssetKind": "All",
@@ -166,13 +185,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/avatars/ad168a1b-cd18-4d22-8222-8432ff298567.jpg"
+      "OriginalItemSpec": "wwwroot\\avatars\\ad168a1b-cd18-4d22-8222-8432ff298567.jpg"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/b3c91469-d489-4a0c-8e7b-722234234eb7.jpg",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\b3c91469-d489-4a0c-8e7b-722234234eb7.jpg",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "avatars/b3c91469-d489-4a0c-8e7b-722234234eb7.jpg",
       "AssetKind": "All",
@@ -185,13 +204,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/avatars/b3c91469-d489-4a0c-8e7b-722234234eb7.jpg"
+      "OriginalItemSpec": "wwwroot\\avatars\\b3c91469-d489-4a0c-8e7b-722234234eb7.jpg"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/b9778e18-7996-4aaf-b246-6c163eea76d0.jpg",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\b9778e18-7996-4aaf-b246-6c163eea76d0.jpg",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "avatars/b9778e18-7996-4aaf-b246-6c163eea76d0.jpg",
       "AssetKind": "All",
@@ -204,13 +223,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/avatars/b9778e18-7996-4aaf-b246-6c163eea76d0.jpg"
+      "OriginalItemSpec": "wwwroot\\avatars\\b9778e18-7996-4aaf-b246-6c163eea76d0.jpg"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/avatars/e2e52983-6cd4-421b-b54c-39bba91619c8.jpg",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\avatars\\e2e52983-6cd4-421b-b54c-39bba91619c8.jpg",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "avatars/e2e52983-6cd4-421b-b54c-39bba91619c8.jpg",
       "AssetKind": "All",
@@ -223,13 +242,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/avatars/e2e52983-6cd4-421b-b54c-39bba91619c8.jpg"
+      "OriginalItemSpec": "wwwroot\\avatars\\e2e52983-6cd4-421b-b54c-39bba91619c8.jpg"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/ab_wheel.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\ab_wheel.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "exercises/ab_wheel.png",
       "AssetKind": "All",
@@ -242,13 +261,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/exercises/ab_wheel.png"
+      "OriginalItemSpec": "wwwroot\\exercises\\ab_wheel.png"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/arnold_press.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\arnold_press.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "exercises/arnold_press.png",
       "AssetKind": "All",
@@ -261,13 +280,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/exercises/arnold_press.png"
+      "OriginalItemSpec": "wwwroot\\exercises\\arnold_press.png"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/barbell_curl.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\barbell_curl.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "exercises/barbell_curl.png",
       "AssetKind": "All",
@@ -280,13 +299,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/exercises/barbell_curl.png"
+      "OriginalItemSpec": "wwwroot\\exercises\\barbell_curl.png"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/barbell_row.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\barbell_row.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "exercises/barbell_row.png",
       "AssetKind": "All",
@@ -299,13 +318,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/exercises/barbell_row.png"
+      "OriginalItemSpec": "wwwroot\\exercises\\barbell_row.png"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/behind_neck_press.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\behind_neck_press.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "exercises/behind_neck_press.png",
       "AssetKind": "All",
@@ -318,13 +337,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/exercises/behind_neck_press.png"
+      "OriginalItemSpec": "wwwroot\\exercises\\behind_neck_press.png"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/bench_press.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\bench_press.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "exercises/bench_press.png",
       "AssetKind": "All",
@@ -337,13 +356,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/exercises/bench_press.png"
+      "OriginalItemSpec": "wwwroot\\exercises\\bench_press.png"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/cable_crunch.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\cable_crunch.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "exercises/cable_crunch.png",
       "AssetKind": "All",
@@ -356,13 +375,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/exercises/cable_crunch.png"
+      "OriginalItemSpec": "wwwroot\\exercises\\cable_crunch.png"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/calf_raise.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\calf_raise.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "exercises/calf_raise.png",
       "AssetKind": "All",
@@ -375,13 +394,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/exercises/calf_raise.png"
+      "OriginalItemSpec": "wwwroot\\exercises\\calf_raise.png"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/close_grip_pushup.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\close_grip_pushup.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "exercises/close_grip_pushup.png",
       "AssetKind": "All",
@@ -394,13 +413,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/exercises/close_grip_pushup.png"
+      "OriginalItemSpec": "wwwroot\\exercises\\close_grip_pushup.png"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/concentration_curl.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\concentration_curl.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "exercises/concentration_curl.png",
       "AssetKind": "All",
@@ -413,13 +432,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/exercises/concentration_curl.png"
+      "OriginalItemSpec": "wwwroot\\exercises\\concentration_curl.png"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/crossover.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\crossover.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "exercises/crossover.png",
       "AssetKind": "All",
@@ -432,13 +451,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/exercises/crossover.png"
+      "OriginalItemSpec": "wwwroot\\exercises\\crossover.png"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/crunches.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\crunches.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "exercises/crunches.png",
       "AssetKind": "All",
@@ -451,13 +470,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/exercises/crunches.png"
+      "OriginalItemSpec": "wwwroot\\exercises\\crunches.png"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/deadlift.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\deadlift.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "exercises/deadlift.png",
       "AssetKind": "All",
@@ -470,13 +489,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/exercises/deadlift.png"
+      "OriginalItemSpec": "wwwroot\\exercises\\deadlift.png"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/dips.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\dips.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "exercises/dips.png",
       "AssetKind": "All",
@@ -489,13 +508,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/exercises/dips.png"
+      "OriginalItemSpec": "wwwroot\\exercises\\dips.png"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/dumbbell_fly.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\dumbbell_fly.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "exercises/dumbbell_fly.png",
       "AssetKind": "All",
@@ -508,13 +527,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/exercises/dumbbell_fly.png"
+      "OriginalItemSpec": "wwwroot\\exercises\\dumbbell_fly.png"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/dumbbell_press.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\dumbbell_press.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "exercises/dumbbell_press.png",
       "AssetKind": "All",
@@ -527,13 +546,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/exercises/dumbbell_press.png"
+      "OriginalItemSpec": "wwwroot\\exercises\\dumbbell_press.png"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/dumbbell_row.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\dumbbell_row.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "exercises/dumbbell_row.png",
       "AssetKind": "All",
@@ -546,13 +565,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/exercises/dumbbell_row.png"
+      "OriginalItemSpec": "wwwroot\\exercises\\dumbbell_row.png"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/french_press.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\french_press.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "exercises/french_press.png",
       "AssetKind": "All",
@@ -565,13 +584,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/exercises/french_press.png"
+      "OriginalItemSpec": "wwwroot\\exercises\\french_press.png"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/front_raises.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\front_raises.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "exercises/front_raises.png",
       "AssetKind": "All",
@@ -584,13 +603,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/exercises/front_raises.png"
+      "OriginalItemSpec": "wwwroot\\exercises\\front_raises.png"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/hack_squat.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\hack_squat.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "exercises/hack_squat.png",
       "AssetKind": "All",
@@ -603,13 +622,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/exercises/hack_squat.png"
+      "OriginalItemSpec": "wwwroot\\exercises\\hack_squat.png"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/hammer_curl.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\hammer_curl.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "exercises/hammer_curl.png",
       "AssetKind": "All",
@@ -622,13 +641,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/exercises/hammer_curl.png"
+      "OriginalItemSpec": "wwwroot\\exercises\\hammer_curl.png"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/hyperextensions.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\hyperextensions.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "exercises/hyperextensions.png",
       "AssetKind": "All",
@@ -641,13 +660,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/exercises/hyperextensions.png"
+      "OriginalItemSpec": "wwwroot\\exercises\\hyperextensions.png"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/incline_dumbbell_press.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\incline_dumbbell_press.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "exercises/incline_dumbbell_press.png",
       "AssetKind": "All",
@@ -660,13 +679,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/exercises/incline_dumbbell_press.png"
+      "OriginalItemSpec": "wwwroot\\exercises\\incline_dumbbell_press.png"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/lat_pulldown.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\lat_pulldown.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "exercises/lat_pulldown.png",
       "AssetKind": "All",
@@ -679,13 +698,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/exercises/lat_pulldown.png"
+      "OriginalItemSpec": "wwwroot\\exercises\\lat_pulldown.png"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/lateral_raises.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\lateral_raises.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "exercises/lateral_raises.png",
       "AssetKind": "All",
@@ -698,13 +717,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/exercises/lateral_raises.png"
+      "OriginalItemSpec": "wwwroot\\exercises\\lateral_raises.png"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/leg_curl.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\leg_curl.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "exercises/leg_curl.png",
       "AssetKind": "All",
@@ -717,13 +736,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/exercises/leg_curl.png"
+      "OriginalItemSpec": "wwwroot\\exercises\\leg_curl.png"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/leg_extension.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\leg_extension.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "exercises/leg_extension.png",
       "AssetKind": "All",
@@ -736,13 +755,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/exercises/leg_extension.png"
+      "OriginalItemSpec": "wwwroot\\exercises\\leg_extension.png"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/leg_press.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\leg_press.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "exercises/leg_press.png",
       "AssetKind": "All",
@@ -755,13 +774,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/exercises/leg_press.png"
+      "OriginalItemSpec": "wwwroot\\exercises\\leg_press.png"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/leg_raises.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\leg_raises.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "exercises/leg_raises.png",
       "AssetKind": "All",
@@ -774,13 +793,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/exercises/leg_raises.png"
+      "OriginalItemSpec": "wwwroot\\exercises\\leg_raises.png"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/lunges.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\lunges.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "exercises/lunges.png",
       "AssetKind": "All",
@@ -793,13 +812,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/exercises/lunges.png"
+      "OriginalItemSpec": "wwwroot\\exercises\\lunges.png"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/overhead_triceps_extension.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\overhead_triceps_extension.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "exercises/overhead_triceps_extension.png",
       "AssetKind": "All",
@@ -812,13 +831,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/exercises/overhead_triceps_extension.png"
+      "OriginalItemSpec": "wwwroot\\exercises\\overhead_triceps_extension.png"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/pec_deck.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\pec_deck.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "exercises/pec_deck.png",
       "AssetKind": "All",
@@ -831,13 +850,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/exercises/pec_deck.png"
+      "OriginalItemSpec": "wwwroot\\exercises\\pec_deck.png"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/plank.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\plank.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "exercises/plank.png",
       "AssetKind": "All",
@@ -850,13 +869,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/exercises/plank.png"
+      "OriginalItemSpec": "wwwroot\\exercises\\plank.png"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/plie_squat.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\plie_squat.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "exercises/plie_squat.png",
       "AssetKind": "All",
@@ -869,13 +888,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/exercises/plie_squat.png"
+      "OriginalItemSpec": "wwwroot\\exercises\\plie_squat.png"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/pull_ups.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\pull_ups.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "exercises/pull_ups.png",
       "AssetKind": "All",
@@ -888,13 +907,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/exercises/pull_ups.png"
+      "OriginalItemSpec": "wwwroot\\exercises\\pull_ups.png"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/pushups.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\pushups.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "exercises/pushups.png",
       "AssetKind": "All",
@@ -907,13 +926,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/exercises/pushups.png"
+      "OriginalItemSpec": "wwwroot\\exercises\\pushups.png"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/rear_delt_fly.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\rear_delt_fly.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "exercises/rear_delt_fly.png",
       "AssetKind": "All",
@@ -926,13 +945,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/exercises/rear_delt_fly.png"
+      "OriginalItemSpec": "wwwroot\\exercises\\rear_delt_fly.png"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/rear_delt_machine.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\rear_delt_machine.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "exercises/rear_delt_machine.png",
       "AssetKind": "All",
@@ -945,13 +964,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/exercises/rear_delt_machine.png"
+      "OriginalItemSpec": "wwwroot\\exercises\\rear_delt_machine.png"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/roman_chair_situp.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\roman_chair_situp.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "exercises/roman_chair_situp.png",
       "AssetKind": "All",
@@ -964,13 +983,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/exercises/roman_chair_situp.png"
+      "OriginalItemSpec": "wwwroot\\exercises\\roman_chair_situp.png"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/russian_twist.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\russian_twist.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "exercises/russian_twist.png",
       "AssetKind": "All",
@@ -983,13 +1002,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/exercises/russian_twist.png"
+      "OriginalItemSpec": "wwwroot\\exercises\\russian_twist.png"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/scott_curl.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\scott_curl.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "exercises/scott_curl.png",
       "AssetKind": "All",
@@ -1002,13 +1021,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/exercises/scott_curl.png"
+      "OriginalItemSpec": "wwwroot\\exercises\\scott_curl.png"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/seated_row.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\seated_row.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "exercises/seated_row.png",
       "AssetKind": "All",
@@ -1021,13 +1040,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/exercises/seated_row.png"
+      "OriginalItemSpec": "wwwroot\\exercises\\seated_row.png"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/side_plank.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\side_plank.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "exercises/side_plank.png",
       "AssetKind": "All",
@@ -1040,13 +1059,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/exercises/side_plank.png"
+      "OriginalItemSpec": "wwwroot\\exercises\\side_plank.png"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/smith_machine_press.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\smith_machine_press.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "exercises/smith_machine_press.png",
       "AssetKind": "All",
@@ -1059,13 +1078,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/exercises/smith_machine_press.png"
+      "OriginalItemSpec": "wwwroot\\exercises\\smith_machine_press.png"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/squat.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\squat.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "exercises/squat.png",
       "AssetKind": "All",
@@ -1078,13 +1097,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/exercises/squat.png"
+      "OriginalItemSpec": "wwwroot\\exercises\\squat.png"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/t_bar_row.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\t_bar_row.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "exercises/t_bar_row.png",
       "AssetKind": "All",
@@ -1097,13 +1116,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/exercises/t_bar_row.png"
+      "OriginalItemSpec": "wwwroot\\exercises\\t_bar_row.png"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/triceps_pushdown.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\triceps_pushdown.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "exercises/triceps_pushdown.png",
       "AssetKind": "All",
@@ -1116,13 +1135,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/exercises/triceps_pushdown.png"
+      "OriginalItemSpec": "wwwroot\\exercises\\triceps_pushdown.png"
     },
     {
-      "Identity": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/exercises/upright_row.png",
+      "Identity": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\exercises\\upright_row.png",
       "SourceId": "FitAppAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/",
+      "ContentRoot": "C:\\myData\\Knowledge\\Projects\\FitApp\\FitAppAPI\\FitAppAPI\\wwwroot\\",
       "BasePath": "_content/FitAppAPI",
       "RelativePath": "exercises/upright_row.png",
       "AssetKind": "All",
@@ -1135,7 +1154,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/exercises/upright_row.png"
+      "OriginalItemSpec": "wwwroot\\exercises\\upright_row.png"
     }
   ]
 }
