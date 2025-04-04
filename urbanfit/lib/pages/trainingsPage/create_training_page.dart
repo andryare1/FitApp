@@ -115,7 +115,7 @@ class _CreateTrainingPageState extends State<CreateTrainingPage> {
     );
   }
 
- Widget _buildExerciseCard(Map<String, dynamic> exercise, int index) {
+Widget _buildExerciseCard(Map<String, dynamic> exercise, int index) {
   return Dismissible(
     key: ValueKey(exercise['id']),
     direction: DismissDirection.endToStart,
@@ -140,33 +140,66 @@ class _CreateTrainingPageState extends State<CreateTrainingPage> {
       ),
     ),
     onDismissed: (direction) {
-      _removeExercise(exercise); // Удаление упражнения
+      _removeExercise(exercise);
     },
     child: Card(
       key: ValueKey(exercise['id']),
       margin: const EdgeInsets.symmetric(vertical: 4),
-      child: ListTile(
-        title: Text(exercise['name']),
-        subtitle: Text('${exercise['sets']}x${exercise['reps']} ${exercise['weight']}кг'),
-        leading: Image.network(
-          exercise['imageUrl'],
-          width: 50,
-          height: 50,
-          fit: BoxFit.cover,
-          errorBuilder: (context, error, stackTrace) {
-            return const Icon(Icons.error);
-          },
-        ),
-        trailing: Row(
-          mainAxisSize: MainAxisSize.min,
+      child: Container(
+        padding: const EdgeInsets.all(8),
+        child: Row(
           children: [
-            IconButton(
-              icon: const Icon(Icons.edit),
-              onPressed: () => _editExerciseParams(context, exercise),
+            // Изображение упражнения
+            Container(
+              width: 60,
+              height: 60,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(8),
+                image: DecorationImage(
+                  image: NetworkImage(exercise['imageUrl']),
+                  fit: BoxFit.cover,
+                  onError: (exception, stackTrace) {
+                    // Обработка ошибки загрузки изображения
+                  },
+                ),
+              ),
+              child: exercise['imageUrl'] == null || exercise['imageUrl'].isEmpty
+                  ? const Icon(Icons.fitness_center)
+                  : null,
             ),
-            ReorderableDragStartListener(
-              index: index,
-              child: const Icon(Icons.drag_handle, color: Colors.grey),
+            const SizedBox(width: 12),
+            // Название и параметры упражнения
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    exercise['name'],
+                    style: const TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 16,
+                    ),
+                  ),
+                  Text(
+                    '${exercise['sets']}x${exercise['reps']} ${exercise['weight']}кг',
+                    style: const TextStyle(color: Colors.grey),
+                  ),
+                ],
+              ),
+            ),
+            // Кнопки управления
+            Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                IconButton(
+                  icon: const Icon(Icons.edit),
+                  onPressed: () => _editExerciseParams(context, exercise),
+                ),
+                ReorderableDragStartListener(
+                  index: index,
+                  child: const Icon(Icons.drag_handle, color: Colors.grey),
+                ),
+              ],
             ),
           ],
         ),

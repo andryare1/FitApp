@@ -1,9 +1,12 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 
 class ExerciseParamsDialog extends StatefulWidget {
   final Map<String, dynamic> exercise;
 
-  const ExerciseParamsDialog({Key? key, required this.exercise}) : super(key: key);
+  const ExerciseParamsDialog({Key? key, required this.exercise})
+      : super(key: key);
 
   @override
   _ExerciseParamsDialogState createState() => _ExerciseParamsDialogState();
@@ -13,13 +16,19 @@ class _ExerciseParamsDialogState extends State<ExerciseParamsDialog> {
   late final TextEditingController _setsController;
   late final TextEditingController _repsController;
   late final TextEditingController _weightController;
+  late final TextEditingController _commentController;
 
   @override
   void initState() {
     super.initState();
-    _setsController = TextEditingController(text: (widget.exercise['sets'] ?? 3).toString());
-    _repsController = TextEditingController(text: (widget.exercise['reps'] ?? 10).toString());
-    _weightController = TextEditingController(text: (widget.exercise['weight'] ?? 0.0).toString());
+    _setsController =
+        TextEditingController(text: (widget.exercise['sets'] ?? 3).toString());
+    _repsController =
+        TextEditingController(text: (widget.exercise['reps'] ?? 10).toString());
+    _weightController = TextEditingController(
+        text: (widget.exercise['weight'] ?? 0.0).toString());
+    _commentController = TextEditingController(
+        text: (widget.exercise['comment'] ?? '').toString());
   }
 
   @override
@@ -27,6 +36,7 @@ class _ExerciseParamsDialogState extends State<ExerciseParamsDialog> {
     _setsController.dispose();
     _repsController.dispose();
     _weightController.dispose();
+    _commentController.dispose();
     super.dispose();
   }
 
@@ -64,6 +74,16 @@ class _ExerciseParamsDialogState extends State<ExerciseParamsDialog> {
               ),
               keyboardType: TextInputType.number,
             ),
+            const SizedBox(height: 16),
+            TextField(
+              controller: _commentController,
+              decoration: const InputDecoration(
+                labelText: 'Комментарий',
+                border: OutlineInputBorder(),
+              ),
+              keyboardType:TextInputType.text,
+            ),
+            const SizedBox(height: 16),
           ],
         ),
       ),
@@ -77,7 +97,8 @@ class _ExerciseParamsDialogState extends State<ExerciseParamsDialog> {
             final updatedExercise = Map<String, dynamic>.from(widget.exercise)
               ..['sets'] = int.tryParse(_setsController.text) ?? 3
               ..['reps'] = int.tryParse(_repsController.text) ?? 10
-              ..['weight'] = double.tryParse(_weightController.text) ?? 0.0;
+              ..['weight'] = double.tryParse(_weightController.text) ?? 0.0
+              ..['comment'] = _commentController.text.trim().isEmpty ? null : _commentController.text.trim();
             Navigator.pop(context, updatedExercise);
           },
           child: const Text('Сохранить'),
