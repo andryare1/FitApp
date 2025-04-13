@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:urbanfit/models/training.dart';
 import 'package:urbanfit/pages/trainingsPage/create_training_page.dart';
+import 'package:urbanfit/pages/trainingsPage/training_detail_page.dart';
 import 'package:urbanfit/services/training_service.dart';
 
 
@@ -87,75 +88,86 @@ class _TrainingsPageState extends State<TrainingsPage> {
   }
 
  Widget _buildTrainingsList(List<Training> trainings) {
-  return ListView.separated( // Используем ListView.separated вместо builder
+  return ListView.separated(
     padding: const EdgeInsets.symmetric(vertical: 8),
     itemCount: trainings.length,
-    separatorBuilder: (context, index) => const SizedBox(height: 8), // Отступ между элементами
+    separatorBuilder: (context, index) => const SizedBox(height: 8),
     itemBuilder: (context, index) {
       final training = trainings[index];
       return Padding(
         padding: const EdgeInsets.symmetric(horizontal: 16),
-        child: ClipRRect(
-          borderRadius: BorderRadius.circular(12),
-          child: Dismissible(
-            key: ValueKey(training.id),
-            direction: DismissDirection.endToStart,
-            background: Container(
+        child: Dismissible(
+          key: ValueKey(training.id),
+          direction: DismissDirection.endToStart,
+          background: Container(
+            decoration: BoxDecoration(
               color: Colors.red,
-              alignment: Alignment.centerRight,
-              padding: const EdgeInsets.only(right: 20),
-              child: const Row(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Icon(Icons.delete, color: Colors.white, size: 24),
-                  SizedBox(width: 8),
-                  Text(
-                    'Удалить',
+              borderRadius: BorderRadius.circular(12),
+            ),
+            alignment: Alignment.centerRight,
+            padding: const EdgeInsets.only(right: 20),
+            child: const Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Icon(Icons.delete, color: Colors.white, size: 24),
+                SizedBox(width: 8),
+                Text(
+                  'Удалить',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 16,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          onDismissed: (direction) => _deleteTraining(training.id),
+          child: Container(
+            decoration: BoxDecoration(
+              color: Theme.of(context).cardColor.withOpacity(0.9),
+              borderRadius: BorderRadius.circular(12),
+              border: Border.all(
+                color: Theme.of(context).dividerColor.withOpacity(0.3),
+                width: 1,
+              ),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black.withOpacity(0.05),
+                  blurRadius: 4,
+                  offset: const Offset(0, 2),
+                ),
+              ],
+            ),
+            child: InkWell(
+              borderRadius: BorderRadius.circular(12),
+              onTap: () => _navigateToTrainingDetails(context, training.id),
+              child: Padding(
+                padding: const EdgeInsets.symmetric(vertical: 12),
+                child: ListTile(
+                  contentPadding: const EdgeInsets.symmetric(horizontal: 16),
+                  title: Text(
+                    training.name,
                     style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
+                      fontWeight: FontWeight.w600,
                       fontSize: 16,
+                      color: Theme.of(context).textTheme.titleLarge?.color,
                     ),
                   ),
-                ],
-              ),
-            ),
-            onDismissed: (direction) => _deleteTraining(training.id),
-            child: Card(
-              margin: EdgeInsets.zero,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(12),
-              ),
-              elevation: 2, // Легкая тень для глубины
-              child: InkWell( // Добавляем эффект нажатия
-                borderRadius: BorderRadius.circular(12),
-                onTap: () => _navigateToTrainingDetails(context, training.id),
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 12),
-                  child: ListTile(
-                    contentPadding: const EdgeInsets.symmetric(horizontal: 16),
-                    title: Text(
-                      training.name,
-                      style: const TextStyle(
-                        fontWeight: FontWeight.w500,
-                        fontSize: 16,
+                  subtitle: Padding(
+                    padding: const EdgeInsets.only(top: 4),
+                    child: Text(
+                      _formatDate(training.createdAt),
+                      style: TextStyle(
+                        color: Theme.of(context).textTheme.bodySmall?.color,
+                        fontSize: 14,
                       ),
                     ),
-                    subtitle: Padding(
-                      padding: const EdgeInsets.only(top: 4),
-                      child: Text(
-                        _formatDate(training.createdAt),
-                        style: TextStyle(
-                          color: Colors.grey[600],
-                          fontSize: 14,
-                        ),
-                      ),
-                    ),
-                    trailing: Icon(
-                      Icons.chevron_right,
-                      color: Theme.of(context).primaryColor,
-                      size: 28,
-                    ),
+                  ),
+                  trailing: Icon(
+                    Icons.chevron_right,
+                    color: Theme.of(context).primaryColor,
+                    size: 28,
                   ),
                 ),
               ),
@@ -179,10 +191,11 @@ class _TrainingsPageState extends State<TrainingsPage> {
   }
 
   void _navigateToTrainingDetails(BuildContext context, int trainingId) {
-    // TODO: Реализовать переход к деталям тренировки
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(content: Text('Открываем тренировку $trainingId')),
-    );
+   
+   Navigator.push (
+    context,
+    MaterialPageRoute(builder: (context) => TrainingDetailsPage(trainingId: trainingId)),
+   ).then((_) => _loadTrainings());
   }
 
   void _deleteTraining(int trainingId) async {

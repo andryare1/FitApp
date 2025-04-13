@@ -6,7 +6,7 @@ class TrainingExercise {
   final int reps;
   final double weight;
   final int orderIndex;
-  final String? comment;
+  final String? imageUrl;
 
   TrainingExercise({
     required this.id,
@@ -16,7 +16,8 @@ class TrainingExercise {
     this.reps = 10,
     this.weight = 0,
     this.orderIndex = 0,
-    this.comment,
+
+    this.imageUrl,
   });
 
   factory TrainingExercise.fromJson(Map<String, dynamic> json) {
@@ -28,18 +29,18 @@ class TrainingExercise {
       reps: json['reps'],
       weight: json['weight']?.toDouble() ?? 0,
       orderIndex: json['orderIndex'],
-      comment: json['comment'],
+      imageUrl: json['imageUrl'],
     );
   }
 
-Map<String, dynamic> toJson() {
+  Map<String, dynamic> toJson() {
     return {
       'exerciseId': exerciseId,
       'sets': sets,
       'reps': reps,
       'weight': weight,
       'orderIndex': orderIndex, // Оставляем orderIndex
-      'comment': comment,
+      'imageUrl': imageUrl,
     };
   }
 }

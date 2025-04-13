@@ -110,4 +110,68 @@ class TrainingService {
         throw Exception('Ошибка: ${response.statusCode}');
     }
   }
+
+  // Новый метод: Получение тренировки с упражнениями
+  Future<Training> getTrainingWithExercises(int trainingId) async {
+    final token = await _authService.getToken();
+    final response = await http.get(
+      Uri.parse('$_baseUrl/trainings/$trainingId/with-exercises'),
+      headers: _getHeaders(token),
+    );
+
+    return _handleResponse<Training>(
+      response,
+      (body) => Training.fromJson(body),
+    );
+  }
+
+  Future<Training> updateTraining({
+    required int trainingId,
+    String? name,
+    List<TrainingExercise>? exercises,
+    bool returnUpdated = false,
+  }) async {
+    final token = await _authService.getToken();
+    final Map<String, dynamic> requestBody = {};
+
+    if (name != null) requestBody['name'] = name;
+    if (exercises != null) {
+      requestBody['exercises'] = exercises.map((e) => e.toJson()).toList();
+    }
+
+    // Определяем какой HTTP метод использовать
+    final isFullUpdate = name != null && exercises != null;
+    final endpoint = isFullUpdate
+        ? '$_baseUrl/trainings/$trainingId/full'
+        : '$_baseUrl/trainings/$trainingId';
+
+    http.Response response;
+
+    if (isFullUpdate) {
+      response = await http.put(
+        Uri.parse(endpoint),
+        headers: _getHeaders(token),
+        body: jsonEncode(requestBody),
+      );
+    } else {
+      response = await http.patch(
+        Uri.parse(endpoint),
+        headers: _getHeaders(token),
+        body: jsonEncode(requestBody),
+      );
+    }
+
+    if (returnUpdated) {
+      return _handleResponse<Training>(
+        response,
+        (body) => Training.fromJson(body),
+      );
+    } else {
+      _handleResponse<void>(response, (_) => null);
+      if (response.statusCode == 200 || response.statusCode == 201) {
+        return Training.fromJson(json.decode(response.body));
+      }
+      throw Exception('Не удалось обновить тренировку');
+    }
+  }
 }

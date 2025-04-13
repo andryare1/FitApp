@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 
 class ExerciseParamsDialog extends StatefulWidget {
@@ -73,17 +71,7 @@ class _ExerciseParamsDialogState extends State<ExerciseParamsDialog> {
                 border: OutlineInputBorder(),
               ),
               keyboardType: TextInputType.number,
-            ),
-            const SizedBox(height: 16),
-            TextField(
-              controller: _commentController,
-              decoration: const InputDecoration(
-                labelText: 'Комментарий',
-                border: OutlineInputBorder(),
-              ),
-              keyboardType:TextInputType.text,
-            ),
-            const SizedBox(height: 16),
+            ),     
           ],
         ),
       ),

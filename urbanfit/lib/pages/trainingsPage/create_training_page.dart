@@ -280,7 +280,6 @@ Widget _buildExerciseCard(Map<String, dynamic> exercise, int index) {
                 reps: e['reps'] ?? 10,
                 weight: (e['weight'] as num?)?.toDouble() ?? 0.0,
                 orderIndex: _selectedExercises.indexOf(e), // Сохраняем порядок
-                comment: e['comment'],
               ))
           .toList();
 
