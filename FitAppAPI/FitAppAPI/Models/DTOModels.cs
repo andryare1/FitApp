@@ -13,6 +13,7 @@ public class TrainingExerciseDto
     public int Id { get; set; }
     public int ExerciseId { get; set; }
     public string ExerciseName { get; set; }
+    public string ImageUrl { get; set; } 
     public int Sets { get; set; }
     public int Reps { get; set; }
     public decimal Weight { get; set; }
@@ -46,7 +47,6 @@ public class CreateTrainingExerciseDto
 
     public int OrderIndex { get; set; }  // Добавляем OrderIndex
 
-    public string? Comment { get; set; }
 }
 
 public class UpdateTrainingExercisesDto
@@ -60,3 +60,24 @@ public class UpdateTrainingExerciseDto : CreateTrainingExerciseDto
 {
     public int Id { get; set; }
 }
+
+public class UpdateExerciseDto
+{
+    public int ExerciseId { get; set; }
+    public int Sets { get; set; }
+    public int Reps { get; set; }
+    public decimal Weight { get; set; }
+}
+
+public class UpdateTrainingDto
+{
+    public string Name { get; set; }
+    public List<UpdateExerciseDto> Exercises { get; set; }
+}
+
+public class PartialUpdateTrainingDto
+{
+    public string Name { get; set; }
+    public List<UpdateExerciseDto> Exercises { get; set; }
+}
+

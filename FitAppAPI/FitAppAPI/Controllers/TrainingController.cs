@@ -13,21 +13,20 @@ namespace FitAppAPI.Controllers
 {
 
 
-        [ApiController]
-        [Route("api/trainings")]
-        [Authorize]
-        public class TrainingsController : ControllerBase
+    [ApiController]
+    [Route("api/trainings")]
+    [Authorize]
+    public class TrainingsController : ControllerBase
+    {
+        private readonly AppDbContext _context;
+
+        public TrainingsController(AppDbContext context)
         {
-            private readonly AppDbContext _context;
+            _context = context;
+        }
 
-            public TrainingsController(AppDbContext context)
-            {
-                _context = context;
-            }
+        private Guid GetUserId() => Guid.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
 
-            private Guid GetUserId() => Guid.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
-
-            [HttpGet]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<TrainingDto>>> GetTrainings()
         {
@@ -48,6 +47,7 @@ namespace FitAppAPI.Controllers
                             ExerciseId = te.ExerciseId,
                             ExerciseName = te.Exercise.Name,
                             Sets = te.Sets,
+                            ImageUrl = $"{Request.Scheme}://{Request.Host}{te.Exercise.ImageUrl}",
                             Reps = te.Reps,
                             Weight = te.Weight,
                             OrderIndex = te.OrderIndex
@@ -55,6 +55,73 @@ namespace FitAppAPI.Controllers
                         .ToList()
                 })
                 .ToListAsync();
+        }
+
+
+        [HttpGet("{trainingId}/with-exercises")]
+        public async Task<ActionResult<TrainingDto>> GetTrainingWithExercises(int trainingId)
+        {
+            var userId = GetUserId();
+            var training = await _context.Trainings
+                .Include(t => t.TrainingExercises)
+                    .ThenInclude(te => te.Exercise)
+                .FirstOrDefaultAsync(t => t.Id == trainingId && t.UserId == userId);
+
+            if (training == null) return NotFound();
+
+            return new TrainingDto
+            {
+                Id = training.Id,
+                Name = training.Name,
+                CreatedAt = training.CreatedAt,
+                Exercises = training.TrainingExercises
+                    .OrderBy(te => te.OrderIndex)
+                    .Select(te => new TrainingExerciseDto
+                    {
+                        Id = te.Id,
+                        ExerciseId = te.ExerciseId,
+                        ExerciseName = te.Exercise.Name,
+                        ImageUrl = $"{Request.Scheme}://{Request.Host}{te.Exercise.ImageUrl}",
+                        Sets = te.Sets,
+                        Reps = te.Reps,
+                        Weight = te.Weight,
+                        OrderIndex = te.OrderIndex
+                    })
+                    .ToList()
+            };
+        }
+
+
+        [HttpPut("{trainingId}/full")]
+        public async Task<ActionResult<TrainingDto>> UpdateFullTraining(
+    int trainingId,
+    [FromBody] UpdateTrainingDto dto)
+        {
+            var training = await _context.Trainings
+                .Include(t => t.TrainingExercises)
+                .FirstOrDefaultAsync(t => t.Id == trainingId && t.UserId == GetUserId());
+
+            if (training == null) return NotFound();
+
+            // Обновляем название
+            training.Name = dto.Name;
+
+            // Удаляем старые упражнения
+            _context.TrainingExercises.RemoveRange(training.TrainingExercises);
+
+            // Добавляем новые упражнения
+            training.TrainingExercises = dto.Exercises.Select((e, i) => new TrainingExercise
+            {
+                ExerciseId = e.ExerciseId,
+                Sets = e.Sets,
+                Reps = e.Reps,
+                Weight = e.Weight,
+                OrderIndex = i,
+            }).ToList();
+
+            await _context.SaveChangesAsync();
+
+            return await GetTrainingWithExercises(trainingId);
         }
 
         [HttpPost("create-full")]
@@ -85,7 +152,6 @@ namespace FitAppAPI.Controllers
                     Reps = e.Reps,
                     Weight = e.Weight,
                     OrderIndex = e.OrderIndex,
-                    Comment = e.Comment
                 }).ToList()
             };
 
@@ -111,6 +177,7 @@ namespace FitAppAPI.Controllers
                         ExerciseId = te.ExerciseId,
                         ExerciseName = te.Exercise?.Name ?? string.Empty, // Защита от null
                         Sets = te.Sets,
+                        ImageUrl = $"{Request.Scheme}://{Request.Host}{te.Exercise.ImageUrl}", // ?????? проверить
                         Reps = te.Reps,
                         Weight = te.Weight,
                         OrderIndex = te.OrderIndex
@@ -118,19 +185,23 @@ namespace FitAppAPI.Controllers
             });
         }
 
-        [HttpPut("{trainingId}/exercises")]
-            public async Task<IActionResult> UpdateTrainingExercises(
-                int trainingId,
-                [FromBody] UpdateTrainingExercisesDto dto)
+        [HttpPatch("{trainingId}")]
+        public async Task<ActionResult<TrainingDto>> PartialUpdateTraining(
+    int trainingId,
+    [FromBody] PartialUpdateTrainingDto dto)
+        {
+            var training = await _context.Trainings
+                .Include(t => t.TrainingExercises)
+                .FirstOrDefaultAsync(t => t.Id == trainingId && t.UserId == GetUserId());
+
+            if (training == null) return NotFound();
+
+            // Обновляем только те поля, которые пришли
+            if (dto.Name != null) training.Name = dto.Name;
+
+            if (dto.Exercises != null)
             {
-                var training = await _context.Trainings
-                    .Include(t => t.TrainingExercises)
-                    .FirstOrDefaultAsync(t => t.Id == trainingId && t.UserId == GetUserId());
-
-                if (training == null) return NotFound();
-
                 _context.TrainingExercises.RemoveRange(training.TrainingExercises);
-
                 training.TrainingExercises = dto.Exercises.Select((e, i) => new TrainingExercise
                 {
                     ExerciseId = e.ExerciseId,
@@ -138,24 +209,51 @@ namespace FitAppAPI.Controllers
                     Reps = e.Reps,
                     Weight = e.Weight,
                     OrderIndex = i,
-                    Comment = e.Comment
                 }).ToList();
-
-                await _context.SaveChangesAsync();
-                return NoContent();
             }
 
-            [HttpDelete("{trainingId}")]
-            public async Task<IActionResult> DeleteTraining(int trainingId)
+            await _context.SaveChangesAsync();
+            return await GetTrainingWithExercises(trainingId);
+        }
+
+
+
+        [HttpPut("{trainingId}/exercises")]
+        public async Task<IActionResult> UpdateTrainingExercises(
+    int trainingId,
+    [FromBody] UpdateTrainingExercisesDto dto)
+        {
+            var training = await _context.Trainings
+                .Include(t => t.TrainingExercises)
+                .FirstOrDefaultAsync(t => t.Id == trainingId && t.UserId == GetUserId());
+
+            if (training == null) return NotFound();
+
+            _context.TrainingExercises.RemoveRange(training.TrainingExercises);
+            training.TrainingExercises = dto.Exercises.Select((e, i) => new TrainingExercise
             {
-                var training = await _context.Trainings
-                    .FirstOrDefaultAsync(t => t.Id == trainingId && t.UserId == GetUserId());
+                ExerciseId = e.ExerciseId,
+                Sets = e.Sets,
+                Reps = e.Reps,
+                Weight = e.Weight,
+                OrderIndex = i,
+            }).ToList();
 
-                if (training == null) return NotFound();
+            await _context.SaveChangesAsync();
+            return NoContent();
+        }
 
-                _context.Trainings.Remove(training);
-                await _context.SaveChangesAsync();
-                return NoContent();
-            }
+        [HttpDelete("{trainingId}")]
+        public async Task<IActionResult> DeleteTraining(int trainingId)
+        {
+            var training = await _context.Trainings
+                .FirstOrDefaultAsync(t => t.Id == trainingId && t.UserId == GetUserId());
+
+            if (training == null) return NotFound();
+
+            _context.Trainings.Remove(training);
+            await _context.SaveChangesAsync();
+            return NoContent();
         }
     }
+}

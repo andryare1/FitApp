@@ -25,7 +25,6 @@ namespace FitAppAPI.Models {
 
         public decimal Weight { get; set; } // Вес
 
-        public string? Comment { get; set; } // Комментарий
         public int OrderIndex { get; set; } // Порядковый номер
     }
 }
