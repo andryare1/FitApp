@@ -19,6 +19,10 @@ namespace FitAppAPI.Models
         public bool IsDraft { get; set; } = true; // Новое поле
 
         public List<TrainingExercise> TrainingExercises { get; set; } = new();
+
+        public decimal CompletionPercentage { get; set; }
+
+        public ICollection<TrainingSession> Sessions { get; set; }
     }
 
 }

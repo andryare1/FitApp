@@ -63,4 +63,19 @@ public class ExerciseController : ControllerBase
         return Ok(results);
     }
 
+
+    [HttpGet("{id}/muscle-group")]
+    public async Task<ActionResult<object>> GetMuscleGroupByExerciseId(int id)
+    {
+        var muscleGroup = await _context.Exercises
+            .Where(e => e.Id == id)
+            .Select(e => e.MuscleGroup.ToString())
+            .FirstOrDefaultAsync();
+
+        if (muscleGroup == null)
+            return NotFound(new { message = "Упражнение не найдено" });
+
+        return Ok(new { muscleGroup });
+    }
+
 }

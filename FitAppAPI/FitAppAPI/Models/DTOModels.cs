@@ -6,6 +6,7 @@ public class TrainingDto
     public string Name { get; set; }
     public DateTime CreatedAt { get; set; }
     public IEnumerable<TrainingExerciseDto> Exercises { get; set; }
+    public decimal CompletionPercentage { get; set; }
 }
 
 public class TrainingExerciseDto
@@ -18,6 +19,7 @@ public class TrainingExerciseDto
     public int Reps { get; set; }
     public decimal Weight { get; set; }
     public int OrderIndex { get; set; }
+    public decimal CompletionPercentage { get; set; }
 }
 
 public class CreateTrainingDto
@@ -79,5 +81,49 @@ public class PartialUpdateTrainingDto
 {
     public string Name { get; set; }
     public List<UpdateExerciseDto> Exercises { get; set; }
+    public decimal TrainingCompletionPercentage { get; set; }  // Процент выполнения всей тренировки
+}
+
+public class StartExerciseDto
+{
+    public int TrainingId { get; set; }  // Ссылка на тренировку (int)
+    public int ExerciseId { get; set; }  // Ссылка на упражнение (int)
+    public int SetsPlanned { get; set; }  // Количество запланированных подходов
+    public int TrainingSessionId { get; set; }
+}
+
+public class CompleteExerciseDto
+{
+    public int SetsCompleted { get; set; }
+    public bool WasSkipped { get; set; }
+
+    public decimal ExerciseCompletionPercentage { get; set; }  // % выполнения конкретного упражнения
+
+    public decimal TrainingCompletionPercentage { get; set; }  // % выполнения всей тренировки
+}
+
+public class TrainingProgressDto
+{
+    public int Id { get; set; }
+    public int ExerciseId { get; set; }
+    public int SetsPlanned { get; set; }
+    public int SetsSkipped { get; set; }  
+    public int SetsCompleted { get; set; }
+    public bool WasSkipped { get; set; }
+    public DateTime? StartTime { get; set; }
+    public DateTime? EndTime { get; set; }
+
+    public decimal ExerciseCompletionPercentage { get; set; }  // процент выполнения именно этого упражнения
+}
+
+public class TrainingProgressResponseDto
+{
+    public decimal TrainingCompletionPercentage { get; set; }
+    public List<TrainingProgressDto> ProgressList { get; set; }
+}
+
+public class StartTrainingSessionDto
+{
+    public int TrainingId { get; set; }
 }
 
