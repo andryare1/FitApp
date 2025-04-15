@@ -16,6 +16,7 @@ class TrainingService {
       headers: _getHeaders(token),
     );
 
+
     return _handleResponse<List<Training>>(
       response,
       (body) {
@@ -57,22 +58,6 @@ class TrainingService {
       response,
       (body) => Training.fromJson(body),
     );
-  }
-
-  Future<void> updateTrainingExercises({
-    required int trainingId,
-    required List<TrainingExercise> exercises,
-  }) async {
-    final token = await _authService.getToken();
-    final response = await http.put(
-      Uri.parse('$_baseUrl/trainings/$trainingId/exercises'),
-      headers: _getHeaders(token),
-      body: jsonEncode({
-        'exercises': exercises.map((e) => e.toJson()).toList(),
-      }),
-    );
-
-    _handleResponse<void>(response, (_) => null);
   }
 
   Future<void> deleteTraining(int trainingId) async {
@@ -174,4 +159,20 @@ class TrainingService {
       throw Exception('Не удалось обновить тренировку');
     }
   }
+
+  // Новый метод: Завершение тренировки
+  Future<Map<String, dynamic>> finishTraining(int trainingId) async {
+    final token = await _authService.getToken();
+    final response = await http.put(
+      Uri.parse('$_baseUrl/trainings/$trainingId/complete'),
+      headers: _getHeaders(token),
+    );
+
+    return _handleResponse<Map<String, dynamic>>(
+      response,
+      (body) => body,  // Возвращаем данные, например, процент завершения тренировки
+    );
+  }
+
+
 }

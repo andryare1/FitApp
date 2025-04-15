@@ -3,6 +3,7 @@ import 'package:urbanfit/models/training.dart';
 import 'package:urbanfit/models/training_exercise.dart';
 import 'package:urbanfit/pages/trainingsPage/exerciseScreens/exercise_params_dialog.dart';
 import 'package:urbanfit/pages/trainingsPage/exerciseScreens/muscle_group_selection_page.dart';
+import 'package:urbanfit/pages/trainingsPage/startTrainingPage/training_start_page.dart';
 import 'package:urbanfit/services/training_service.dart';
 
 class TrainingDetailsPage extends StatefulWidget {
@@ -330,15 +331,14 @@ class _TrainingDetailsPageState extends State<TrainingDetailsPage> {
   }
 
   void _startTraining(BuildContext context) {
-    // Navigator.pushNamed(
-    //   context,
-    //   '/training-execution',
-    //   arguments: {
-    //     'trainingId': widget.trainingId,
-    //     'exercises': _exercises,
-    //   },
-    // );
-    ScaffoldMessenger.of(context)
-        .showSnackBar(const SnackBar(content: Text('тренировка началась!')));
-  }
+  Navigator.push(
+    context,
+    MaterialPageRoute(
+      builder: (context) => TrainingStartPage(
+        trainingId: widget.trainingId,
+        exercises: _exercises,
+      ),
+    ),
+  );
+}
 }
