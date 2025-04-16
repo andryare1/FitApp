@@ -35,27 +35,27 @@ class _TrainingStartPageState extends State<TrainingStartPage> {
   late int _currentProgressId;
   int? _sessionId; // ID сессии тренировки
 
-  List<Map<String, dynamic>> _exerciseStats = [];
+  final List<Map<String, dynamic>> _exerciseStats = [];
 
-@override
-void initState() {
-  super.initState();
-  print("Передача упражнений: ${widget.exercises}"); // Выводим данные в консоль
-  _exercises = List.from(widget.exercises);
-  _currentExerciseIndex = 0;
-  _currentSet = 1;
-  _totalSets = _exercises[_currentExerciseIndex]['sets'];
-  _createTrainingSession(); // создаем сессию
-  _loadMuscleGroup();
-  _startTimer();
-}
+  @override
+  void initState() {
+    super.initState();
+    _exercises = List.from(widget.exercises);
+    _currentExerciseIndex = 0;
+    _currentSet = 1;
+    _totalSets = _exercises[_currentExerciseIndex]['sets'];
+    _createTrainingSession(); // создаем сессию
+    _loadMuscleGroup();
+    _startTimer();
+  }
 
   Future<void> _createTrainingSession() async {
     final token = await _authService.getToken();
     if (token == null) return;
 
     try {
-      final sessionId = await _exerciseService.startTrainingSession(widget.trainingId, token);
+      final sessionId =
+          await _exerciseService.startTrainingSession(widget.trainingId, token);
       if (!mounted) return;
       setState(() {
         _sessionId = sessionId;
@@ -72,53 +72,41 @@ void initState() {
     final token = await _authService.getToken();
     if (token == null) return;
     final exerciseId = _exercises[_currentExerciseIndex]['exerciseId'];
-    final muscleGroupRaw = await _exerciseService.getMuscleGroupByExerciseId(exerciseId, token);
+    final muscleGroupRaw =
+        await _exerciseService.getMuscleGroupByExerciseId(exerciseId, token);
     if (!mounted) return;
     setState(() {
       _muscleGroup = getMuscleGroupName(muscleGroupRaw);
-     
     });
   }
 
-Future<void> _startExerciseProgress() async {
-  // Логирование начала работы метода
-  print("Starting exercise progress...");
+  Future<void> _startExerciseProgress() async {
 
-  final token = await _authService.getToken();
-  if (token == null || _sessionId == null) {
-    print("Error: Token or SessionId is null");
-    return;
+    final token = await _authService.getToken();
+    if (token == null || _sessionId == null) {
+      return;
+    }
+
+    final exerciseId = _exercises[_currentExerciseIndex]['exerciseId'];
+    final setsPlanned = _exercises[_currentExerciseIndex]['sets'];
+
+    try {
+      final progressId = await _exerciseService.startExerciseProgress(
+        widget.trainingId,
+        exerciseId,
+        setsPlanned,
+        token,
+        sessionId: _sessionId!,
+      );
+      if (!mounted) return;
+      setState(() {
+        _currentProgressId = progressId;
+      });
+    } catch (e) {
+      // Логирование ошибок
+      print("Error occurred while starting exercise progress: $e");
+    }
   }
-
-  final exerciseId = _exercises[_currentExerciseIndex]['exerciseId'];
-  final setsPlanned = _exercises[_currentExerciseIndex]['sets'];
-
-  // Логирование значений
-  print('Using sessionId = $_sessionId');
-  print('ExerciseId: $exerciseId, SetsPlanned: $setsPlanned');
-
-  try {
-    final progressId = await _exerciseService.startExerciseProgress(
-      widget.trainingId,
-      exerciseId,
-      setsPlanned,
-      token,
-      sessionId: _sessionId!,
-    );
-
-    // Логирование ответа от API
-    print("Received progressId: $progressId");
-
-    if (!mounted) return;
-    setState(() {
-      _currentProgressId = progressId;
-    });
-
-  } catch (e) {
-    // Логирование ошибок
-    print("Error occurred while starting exercise progress: $e");
-  }
-}
 
   Future<void> _completeExercise({bool skipped = false}) async {
     final token = await _authService.getToken();
@@ -218,7 +206,7 @@ Future<void> _startExerciseProgress() async {
       );
 
       // Проверка успешного ответа от сервера
-      if (response != null && response['completionPercentage'] != null) {
+      if (response['completionPercentage'] != null) {
         // Перенаправляем на страницу результатов с данными тренировки
         Navigator.pushReplacement(
           context,
@@ -287,11 +275,16 @@ Future<void> _startExerciseProgress() async {
     final exercise = _exercises[_currentExerciseIndex];
     return Scaffold(
       appBar: AppBar(
-        title: Text('${_currentExerciseIndex + 1}/${_exercises.length} ${_muscleGroup}'),
+        title: Text(
+            '${_currentExerciseIndex + 1}/${_exercises.length} $_muscleGroup'),
         actions: [
           Padding(
             padding: const EdgeInsets.all(16),
-            child: Center(child: Text(_formatTime(_elapsedTime))),
+            child: Center(
+                child: Text(
+              _formatTime(_elapsedTime),
+              style: const TextStyle(fontWeight: FontWeight.bold),
+            )),
           ),
         ],
       ),
@@ -304,6 +297,7 @@ Future<void> _startExerciseProgress() async {
       body: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
               height: 180,
@@ -315,28 +309,116 @@ Future<void> _startExerciseProgress() async {
               child: const Center(child: Text('Видео упражнения')),
             ),
             const SizedBox(height: 16),
-            Text('Упражнение: ${exercise['name']}', style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+            TweenAnimationBuilder<double>(
+              tween: Tween<double>(
+                begin: 0,
+                end: (_currentExerciseIndex + _currentSet / _totalSets) /
+                    _exercises.length,
+              ),
+              duration: const Duration(milliseconds: 500),
+              builder: (context, value, child) {
+                return LinearProgressIndicator(
+                  value: value,
+                );
+              },
+            ),
+            const SizedBox(height: 16),
+            Text(
+              'Упражнение: ${exercise['name']}',
+              style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(height: 4),
             Text('Сеты: $_currentSet/$_totalSets'),
-            TextField(
-              controller: _weightController,
-              keyboardType: TextInputType.number,
-              decoration: const InputDecoration(labelText: 'Вес'),
-            ),
-            TextField(
-              controller: _repsController,
-              keyboardType: TextInputType.number,
-              decoration: const InputDecoration(labelText: 'Повторения'),
-            ),
+            const SizedBox(height: 16),
+
+            // Вес и повторения в одну строку
             Row(
               children: [
-                ElevatedButton(
-                  onPressed: _addSetData,
-                  child: const Text('Добавить данные'),
+                Expanded(
+                  child: TextField(
+                    controller: _weightController,
+                    enabled: _isTimerRunning,
+                    keyboardType: TextInputType.number,
+                    textAlign: TextAlign.center,
+                    decoration: InputDecoration(
+                      labelText: 'Вес (кг)',
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                    ),
+                  ),
                 ),
                 const SizedBox(width: 8),
-                ElevatedButton(
-                  onPressed: _skipSet,
-                  child: const Text('Пропустить подход'),
+                Expanded(
+                  child: TextField(
+                    controller: _repsController,
+                    enabled: _isTimerRunning,
+                    keyboardType: TextInputType.number,
+                    textAlign: TextAlign.center,
+                    decoration: InputDecoration(
+                      labelText: 'Повторения',
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                    ),
+                  ),
+                ),
+                const SizedBox(width: 8),
+                // Кнопка +
+                SizedBox(
+                  height: 56,
+                  width: 56,
+                  child: ElevatedButton(
+                    onPressed: _isTimerRunning ? _addSetData : null,
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: const Color.fromARGB(255, 83, 174, 86),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(16),
+                      ),
+                      padding: EdgeInsets.zero, // Убираем внутренние отступы
+                      alignment: Alignment.center, // Центрируем контент
+                      minimumSize: const Size(56, 56), // Четко задаем размер
+                    ),
+                    child: const Icon(
+                      Icons.add,
+                      color: Colors.white,
+                      size:
+                          24, // Можно уменьшить или увеличить при необходимости
+                    ),
+                  ),
+                ),
+              ],
+            ),
+
+            const SizedBox(height: 16),
+
+            // Пропустить подход и упражнение
+            Row(
+              children: [
+                Expanded(
+                  child: ElevatedButton(
+                    onPressed: _isTimerRunning ? _skipSet : null,
+                    style: ElevatedButton.styleFrom(
+                      padding: const EdgeInsets.symmetric(vertical: 16),
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(12)),
+                    ),
+                    child: const Text('Пропустить подход'),
+                  ),
+                ),
+                const SizedBox(width: 12),
+                Expanded(
+                  child: ElevatedButton(
+                    onPressed: _isTimerRunning
+                        ? () => _nextExercise(skipped: true)
+                        : null,
+                    style: ElevatedButton.styleFrom(
+                      padding: const EdgeInsets.symmetric(vertical: 16),
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(12)),
+                    ),
+                    child: const Text('Пропустить упражнение'),
+                  ),
                 ),
               ],
             ),

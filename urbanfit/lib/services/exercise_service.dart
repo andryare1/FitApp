@@ -1,5 +1,3 @@
-
-
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 
@@ -94,8 +92,6 @@ Future<void> completeExerciseProgress(
 Future<int> startExerciseProgress(
     int trainingId, int exerciseId, int setsPlanned, String token, {required int sessionId}) async {
 
-  print("startExerciseProgress called with TrainingId: $trainingId, ExerciseId: $exerciseId, SetsPlanned: $setsPlanned, SessionId: $sessionId");
-
   try {
     final response = await http.post(
       Uri.parse('$baseUrl/api/trainings/progress'),
@@ -108,17 +104,12 @@ Future<int> startExerciseProgress(
       }),
     );
 
-    print("Request sent to API: ${response.request?.url}, Response Status: ${response.statusCode}");
-
     final responseData = _handleResponse<Map<String, dynamic>>(response, (data) {
       return data;
     });
 
-    print("Received response data: $responseData");
-
     return responseData['id'];
   } catch (e) {
-    print("Error occurred while starting exercise progress: $e");
     rethrow;  // Re-throw the error to handle it outside if needed
   }
 }

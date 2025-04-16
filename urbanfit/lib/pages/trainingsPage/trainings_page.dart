@@ -273,13 +273,11 @@ class _TrainingsPageState extends State<TrainingsPage> {
         );
         return;
       }
-
       final training =
           await _trainingService.getTrainingWithExercises(trainingId);
 
       // Преобразуем список упражнений в List<Map<String, dynamic>>
       final exercises = training.exercises.map((exercise) {
-        print('Exercise: ${exercise.exerciseName}');
         return {
           'id': exercise.id,
           'exerciseId': exercise.exerciseId,
@@ -293,7 +291,6 @@ class _TrainingsPageState extends State<TrainingsPage> {
       }).toList();
 
       if (!mounted) return;
-      _loadTrainings();
       Navigator.push(
         context,
         MaterialPageRoute(
@@ -302,7 +299,7 @@ class _TrainingsPageState extends State<TrainingsPage> {
             exercises: exercises, // Передаем список Map
           ),
         ),
-      );
+      ).then((_) => _loadTrainings());
     } catch (e) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text('Ошибка при загрузке упражнений: $e')),
