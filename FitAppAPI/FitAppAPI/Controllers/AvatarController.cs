@@ -17,13 +17,11 @@ namespace FitAppAPI.Controllers
         private readonly AppDbContext _context;
         private readonly JwtService _jwtService; // Добавлен сервис JWT для работы с токенами
         private readonly string _avatarFolderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "avatars");
-        private readonly ILogger<AvatarController> _logger;
 
-        public AvatarController(AppDbContext context, JwtService jwtService, ILogger<AvatarController> logger)
+        public AvatarController(AppDbContext context, JwtService jwtService)
         {
             _context = context;
             _jwtService = jwtService;
-            _logger = logger; // Инициализация логера
         }
 
         [HttpPost("upload")]

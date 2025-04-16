@@ -20,21 +20,14 @@ namespace FitAppAPI.Controllers
     {
         private readonly AppDbContext _context;
 
-       // public TrainingsController(AppDbContext context)
-       // {
-       //     _context = context;
-       // }
+        public TrainingsController(AppDbContext context)
+        {
+            _context = context;
+        }
 
         private Guid GetUserId() => Guid.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
 
 
-        private readonly ILogger<TrainingsController> _logger;
-
-        public TrainingsController(AppDbContext context, ILogger<TrainingsController> logger)
-        {
-            _context = context;
-            _logger = logger;
-        }
 
         [HttpGet]
         public async Task<ActionResult<IEnumerable<TrainingDto>>> GetTrainings()
@@ -49,7 +42,7 @@ namespace FitAppAPI.Controllers
                     Id = t.Id,
                     Name = t.Name,
                     CreatedAt = t.CreatedAt,
-                    CompletionPercentage = t.CompletionPercentage, 
+                    CompletionPercentage = t.CompletionPercentage,
                     Exercises = t.TrainingExercises
                         .OrderBy(te => te.OrderIndex)
                         .Select(te => new TrainingExerciseDto
@@ -274,45 +267,30 @@ namespace FitAppAPI.Controllers
         [HttpPost("progress")]
         public async Task<IActionResult> StartExercise([FromBody] StartExerciseDto dto)
         {
-            _logger.LogInformation("StartExercise method called. TrainingId: {TrainingId}, ExerciseId: {ExerciseId}, TrainingSessionId: {TrainingSessionId}",
-                dto.TrainingId, dto.ExerciseId, dto.TrainingSessionId);
 
             var userId = GetUserId();
-            _logger.LogInformation("UserId retrieved: {UserId}", userId);
 
-            try
+
+            var progress = new TrainingProgress
             {
-                var progress = new TrainingProgress
-                {
-                    Id = 0, // Используем GUID, как в твоей БД
-                    TrainingId = dto.TrainingId,
-                    UserId = userId,
-                    ExerciseId = dto.ExerciseId,
-                    SetsPlanned = dto.SetsPlanned,
-                    SetsCompleted = 0,
-                    SetsSkipped = 0,
-                    ExerciseCompletionPercentage = 0, // Начальный процент тренировки
-                    WasSkipped = false,
-                    StartTime = DateTime.UtcNow,
-                    CreatedAt = DateTime.UtcNow,
-                    TrainingSessionId = dto.TrainingSessionId
-                };
+                Id = 0, // Используем GUID, как в твоей БД
+                TrainingId = dto.TrainingId,
+                UserId = userId,
+                ExerciseId = dto.ExerciseId,
+                SetsPlanned = dto.SetsPlanned,
+                SetsCompleted = 0,
+                SetsSkipped = 0,
+                ExerciseCompletionPercentage = 0, // Начальный процент тренировки
+                WasSkipped = false,
+                StartTime = DateTime.UtcNow,
+                CreatedAt = DateTime.UtcNow,
+                TrainingSessionId = dto.TrainingSessionId
+            };
 
-                _logger.LogInformation("TrainingProgress entity created: {Progress}", progress);
+            _context.TrainingProgress.Add(progress);
+            await _context.SaveChangesAsync();
 
-                _context.TrainingProgress.Add(progress);
-                await _context.SaveChangesAsync();
-
-                _logger.LogInformation("TrainingProgress saved to database. Progress Id: {ProgressId}", progress.Id);
-
-                return Ok(new { id = progress.Id });
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "An error occurred while saving the TrainingProgress for TrainingId: {TrainingId}, ExerciseId: {ExerciseId}",
-                    dto.TrainingId, dto.ExerciseId);
-                return StatusCode(500, "Internal server error");
-            }
+            return Ok(new { id = progress.Id });
         }
 
         // Обновление прогресса по завершению упражнения
@@ -350,7 +328,7 @@ namespace FitAppAPI.Controllers
 
             return Ok();
         }
-     
+
 
         [HttpGet("{trainingId}/progress")]
         public async Task<ActionResult<TrainingProgressResponseDto>> GetProgressByTraining(int trainingId)
