@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:urbanfit/pages/authorization/login_page.dart';
+import 'package:urbanfit/pages/authorizationPage/login_page.dart';
 import 'package:urbanfit/pages/home_page.dart';
 import 'package:urbanfit/services/auth_service.dart';
 

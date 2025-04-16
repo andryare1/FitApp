@@ -3,7 +3,7 @@ import 'dart:typed_data';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:urbanfit/pages/authorization/login_page.dart';
+import 'package:urbanfit/pages/authorizationPage/login_page.dart';
 import 'package:urbanfit/services/auth_service.dart';
 
 class ProfilePage extends StatefulWidget {

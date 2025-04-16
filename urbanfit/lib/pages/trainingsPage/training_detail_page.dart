@@ -330,15 +330,102 @@ class _TrainingDetailsPageState extends State<TrainingDetailsPage> {
     }
   }
 
-  void _startTraining(BuildContext context) {
-  Navigator.push(
-    context,
-    MaterialPageRoute(
-      builder: (context) => TrainingStartPage(
-        trainingId: widget.trainingId,
-        exercises: _exercises,
+  // void _startTraining(BuildContext context) {
+  //   Navigator.push(
+  //     context,
+  //     MaterialPageRoute(
+  //       builder: (context) => TrainingStartPage(
+  //         trainingId: widget.trainingId,
+  //         exercises: _exercises,
+  //       ),
+  //     ),
+  //   );
+  // }
+
+  void _startTraining(BuildContext context) async {
+    final training = await _trainingFuture;
+
+    if (_hasChanges(training)) {
+      final shouldSave = await showDialog<bool>(
+        context: context,
+        builder: (context) => AlertDialog(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(20),
+          ),
+          backgroundColor: Colors.white,
+          title: const Row(
+            children: [
+              SizedBox(width: 8),
+              Text('Вы внесли изменения'),
+            ],
+          ),
+          content: const Text(
+            'Сохранить и начать тренировку?',
+            style: TextStyle(fontSize: 16),
+          ),
+          actionsPadding:
+              const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+          actionsAlignment: MainAxisAlignment.end,
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(context, false),
+              style: TextButton.styleFrom(
+                foregroundColor: Colors.redAccent,
+              ),
+              child: const Text('Отмена'),
+            ),
+            TextButton(
+              onPressed: () => Navigator.pop(context, true),
+              child: const Text('Сохранить и начать'),
+            ),
+          ],
+        ),
+      );
+
+      if (shouldSave == true) {
+        await _saveTraining();
+      } else {
+        return;
+      }
+    }
+
+    if (!mounted) return;
+
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => TrainingStartPage(
+          trainingId: widget.trainingId,
+          exercises: _exercises,
+        ),
       ),
-    ),
-  );
-}
+    );
+  }
+
+  bool _hasChanges(Training training) {
+    if (_nameController.text != training.name) return true;
+    final originalExercises = training.exercises ?? [];
+
+    if (_exercises.length != originalExercises.length) return true;
+
+    for (int i = 0; i < _exercises.length; i++) {
+      final local = _exercises[i];
+      final server = originalExercises.firstWhere(
+          (e) => e.exerciseId == local['exerciseId'],
+          orElse: () => TrainingExercise(
+                id: -1,
+                exerciseId: -1,
+              ));
+
+      if (local['sets'] != server.sets ||
+          local['reps'] != server.reps ||
+          local['weight'] != server.weight ||
+          local['orderIndex'] != server.orderIndex ||
+          local['name'] != server.exerciseName) {
+        return true;
+      }
+    }
+
+    return false;
+  }
 }

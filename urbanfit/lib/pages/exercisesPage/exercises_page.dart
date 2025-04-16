@@ -54,39 +54,44 @@ class _ExercisesPageState extends State<ExercisesPage> {
   ];
 
   void _onSearchTextChanged(String query) async {
-    if (query.isEmpty) {
-      setState(() {
-        _searchResults
-            .clear(); 
-      });
-      return;
-    }
+  //print('Поисковой запрос: $query'); // отладка
 
+  if (query.isEmpty) {
     setState(() {
-      _isSearching = true;
+      _searchResults.clear(); 
     });
+    return;
+  }
 
-    final token = await _authService.getToken();
+  setState(() {
+    _isSearching = true;
+  });
 
-    if (token == null) {
+  final token = await _authService.getToken();
+  //print('Полученный токен: $token'); // отладка
+
+  if (token == null) {
     setState(() {
       _isSearching = false;
       _searchResults = [];
     });
-    print("Ошибка: токен не найден");
+    //print("Ошибка: токен не найден");
     return;
   }
-    try {
-      final results = await _exerciseService.searchExercises(query, token);
-      setState(() {
-        _searchResults = results;
-      });
-    } catch (e) {
-      setState(() {
-        _searchResults = [];
-      });
-    }
+
+  try {
+    final results = await _exerciseService.searchExercises(query, token);
+   // print('Результаты поиска: $results'); // отладка
+    setState(() {
+      _searchResults = results;
+    });
+  } catch (e) {
+    //print('Ошибка при поиске: $e'); // отладка
+    setState(() {
+      _searchResults = [];
+    });
   }
+}
 
   void _cancelSearch() {
     setState(() {

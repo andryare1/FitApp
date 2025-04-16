@@ -81,7 +81,6 @@ class _TrainingStartPageState extends State<TrainingStartPage> {
   }
 
   Future<void> _startExerciseProgress() async {
-
     final token = await _authService.getToken();
     if (token == null || _sessionId == null) {
       return;
@@ -181,6 +180,15 @@ class _TrainingStartPageState extends State<TrainingStartPage> {
       );
       return;
     }
+
+     if (double.tryParse(_weightController.text) == null ||
+        int.tryParse(_repsController.text) == null) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Введите корректные значения')),
+      );
+      return;
+    }
+    
     setState(() {
       _completedSets++;
       _weightController.clear();
@@ -312,7 +320,7 @@ class _TrainingStartPageState extends State<TrainingStartPage> {
             TweenAnimationBuilder<double>(
               tween: Tween<double>(
                 begin: 0,
-                end: (_currentExerciseIndex + _currentSet / _totalSets) /
+                end: (_currentExerciseIndex + (_currentSet - 1) / _totalSets) /
                     _exercises.length,
               ),
               duration: const Duration(milliseconds: 500),

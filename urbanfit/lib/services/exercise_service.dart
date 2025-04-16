@@ -47,19 +47,21 @@ class ExerciseService {
 
 
   Future<List<Map<String, dynamic>>> searchExercises(
-      String query, String token) async {
-    final response = await http.get(
-      Uri.parse('$baseUrl/api/exercises/search?query=$query'),
-      headers: _getHeaders(token),
-    );
+    String query, String token) async {
+  final response = await http.get(
+    Uri.parse('$baseUrl/api/exercises/search?query=$query'),
+    headers: _getHeaders(token),
+  );
 
-    return _handleResponse<List<Map<String, dynamic>>>(response, (data) {
-      return data.map((exercise) {
-        exercise['imageUrl'] = '$baseUrl${exercise['imageUrl']}';
-        return exercise as Map<String, dynamic>;
-      }).toList();
-    });
-  } // ---------------------------------------------------------------------- не работает поиск почему то 
+  return _handleResponse<List<Map<String, dynamic>>>(response, (data) {
+    final List<dynamic> exercises = data; 
+    return exercises.map<Map<String, dynamic>>((exercise) {
+      final updatedExercise = Map<String, dynamic>.from(exercise);
+      updatedExercise['imageUrl'] = '$baseUrl${updatedExercise['imageUrl']}';
+      return updatedExercise;
+    }).toList();
+  });
+}
 
   // Получение прогресса тренировки
   Future<List<Map<String, dynamic>>> getTrainingProgress(
