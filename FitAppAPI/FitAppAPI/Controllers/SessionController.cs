@@ -77,7 +77,7 @@ public class SessionController : ControllerBase
     public async Task<IActionResult> DeleteTrainingSession(int sessionId)
     {
         var session = await _context.TrainingSessions
-            .FirstOrDefaultAsync(s => s.Id == sessionId && s.UserId == Guid.Parse("2246A1D9-ADD6-4A0D-9D8B-2691AD57CACF"));
+            .FirstOrDefaultAsync(s => s.Id == sessionId && s.UserId == GetUserId());
 
         if (session == null) return NotFound();
 
