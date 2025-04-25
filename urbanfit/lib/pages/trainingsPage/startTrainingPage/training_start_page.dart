@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:urbanfit/pages/trainingsPage/startTrainingPage/training_result_page.dart';
 import 'package:urbanfit/services/auth_service.dart';
 import 'package:urbanfit/services/exercise_service.dart';
+import 'package:urbanfit/services/session_service.dart';
 
 class TrainingStartPage extends StatefulWidget {
   final int trainingId;
@@ -30,12 +31,14 @@ class _TrainingStartPageState extends State<TrainingStartPage> {
   String _muscleGroup = '';
   final _authService = AuthService();
   final _exerciseService = ExerciseService();
+  final _sessionService = SessionService();
   final _weightController = TextEditingController();
   final _repsController = TextEditingController();
   late int _currentProgressId;
   int? _sessionId; // ID сессии тренировки
 
   final List<Map<String, dynamic>> _exerciseStats = [];
+
 
   @override
   void initState() {
@@ -55,17 +58,49 @@ class _TrainingStartPageState extends State<TrainingStartPage> {
 
     try {
       final sessionId =
-          await _exerciseService.startTrainingSession(widget.trainingId, token);
+          await _sessionService.startTrainingSession(widget.trainingId, token);
       if (!mounted) return;
       setState(() {
         _sessionId = sessionId;
       });
-      _startExerciseProgress(); // начинаем первый прогресс только после создания сессии
+      _startExerciseProgress(); 
     } catch (e) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text('Не удалось создать сессию тренировки')),
       );
     }
+  }
+
+  Future<bool> _onWillPop() async {
+    // Показать диалог перед выходом
+    final shouldExit = await showDialog<bool>(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: const Text('Выход из тренировки'),
+          content: const Text('При выходе прогресс будет утерян. Вы уверены, что хотите выйти?'),
+          actions: [
+            TextButton(
+              onPressed: () {
+                Navigator.of(context).pop(false); // Отменить выход
+              },
+              child: const Text('Отмена'),
+            ),
+            TextButton(
+              onPressed: () async {
+                // Удаление данных сессии из базы данных
+                await _sessionService.deleteTrainingSession(_sessionId!);
+                Navigator.of(context).pop(true); // Подтвердить выход
+              },
+              child: const Text('Выйти'),
+            ),
+          ],
+        );
+      },
+    );
+
+    // Возвращаем true или false в зависимости от того, подтвердил ли пользователь выход
+    return shouldExit ?? false;
   }
 
   Future<void> _loadMuscleGroup() async {
@@ -207,7 +242,7 @@ class _TrainingStartPageState extends State<TrainingStartPage> {
 
     try {
       // Вызов эндпоинта для завершения тренировки
-      final response = await _exerciseService.completeTraining(
+      final response = await _sessionService.completeTraining(
         widget.trainingId,
         token,
         sessionId: _sessionId!,
@@ -278,10 +313,12 @@ class _TrainingStartPageState extends State<TrainingStartPage> {
     super.dispose();
   }
 
-  @override
-  Widget build(BuildContext context) {
-    final exercise = _exercises[_currentExerciseIndex];
-    return Scaffold(
+@override
+Widget build(BuildContext context) {
+  final exercise = _exercises[_currentExerciseIndex];
+  return WillPopScope(
+    onWillPop: _onWillPop,  // Использование уже существующего метода
+    child: Scaffold(
       appBar: AppBar(
         title: Text(
             '${_currentExerciseIndex + 1}/${_exercises.length} $_muscleGroup'),
@@ -318,16 +355,10 @@ class _TrainingStartPageState extends State<TrainingStartPage> {
             ),
             const SizedBox(height: 16),
             TweenAnimationBuilder<double>(
-              tween: Tween<double>(
-                begin: 0,
-                end: (_currentExerciseIndex + (_currentSet - 1) / _totalSets) /
-                    _exercises.length,
-              ),
+              tween: Tween<double>(begin: 0, end: (_currentExerciseIndex + (_currentSet - 1) / _totalSets) / _exercises.length),
               duration: const Duration(milliseconds: 500),
               builder: (context, value, child) {
-                return LinearProgressIndicator(
-                  value: value,
-                );
+                return LinearProgressIndicator(value: value);
               },
             ),
             const SizedBox(height: 16),
@@ -338,7 +369,6 @@ class _TrainingStartPageState extends State<TrainingStartPage> {
             const SizedBox(height: 4),
             Text('Сеты: $_currentSet/$_totalSets'),
             const SizedBox(height: 16),
-
             // Вес и повторения в одну строку
             Row(
               children: [
@@ -390,16 +420,13 @@ class _TrainingStartPageState extends State<TrainingStartPage> {
                     child: const Icon(
                       Icons.add,
                       color: Colors.white,
-                      size:
-                          24, // Можно уменьшить или увеличить при необходимости
+                      size: 24, // Можно уменьшить или увеличить при необходимости
                     ),
                   ),
                 ),
               ],
             ),
-
             const SizedBox(height: 16),
-
             // Пропустить подход и упражнение
             Row(
               children: [
@@ -433,6 +460,7 @@ class _TrainingStartPageState extends State<TrainingStartPage> {
           ],
         ),
       ),
-    );
-  }
+    ),
+  );
+}
 }
