@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Authorization;
 
 [ApiController]
 [Route("api/session")]
-//[Authorize]
+[Authorize]
 public class SessionController : ControllerBase
 {
     private readonly AppDbContext _context;
