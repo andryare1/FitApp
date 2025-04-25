@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Authorization;
 
 [Route("api/exercises")]
 [ApiController]
-//[Authorize]
+[Authorize]
 public class ExerciseController : ControllerBase
 {
     private readonly AppDbContext _context;
