@@ -4,10 +4,12 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using FitAppAPI.Services;
+using Microsoft.AspNetCore.Identity.UI.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Logging.AddConsole(); // Добавить вывод в консоль
+builder.Logging.AddConsole();
+builder.Services.AddTransient<IEmailSender, EmailSender>();
 
 builder.Services.AddScoped<JwtService>();
 builder.Services.AddDbContext<AppDbContext>(options =>
@@ -56,14 +58,13 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-// Middleware
 app.UseAuthentication();
-app.UseCors("AllowAll"); // Включаем CORS  
+app.UseCors("AllowAll"); 
 app.UseAuthorization();
 
 app.UseAuthorization();
 
 app.MapControllers();
-app.UseStaticFiles(); // Для обслуживания статических файлов
+app.UseStaticFiles(); 
 
 app.Run();

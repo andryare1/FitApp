@@ -24,4 +24,10 @@
     <PackageReference Include="System.CodeDom" Version="9.0.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="EmailTemplates\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="EmailTemplates\" />
+  </ItemGroup>
 </Project>

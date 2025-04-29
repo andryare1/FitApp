@@ -12,7 +12,8 @@ namespace FitAppAPI.Data
         public DbSet<Training> Trainings { get; set; }
         public DbSet<TrainingExercise> TrainingExercises { get; set; }
         public DbSet<TrainingProgress> TrainingProgress { get; set; }
-        public DbSet<TrainingSession> TrainingSessions { get; set; } // ⬅ добавляем новую таблицу
-      
+        public DbSet<TrainingSession> TrainingSessions { get; set; } 
+        public DbSet<EmailVerificationCode> EmailVerificationCodes { get; set; }
+
     }
 }

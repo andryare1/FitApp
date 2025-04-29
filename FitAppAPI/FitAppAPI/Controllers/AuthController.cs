@@ -48,7 +48,12 @@ namespace FitAppAPI.Controllers
             await _context.Users.AddAsync(user);
             await _context.SaveChangesAsync();
 
-            return Ok(new { message = "Регистрация успешна!" });
+            return Ok(new
+            {
+                message = "Регистрация успешна!",
+                userId = user.Id,
+                email = user.Email
+            });
         }
 
 
@@ -59,6 +64,11 @@ namespace FitAppAPI.Controllers
             if (user == null || !VerifyPassword(model.Password, user.PasswordHash))
             {
                 return Unauthorized(new { message = "Неверный логин или пароль." });
+            }
+
+            if (!user.IsEmailVerified)
+            {
+                return Unauthorized(new { message = "Email не подтвержден" });
             }
 
             // Преобразуем userId из Guid в строку

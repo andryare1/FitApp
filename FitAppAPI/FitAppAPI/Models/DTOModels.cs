@@ -127,3 +127,14 @@ public class StartTrainingSessionDto
     public int TrainingId { get; set; }
 }
 
+public class SendVerificationCodeDto
+{
+    public Guid UserId { get; set; }
+    public string Email { get; set; }
+}
+
+public class VerifyEmailCodeDto
+{
+    public Guid UserId { get; set; }
+    public string Code { get; set; }
+}
