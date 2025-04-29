@@ -6,8 +6,8 @@ import 'dart:convert';
 import 'dart:io';
 import 'package:http_parser/http_parser.dart';
 
-//const baseUrl = 'http://192.168.31.65:5016'; // для макбука
-const baseUrl = 'http://192.168.31.142:5016';   // для ПК
+const baseUrl = 'http://192.168.31.169:5016'; // для макбука
+//const baseUrl = 'http://192.168.31.142:5016';   // для ПК
 
 class AuthService {
   Future<void> saveUsername(String username) async {
@@ -47,23 +47,44 @@ class AuthService {
     await prefs.setString('token', token); // Сохраняем токен
   }
 
-  Future<String?> register(
-      String username, String email, String password) async {
-    final response = await http.post(
-      Uri.parse('$baseUrl/api/auth/register'),
-      headers: {'Content-Type': 'application/json'},
-      body: json
-          .encode({'username': username, 'email': email, 'password': password}),
-    );
+  // Future<String?> register(
+  //     String username, String email, String password) async {
+  //   final response = await http.post(
+  //     Uri.parse('$baseUrl/api/auth/register'),
+  //     headers: {'Content-Type': 'application/json'},
+  //     body: json
+  //         .encode({'username': username, 'email': email, 'password': password}),
+  //   );
 
-    if (response.statusCode == 200) {
-      return null; // Регистрация успешна, возвращаем null (нет ошибки)
-    } else {
-      final errorData = json.decode(response.body);
-      return errorData['message'] ??
-          'Ошибка регистрации'; // Получаем сообщение об ошибке с сервера
-    }
+  //   if (response.statusCode == 200) {
+  //     return null; // Регистрация успешна, возвращаем null (нет ошибки)
+  //   } else {
+  //     final errorData = json.decode(response.body);
+  //     return errorData['message'] ??
+  //         'Ошибка регистрации'; // Получаем сообщение об ошибке с сервера
+  //   }
+  // }
+
+  Future<Map<String, dynamic>?> register(
+    String username, String email, String password) async {
+  final response = await http.post(
+    Uri.parse('$baseUrl/api/auth/register'),
+    headers: {'Content-Type': 'application/json'},
+    body: json.encode({
+      'username': username,
+      'email': email,
+      'password': password,
+    }),
+  );
+
+  if (response.statusCode == 200) {
+    final data = json.decode(response.body);
+    return data; // Предполагаем, что сервер возвращает { "userId": "...", "email": "..." }
+  } else {
+    final errorData = json.decode(response.body);
+    throw Exception(errorData['message'] ?? 'Ошибка регистрации');
   }
+}
 
   Future<String?> getUsername() async {
     final prefs = await SharedPreferences.getInstance();
@@ -85,7 +106,8 @@ class AuthService {
     final url = '$baseUrl/api/avatar/$userId';
 
     // Запрос аватарки с сервера
-    final response = await http.get(Uri.parse(url) , headers: {'Authorization': 'Bearer $token'});
+    final response = await http
+        .get(Uri.parse(url), headers: {'Authorization': 'Bearer $token'});
 
     if (response.statusCode == 200) {
       // Сервер возвращает успешный ответ, можем обработать данные
@@ -158,8 +180,7 @@ class AuthService {
     }
   }
 
-
-    Future<bool> deleteAvatar() async {
+  Future<bool> deleteAvatar() async {
     final token = await getToken();
     if (token == null) return false;
 
@@ -170,14 +191,55 @@ class AuthService {
     );
 
     if (response.statusCode == 200) {
-      await clearAvatarPath(); 
+      await clearAvatarPath();
       return true;
     } else {
       return false;
     }
   }
+
   Future<void> clearAvatarPath() async {
     final prefs = await SharedPreferences.getInstance();
     await prefs.remove('avatarPath');
   }
+
+  Future<String?> sendVerificationCode(String userId, String email) async {
+    final response = await http.post(
+      Uri.parse('$baseUrl/api/email-verification/send-code'),
+      headers: {'Content-Type': 'application/json'},
+      body: jsonEncode({
+        'userId': userId,
+        'email': email,
+      }),
+    );
+
+    if (response.statusCode == 200) {
+      return null; // код отправлен
+    } else {
+      final error = jsonDecode(response.body);
+      return error['message'] ?? 'Не удалось отправить код';
+    }
+  }
+
+Future<String?> verifyEmailCode(String userId, String code) async {
+  final response = await http.post(
+    Uri.parse('$baseUrl/api/email-verification/verify'),
+    headers: {'Content-Type': 'application/json'},
+    body: jsonEncode({
+      'userId': userId,
+      'code': code,
+    }),
+  );
+
+  if (response.statusCode == 200) {
+    return null; // подтвержден успешно
+  } else {
+    try {
+      final error = jsonDecode(response.body);
+      return error['message'] ?? 'Ошибка подтверждения';
+    } catch (_) {
+      return response.body; // просто возвращаем как текст
+    }
+  }
+}
 }

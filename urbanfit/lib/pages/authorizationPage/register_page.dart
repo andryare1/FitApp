@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:urbanfit/pages/authorizationPage/email_confirmation_page.dart';
 import 'package:urbanfit/services/auth_service.dart';
 import 'login_page.dart';
 
@@ -16,7 +17,7 @@ class _RegisterPageState extends State<RegisterPage> {
   final AuthService _authService = AuthService();
 
   bool _isLoading = false;
-  bool _isPasswordVisible = false; 
+  bool _isPasswordVisible = false;
 
   bool _isUsernameValid(String username) {
     return username.length >= 5;
@@ -60,47 +61,45 @@ class _RegisterPageState extends State<RegisterPage> {
       return;
     }
 
-    setState(() {
-      _isLoading = true;
-    });
-
+    setState(() => _isLoading = true);
     ScaffoldMessenger.of(context).hideCurrentSnackBar();
 
     try {
-      String? errorMessage = await _authService.register(
+      final result = await _authService.register(
         _usernameController.text.trim(),
         _emailController.text.trim(),
         _passwordController.text.trim(),
       );
 
-      if (errorMessage == null) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-              backgroundColor: Color.fromARGB(255, 168, 225, 162),
-              content: Text('Регистрация успешна! Войдите в аккаунт')),
-        );
-
+      if (result != null &&
+          result['userId'] != null &&
+          result['email'] != null) {
+        final userId = result['userId'];
+        final email = result['email'];
+        _authService.sendVerificationCode(userId, email);
         Navigator.pushReplacement(
           context,
-          MaterialPageRoute(builder: (context) => const LoginPage()),
+          MaterialPageRoute(
+            builder: (_) => EmailConfirmationPage(userId: userId, email: email),
+          ),
         );
       } else {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-              backgroundColor: const Color.fromARGB(255, 200, 108, 108),
-              content: Text(errorMessage)),
+          const SnackBar(
+            backgroundColor: Color.fromARGB(255, 200, 108, 108),
+            content: Text('Что-то пошло не так. Повторите позже.'),
+          ),
         );
       }
     } catch (e) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-            backgroundColor: const Color.fromARGB(255, 200, 108, 108),
-            content: Text('Ошибка: ${e.toString()}')),
+          backgroundColor: const Color.fromARGB(255, 200, 108, 108),
+          content: Text(e.toString()),
+        ),
       );
     } finally {
-      setState(() {
-        _isLoading = false;
-      });
+      setState(() => _isLoading = false);
     }
   }
 
@@ -138,7 +137,7 @@ class _RegisterPageState extends State<RegisterPage> {
             const SizedBox(height: 20),
             TextField(
               controller: _passwordController,
-              obscureText: !_isPasswordVisible, 
+              obscureText: !_isPasswordVisible,
               decoration: InputDecoration(
                 labelText: 'Пароль',
                 prefixIcon: const Icon(Icons.lock),
@@ -153,8 +152,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   ),
                   onPressed: () {
                     setState(() {
-                      _isPasswordVisible =
-                          !_isPasswordVisible; 
+                      _isPasswordVisible = !_isPasswordVisible;
                     });
                   },
                 ),

@@ -4,7 +4,7 @@ description: A new Flutter project for FitApp
 environment:
   sdk: "^3.6.0"
 
-publish_to: 'none' # Remove this line if you want to publish to pub.dev
+publish_to: "none" # Remove this line if you want to publish to pub.dev
 
 dependencies:
   image_picker: ^0.8.7
@@ -21,8 +21,8 @@ dependencies:
   path_provider: ^2.1.5
   mime_type: ^1.0.1
   flutter_launcher_icons: ^0.14.3
+  fl_chart: ^0.71.0
 
-  
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -60,4 +60,3 @@ flutter_launcher_icons:
   macos:
     generate: true
     image_path: "assets/icons/icon.png"
-

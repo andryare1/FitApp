@@ -39,7 +39,6 @@ class _TrainingStartPageState extends State<TrainingStartPage> {
 
   final List<Map<String, dynamic>> _exerciseStats = [];
 
-
   @override
   void initState() {
     super.initState();
@@ -63,7 +62,7 @@ class _TrainingStartPageState extends State<TrainingStartPage> {
       setState(() {
         _sessionId = sessionId;
       });
-      _startExerciseProgress(); 
+      _startExerciseProgress();
     } catch (e) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text('Не удалось создать сессию тренировки')),
@@ -78,7 +77,8 @@ class _TrainingStartPageState extends State<TrainingStartPage> {
       builder: (BuildContext context) {
         return AlertDialog(
           title: const Text('Выход из тренировки'),
-          content: const Text('При выходе прогресс будет утерян. Вы уверены, что хотите выйти?'),
+          content: const Text(
+              'При выходе прогресс будет утерян. Вы уверены, что хотите выйти?'),
           actions: [
             TextButton(
               onPressed: () {
@@ -216,14 +216,14 @@ class _TrainingStartPageState extends State<TrainingStartPage> {
       return;
     }
 
-     if (double.tryParse(_weightController.text) == null ||
+    if (double.tryParse(_weightController.text) == null ||
         int.tryParse(_repsController.text) == null) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text('Введите корректные значения')),
       );
       return;
     }
-    
+
     setState(() {
       _completedSets++;
       _weightController.clear();
@@ -313,154 +313,173 @@ class _TrainingStartPageState extends State<TrainingStartPage> {
     super.dispose();
   }
 
-@override
-Widget build(BuildContext context) {
-  final exercise = _exercises[_currentExerciseIndex];
-  return WillPopScope(
-    onWillPop: _onWillPop,  // Использование уже существующего метода
-    child: Scaffold(
-      appBar: AppBar(
-        title: Text(
-            '${_currentExerciseIndex + 1}/${_exercises.length} $_muscleGroup'),
-        actions: [
-          Padding(
-            padding: const EdgeInsets.all(16),
-            child: Center(
-                child: Text(
-              _formatTime(_elapsedTime),
-              style: const TextStyle(fontWeight: FontWeight.bold),
-            )),
-          ),
-        ],
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          _isTimerRunning ? _pauseTimer() : _resumeTimer();
+  @override
+  Widget build(BuildContext context) {
+    final exercise = _exercises[_currentExerciseIndex];
+    return WillPopScope(
+      onWillPop: _onWillPop, // Использование уже существующего метода
+      child: GestureDetector(
+        onTap: () {
+          // Скрыть клавиатуру при касании вне поля ввода
+          FocusScope.of(context).unfocus();
         },
-        child: Icon(_isTimerRunning ? Icons.pause : Icons.play_arrow),
-      ),
-      body: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Container(
-              height: 180,
-              width: double.infinity,
-              decoration: BoxDecoration(
-                color: Colors.grey[300],
-                borderRadius: BorderRadius.circular(12),
+        child: Scaffold(
+          appBar: AppBar(
+            title: Text(
+                '${_currentExerciseIndex + 1}/${_exercises.length} $_muscleGroup'),
+            actions: [
+              Padding(
+                padding: const EdgeInsets.all(16),
+                child: Center(
+                    child: Text(
+                  _formatTime(_elapsedTime),
+                  style: const TextStyle(fontWeight: FontWeight.bold),
+                )),
               ),
-              child: const Center(child: Text('Видео упражнения')),
-            ),
-            const SizedBox(height: 16),
-            TweenAnimationBuilder<double>(
-              tween: Tween<double>(begin: 0, end: (_currentExerciseIndex + (_currentSet - 1) / _totalSets) / _exercises.length),
-              duration: const Duration(milliseconds: 500),
-              builder: (context, value, child) {
-                return LinearProgressIndicator(value: value);
-              },
-            ),
-            const SizedBox(height: 16),
-            Text(
-              'Упражнение: ${exercise['name']}',
-              style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-            ),
-            const SizedBox(height: 4),
-            Text('Сеты: $_currentSet/$_totalSets'),
-            const SizedBox(height: 16),
-            // Вес и повторения в одну строку
-            Row(
+            ],
+          ),
+          floatingActionButton: FloatingActionButton(
+            onPressed: () {
+              _isTimerRunning ? _pauseTimer() : _resumeTimer();
+            },
+            child: Icon(_isTimerRunning ? Icons.pause : Icons.play_arrow),
+          ),
+          body: SingleChildScrollView(
+            padding: const EdgeInsets.all(16),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Expanded(
-                  child: TextField(
-                    controller: _weightController,
-                    enabled: _isTimerRunning,
-                    keyboardType: TextInputType.number,
-                    textAlign: TextAlign.center,
-                    decoration: InputDecoration(
-                      labelText: 'Вес (кг)',
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                    ),
+                Container(
+                  height: 180,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                    color: Colors.grey[300],
+                    borderRadius: BorderRadius.circular(12),
                   ),
+                  child: const Center(child: Text('Видео упражнения')),
                 ),
-                const SizedBox(width: 8),
-                Expanded(
-                  child: TextField(
-                    controller: _repsController,
-                    enabled: _isTimerRunning,
-                    keyboardType: TextInputType.number,
-                    textAlign: TextAlign.center,
-                    decoration: InputDecoration(
-                      labelText: 'Повторения',
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                    ),
-                  ),
+                const SizedBox(height: 16),
+                TweenAnimationBuilder<double>(
+                  tween: Tween<double>(
+                      begin: 0,
+                      end: (_currentExerciseIndex +
+                              (_currentSet - 1) / _totalSets) /
+                          _exercises.length),
+                  duration: const Duration(milliseconds: 500),
+                  builder: (context, value, child) {
+                    return LinearProgressIndicator(value: value);
+                  },
                 ),
-                const SizedBox(width: 8),
-                // Кнопка +
-                SizedBox(
-                  height: 56,
-                  width: 56,
-                  child: ElevatedButton(
-                    onPressed: _isTimerRunning ? _addSetData : null,
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color.fromARGB(255, 83, 174, 86),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(16),
+                const SizedBox(height: 16),
+                Text(
+                  'Упражнение: ${exercise['name']}',
+                  style: const TextStyle(
+                      fontSize: 20, fontWeight: FontWeight.bold),
+                ),
+                const SizedBox(height: 4),
+                Text('Сеты: $_currentSet/$_totalSets'),
+                const SizedBox(height: 16),
+                // Вес и повторения в одну строку
+                Row(
+                  children: [
+                    Expanded(
+                      child: TextField(
+                        controller: _weightController,
+                        enabled: _isTimerRunning,
+                        keyboardType: TextInputType.number,
+                        textAlign: TextAlign.center,
+                        decoration: InputDecoration(
+                          labelText: 'Вес (кг)',
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                        ),
                       ),
-                      padding: EdgeInsets.zero, // Убираем внутренние отступы
-                      alignment: Alignment.center, // Центрируем контент
-                      minimumSize: const Size(56, 56), // Четко задаем размер
                     ),
-                    child: const Icon(
-                      Icons.add,
-                      color: Colors.white,
-                      size: 24, // Можно уменьшить или увеличить при необходимости
+                    const SizedBox(width: 8),
+                    Expanded(
+                      child: TextField(
+                        controller: _repsController,
+                        enabled: _isTimerRunning,
+                        keyboardType: TextInputType.number,
+                        textAlign: TextAlign.center,
+                        decoration: InputDecoration(
+                          labelText: 'Повторения',
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                        ),
+                      ),
                     ),
-                  ),
+                    const SizedBox(width: 8),
+                    // Кнопка +
+                    SizedBox(
+                      height: 56,
+                      width: 56,
+                      child: ElevatedButton(
+                        onPressed: _isTimerRunning ? _addSetData : null,
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor:
+                              const Color.fromARGB(255, 83, 174, 86),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                          padding:
+                              EdgeInsets.zero, // Убираем внутренние отступы
+                          alignment: Alignment.center, // Центрируем контент
+                          minimumSize:
+                              const Size(56, 56), // Четко задаем размер
+                        ),
+                        child: const Icon(
+                          Icons.add,
+                          color: Colors.white,
+                          size:
+                              24, // Можно уменьшить или увеличить при необходимости
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 16),
+                // Пропустить подход и упражнение
+                Row(
+                  children: [
+                    Expanded(
+                      child: ElevatedButton(
+                        onPressed: _isTimerRunning ? _skipSet : null,
+                        style: ElevatedButton.styleFrom(
+                          padding: const EdgeInsets.symmetric(vertical: 16),
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(12)),
+                        ),
+                        child: const Text('Пропустить подход',
+                            style: TextStyle(fontSize: 12)),
+                      ),
+                    ),
+                    const SizedBox(width: 12),
+                    Expanded(
+                      child: ElevatedButton(
+                        onPressed: _isTimerRunning
+                            ? () => _nextExercise(skipped: true)
+                            : null,
+                        style: ElevatedButton.styleFrom(
+                          padding: const EdgeInsets.symmetric(vertical: 16),
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(12)),
+                        ),
+                        child: const Text(
+                          'Пропустить упражнение',
+                          style: TextStyle(fontSize: 12),
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
               ],
             ),
-            const SizedBox(height: 16),
-            // Пропустить подход и упражнение
-            Row(
-              children: [
-                Expanded(
-                  child: ElevatedButton(
-                    onPressed: _isTimerRunning ? _skipSet : null,
-                    style: ElevatedButton.styleFrom(
-                      padding: const EdgeInsets.symmetric(vertical: 16),
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(12)),
-                    ),
-                    child: const Text('Пропустить подход'),
-                  ),
-                ),
-                const SizedBox(width: 12),
-                Expanded(
-                  child: ElevatedButton(
-                    onPressed: _isTimerRunning
-                        ? () => _nextExercise(skipped: true)
-                        : null,
-                    style: ElevatedButton.styleFrom(
-                      padding: const EdgeInsets.symmetric(vertical: 16),
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(12)),
-                    ),
-                    child: const Text('Пропустить упражнение'),
-                  ),
-                ),
-              ],
-            ),
-          ],
+          ),
         ),
       ),
-    ),
-  );
-}
+    );
+  }
 }

@@ -18,7 +18,7 @@ class _HomePageState extends State<HomePage> {
   int _currentIndex = 0;
 
   final List<Widget> _pages = [
-    const MainPage(), // Главная страница
+    //const MainPage(), // Главная страница
     const TrainingsPage(), // Тренировки
     const ExercisesPage(), // Упражнения
     const ProfilePage(), // Страница профиля
@@ -38,7 +38,7 @@ class _HomePageState extends State<HomePage> {
         selectedItemColor: Colors.purple,
         unselectedItemColor: Colors.grey,
         items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Главная'),
+          //BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Главная'),
           BottomNavigationBarItem(
               icon: Icon(Icons.fitness_center), label: 'Тренировки'),
           BottomNavigationBarItem(
