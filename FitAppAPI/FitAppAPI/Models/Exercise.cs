@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using System.Reflection.Metadata;
 
 namespace FitAppAPI.Models
 {
@@ -30,6 +31,9 @@ namespace FitAppAPI.Models
 
         [Required]
         public string ImageUrl { get; set; }
+
+        [Required]
+        public string VideoUrl { get; set; }
 
     }
 }

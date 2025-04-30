@@ -74,6 +74,38 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "FitAppAPI.Controllers.EmailVerificationController",
+    "Method": "SendCode",
+    "RelativePath": "api/email-verification/send-code",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "SendVerificationCodeDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FitAppAPI.Controllers.EmailVerificationController",
+    "Method": "VerifyCode",
+    "RelativePath": "api/email-verification/verify",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "VerifyEmailCodeDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ExerciseController",
     "Method": "GetMuscleGroupByExerciseId",
     "RelativePath": "api/exercises/{id}/muscle-group",

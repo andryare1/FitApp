@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Authorization;
 
 [Route("api/exercises")]
 [ApiController]
-[Authorize]
+//[Authorize]
 public class ExerciseController : ControllerBase
 {
     private readonly AppDbContext _context;
@@ -53,7 +53,9 @@ public class ExerciseController : ControllerBase
                 e.Name,
                 e.MuscleGroup,
                 e.Description,
-                ImageUrl = Url.Content($"~{e.ImageUrl}")
+                ImageUrl = Url.Content($"~{e.ImageUrl}"),
+                VideoUrl = Url.Content($"~{e.VideoUrl}")
+                
             })
             .ToListAsync();
 

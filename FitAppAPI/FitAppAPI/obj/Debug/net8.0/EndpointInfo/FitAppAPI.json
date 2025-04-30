@@ -134,6 +134,68 @@
         }
       }
     },
+    "/api/email-verification/send-code": {
+      "post": {
+        "tags": [
+          "EmailVerification"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SendVerificationCodeDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SendVerificationCodeDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SendVerificationCodeDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/email-verification/verify": {
+      "post": {
+        "tags": [
+          "EmailVerification"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/VerifyEmailCodeDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/VerifyEmailCodeDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/VerifyEmailCodeDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/exercises/search": {
       "get": {
         "tags": [
@@ -829,7 +891,8 @@
           "description",
           "imageUrl",
           "muscleGroup",
-          "name"
+          "name",
+          "videoUrl"
         ],
         "type": "object",
         "properties": {
@@ -851,6 +914,10 @@
             "$ref": "#/components/schemas/MuscleGroup"
           },
           "imageUrl": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "videoUrl": {
             "minLength": 1,
             "type": "string"
           }
@@ -886,6 +953,20 @@
           "trainingCompletionPercentage": {
             "type": "number",
             "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "SendVerificationCodeDto": {
+        "type": "object",
+        "properties": {
+          "userId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -1173,6 +1254,20 @@
             "nullable": true
           },
           "password": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "VerifyEmailCodeDto": {
+        "type": "object",
+        "properties": {
+          "userId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "code": {
             "type": "string",
             "nullable": true
           }
