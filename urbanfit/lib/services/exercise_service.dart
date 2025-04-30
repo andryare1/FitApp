@@ -1,8 +1,8 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 
-const baseUrl = 'http://192.168.31.169:5016'; // для макбука
-//const baseUrl = 'http://192.168.31.142:5016';   // для ПК
+//const baseUrl = 'http://192.168.31.169:5016'; // для макбука
+const baseUrl = 'http://192.168.31.142:5016';   // для ПК
 
 class ExerciseService { 
   // Метод для получения заголовков с токеном
@@ -25,6 +25,8 @@ class ExerciseService {
       final List<dynamic> data = jsonDecode(response.body);
       return data.map((exercise) {
         exercise['imageUrl'] = '$baseUrl${exercise['imageUrl']}';
+        exercise['videoUrl'] = '$baseUrl${exercise['videoUrl']}';
+        
         return exercise as Map<String, dynamic>;
       }).toList();
     } else {

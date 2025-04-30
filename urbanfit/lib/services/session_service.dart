@@ -3,25 +3,10 @@ import 'package:http/http.dart' as http;
 import 'package:urbanfit/services/auth_service.dart';
 
 class SessionService {
-  //static const _baseUrl = 'http://192.168.31.142:5016/api'; // для ПК
-  static const _baseUrl = 'http://192.168.31.169:5016/api'; // для макбука
+  static const _baseUrl = 'http://192.168.31.142:5016/api'; // для ПК
+  //static const _baseUrl = 'http://192.168.31.169:5016/api'; // для макбука
   final AuthService _authService = AuthService();
 
-
-  // Универсальный обработчик ответа
-  T _handleResponse<T>(
-      http.Response response, T Function(dynamic data) onSuccess) {
-    if (response.statusCode == 200) {
-      if (response.body.isEmpty) {
-        return onSuccess(null); // или брось исключение, если ожидаешь данные
-      }
-
-      final data = jsonDecode(response.body);
-      return onSuccess(data);
-    } else {
-      throw Exception('Ошибка: ${response.statusCode}');
-    }
-  }
 
   Map<String, String> _getHeaders(String token) {
     return {

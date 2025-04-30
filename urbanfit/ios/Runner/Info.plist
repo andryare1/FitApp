@@ -6,6 +6,11 @@
 	<string>Мы используем камеру для того, чтобы вы могли сделать фото для вашего профиля.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Мы используем вашу фотогалерею для того, чтобы вы могли выбрать фото для вашего профиля.</string>
+	 <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <true/>
+    </dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>

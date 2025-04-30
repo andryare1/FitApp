@@ -22,6 +22,8 @@ dependencies:
   mime_type: ^1.0.1
   flutter_launcher_icons: ^0.14.3
   fl_chart: ^0.71.0
+  video_player: ^2.9.5
+  chewie: ^1.11.3
 
 dev_dependencies:
   flutter_test:
