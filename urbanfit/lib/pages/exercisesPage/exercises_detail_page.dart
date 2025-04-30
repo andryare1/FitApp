@@ -1,8 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
-import 'package:chewie/chewie.dart';
-import 'package:flutter/services.dart';
+
 
 class ExerciseDetailPage extends StatefulWidget {
   final Map<String, dynamic> exercise;
@@ -15,7 +14,6 @@ class ExerciseDetailPage extends StatefulWidget {
 
 class _ExerciseDetailPageState extends State<ExerciseDetailPage> {
   late VideoPlayerController _videoController;
-  ChewieController? _chewieController;
   bool _isVideoInitialized = false;
   bool _hasError = false;
   Timer? _loadTimeoutTimer;
@@ -26,62 +24,31 @@ class _ExerciseDetailPageState extends State<ExerciseDetailPage> {
     
     _initializeVideo();
   }
-
   Future<void> _initializeVideo() async {
+  final videoUrl = widget.exercise['videoUrl']?.toString();
 
+  if (videoUrl == null || videoUrl.isEmpty) {
+    if (mounted) setState(() => _hasError = true);
+    return;
+  }
 
-    
+  _startTimeoutTimer();
+
   try {
-    final videoUrl = widget.exercise['videoUrl']?.toString();
-    
-    if (videoUrl == null || videoUrl.isEmpty) {
-      if (mounted) setState(() => _hasError = true);
-      return;
-    }
+    _videoController = VideoPlayerController.networkUrl(Uri.parse(videoUrl))
+      ..addListener(_videoListener);
 
-    _startTimeoutTimer();
+    await _videoController.initialize();
 
-    // Инициализация с обработкой платформы
-    _videoController = VideoPlayerController.networkUrl(
-      Uri.parse(videoUrl),
-      // Добавляем конфигурацию для Android/iOS
-      videoPlayerOptions: VideoPlayerOptions(
-        mixWithOthers: true,
-        allowBackgroundPlayback: false,
-      ),
-    )..addListener(_videoListener);
+    _cancelTimer();
+    _videoController.setLooping(true);
+    _videoController.play();
 
-    // Явная проверка поддержки формата
-    final isFormatSupported = await _videoController.initialize().then((_) {
-      return _videoController.value.isInitialized;
-    }).catchError((_) => false);
-
-    if (!isFormatSupported) {
-      throw Exception('Формат видео не поддерживается');
-    }
-
-    if (mounted) {
-      _chewieController = ChewieController(
-        videoPlayerController: _videoController,
-        autoPlay: false,
-        looping: false,
-        aspectRatio: 16 / 9,
-        showControls: true,
-        allowedScreenSleep: false, // Важно для iOS
-        deviceOrientationsAfterFullScreen: [
-          DeviceOrientation.portraitUp,
-        ],
-        errorBuilder: (context, errorMessage) {
-          return _buildErrorPlaceholder();
-        },
-      );
-      _cancelTimer();
-      setState(() => _isVideoInitialized = true);
-    }
+    if (mounted) setState(() => _isVideoInitialized = true);
   } catch (e) {
     debugPrint('Error initializing video: $e');
-    if (mounted) setState(() => _hasError = true);
     _cancelTimer();
+    if (mounted) setState(() => _hasError = true);
     await _videoController.dispose();
   }
 }
@@ -110,7 +77,6 @@ class _ExerciseDetailPageState extends State<ExerciseDetailPage> {
   void dispose() {
     _videoController.removeListener(_videoListener);
     _videoController.dispose();
-    _chewieController?.dispose();
     _cancelTimer();
     super.dispose();
   }
@@ -179,16 +145,14 @@ class _ExerciseDetailPageState extends State<ExerciseDetailPage> {
   }
 
   Widget _buildVideoWidget() {
-    if (_hasError) {
-      return _buildErrorPlaceholder();
-    }
+  if (_hasError) return _buildErrorPlaceholder();
+  if (!_isVideoInitialized) return _buildLoadingIndicator();
 
-    if (!_isVideoInitialized) {
-      return _buildLoadingIndicator();
-    }
-
-    return Chewie(controller: _chewieController!);
-  }
+  return AspectRatio(
+    aspectRatio: _videoController.value.aspectRatio,
+    child: VideoPlayer(_videoController),
+  );
+}
 
   Widget _buildLoadingIndicator() {
     return Container(
