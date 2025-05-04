@@ -4,6 +4,7 @@ import 'package:urbanfit/pages/trainingsPage/startTrainingPage/training_result_p
 import 'package:urbanfit/services/auth_service.dart';
 import 'package:urbanfit/services/exercise_service.dart';
 import 'package:urbanfit/services/session_service.dart';
+import 'package:video_player/video_player.dart';
 
 class TrainingStartPage extends StatefulWidget {
   final int trainingId;
@@ -37,6 +38,11 @@ class _TrainingStartPageState extends State<TrainingStartPage> {
   late int _currentProgressId;
   int? _sessionId; // ID сессии тренировки
 
+  bool _isVideoInitialized = false;
+  bool _hasError = false;
+  Timer? _loadTimeoutTimer;
+  late VideoPlayerController _videoController;
+
   final List<Map<String, dynamic>> _exerciseStats = [];
 
   @override
@@ -50,7 +56,49 @@ class _TrainingStartPageState extends State<TrainingStartPage> {
     _loadMuscleGroup();
     _startTimer();
   }
+  
+  Future<void> _initializeVideo() async {
+    final videoUrl = _exercises[_currentExerciseIndex]['videoUrl']?.toString();
 
+    if (videoUrl == null || videoUrl.isEmpty) {
+      if (mounted) setState (() => _hasError = true);
+      return;
+    }
+_startTimeoutTimer();
+    try {
+_videoController = VideoPlayerController.networkUrl(Uri.parse(videoUrl))..addListener(_videoListener);
+await _videoController.initialize();
+ _cancelTimer();
+    _videoController.setLooping(true);
+    _videoController.play();
+
+    if (mounted) setState(() => _isVideoInitialized = true);
+  } catch (e) {
+    debugPrint('Error initializing video: $e');
+    _cancelTimer();
+    if (mounted) setState(() => _hasError = true);
+    await _videoController.dispose();
+    }
+  }
+  void _videoListener() {
+    if (_videoController.value.hasError && mounted) {
+      setState(() => _hasError = true);
+      _cancelTimer();
+    }
+  }
+
+   void _startTimeoutTimer() {
+    _loadTimeoutTimer = Timer(const Duration(seconds: 5), () {
+      if (mounted && !_isVideoInitialized && !_hasError) {
+        setState(() => _hasError = true);
+      }
+    });
+  }
+
+  void _cancelTimer() {
+    _loadTimeoutTimer?.cancel();
+    _loadTimeoutTimer = null;
+  }
   Future<void> _createTrainingSession() async {
     final token = await _authService.getToken();
     if (token == null) return;
@@ -307,6 +355,9 @@ class _TrainingStartPageState extends State<TrainingStartPage> {
 
   @override
   void dispose() {
+    _videoController.removeListener(_videoListener);
+    _videoController.dispose();
+    _cancelTimer();
     _timer.cancel();
     _weightController.dispose();
     _repsController.dispose();
@@ -349,14 +400,9 @@ class _TrainingStartPageState extends State<TrainingStartPage> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Container(
-                  height: 180,
-                  width: double.infinity,
-                  decoration: BoxDecoration(
-                    color: Colors.grey[300],
+                ClipRRect(            
                     borderRadius: BorderRadius.circular(12),
-                  ),
-                  child: const Center(child: Text('Видео упражнения')),
+                  child: AspectRatio(aspectRatio: 16/9, child: _buildVideoWidget(),),
                 ),
                 const SizedBox(height: 16),
                 TweenAnimationBuilder<double>(
@@ -481,5 +527,66 @@ class _TrainingStartPageState extends State<TrainingStartPage> {
         ),
       ),
     );
+  }
+
+
+   Widget _buildVideoWidget() {
+  if (_hasError) return _buildErrorPlaceholder();
+  if (!_isVideoInitialized) return _buildLoadingIndicator();
+
+  return AspectRatio(
+    aspectRatio: _videoController.value.aspectRatio,
+    child: VideoPlayer(_videoController),
+  );
+}
+
+  Widget _buildLoadingIndicator() {
+    return Container(
+      decoration: BoxDecoration(
+        color: Colors.grey[200],
+        borderRadius: BorderRadius.circular(12),
+      ),
+      child: const Center(
+        child: CircularProgressIndicator(),
+      ),
+    );
+  }
+
+  Widget _buildErrorPlaceholder() {
+    return Container(
+      decoration: BoxDecoration(
+        color: Colors.grey[200],
+        borderRadius: BorderRadius.circular(12),
+      ),
+      child: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Icon(Icons.error_outline, size: 48, color: Colors.grey),
+            const SizedBox(height: 8),
+            Text(
+              'Видео недоступно',
+              style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                color: Colors.grey),
+            ),
+            const SizedBox(height: 8),
+            TextButton(
+              onPressed: _retryVideoLoading,
+              child: const Text('Попробовать снова'),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+    void _retryVideoLoading() {
+    if (mounted) {
+      setState(() {
+        _hasError = false;
+        _isVideoInitialized = false;
+      });
+      _initializeVideo();
+    }
   }
 }

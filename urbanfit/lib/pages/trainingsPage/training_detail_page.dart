@@ -67,7 +67,7 @@ class _TrainingDetailsPageState extends State<TrainingDetailsPage> {
 
           if (!_isInitialized) {
             _nameController.text = training.name;
-            _exercises = (training.exercises ?? [])
+            _exercises = (training.exercises)
                 .map((e) => {
                       'id': e.id,
                       'exerciseId': e.exerciseId,
@@ -209,7 +209,7 @@ class _TrainingDetailsPageState extends State<TrainingDetailsPage> {
                       ? DecorationImage(
                           image: NetworkImage(exercise['imageUrl']!),
                           fit: BoxFit.cover,
-                          onError: (_, __) => Icon(Icons
+                          onError: (_, __) => const Icon(Icons
                               .error), // Обработчик ошибок загрузки изображения
                         )
                       : null,
@@ -404,7 +404,7 @@ class _TrainingDetailsPageState extends State<TrainingDetailsPage> {
 
   bool _hasChanges(Training training) {
     if (_nameController.text != training.name) return true;
-    final originalExercises = training.exercises ?? [];
+    final originalExercises = training.exercises;
 
     if (_exercises.length != originalExercises.length) return true;
 

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:urbanfit/pages/exercisesPage/exercises_page.dart';
-import 'package:urbanfit/pages/main_page.dart';
 import 'package:urbanfit/pages/profile_page.dart';
 import 'package:urbanfit/pages/trainingsPage/trainings_page.dart';
 import 'authorizationPage/login_page.dart'; 
@@ -18,7 +17,6 @@ class _HomePageState extends State<HomePage> {
   int _currentIndex = 0;
 
   final List<Widget> _pages = [
-    //const MainPage(), // Главная страница
     const TrainingsPage(), // Тренировки
     const ExercisesPage(), // Упражнения
     const ProfilePage(), // Страница профиля
@@ -38,7 +36,6 @@ class _HomePageState extends State<HomePage> {
         selectedItemColor: Colors.purple,
         unselectedItemColor: Colors.grey,
         items: const [
-          //BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Главная'),
           BottomNavigationBarItem(
               icon: Icon(Icons.fitness_center), label: 'Тренировки'),
           BottomNavigationBarItem(
