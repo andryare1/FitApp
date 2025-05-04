@@ -52,6 +52,7 @@ namespace FitAppAPI.Controllers
                             ExerciseName = te.Exercise.Name,
                             Sets = te.Sets,
                             ImageUrl = $"{Request.Scheme}://{Request.Host}{te.Exercise.ImageUrl}",
+                            VideoUrl = $"{Request.Scheme}://{Request.Host}{te.Exercise.VideoUrl}",
                             Reps = te.Reps,
                             Weight = te.Weight,
                             OrderIndex = te.OrderIndex,
@@ -88,6 +89,7 @@ namespace FitAppAPI.Controllers
                         ExerciseId = te.ExerciseId,
                         ExerciseName = te.Exercise.Name,
                         ImageUrl = $"{Request.Scheme}://{Request.Host}{te.Exercise.ImageUrl}",
+                        VideoUrl = $"{Request.Scheme}://{Request.Host}{te.Exercise.VideoUrl}",
                         Sets = te.Sets,
                         Reps = te.Reps,
                         Weight = te.Weight,
@@ -184,6 +186,7 @@ namespace FitAppAPI.Controllers
                         ExerciseName = te.Exercise?.Name ?? string.Empty, // Защита от null
                         Sets = te.Sets,
                         ImageUrl = $"{Request.Scheme}://{Request.Host}{te.Exercise.ImageUrl}", // ?????? проверить
+                        VideoUrl = $"{Request.Scheme}://{Request.Host}{te.Exercise.VideoUrl}",
                         Reps = te.Reps,
                         Weight = te.Weight,
                         OrderIndex = te.OrderIndex

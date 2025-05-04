@@ -253,8 +253,68 @@
       "PackagePath": "staticwebassets/exercises/upright_row.png"
     },
     {
+      "Id": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/videos/barbell_row.MP4",
+      "PackagePath": "staticwebassets/videos/barbell_row.MP4"
+    },
+    {
+      "Id": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/videos/bench_press.MP4",
+      "PackagePath": "staticwebassets/videos/bench_press.MP4"
+    },
+    {
+      "Id": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/videos/crossover.MP4",
+      "PackagePath": "staticwebassets/videos/crossover.MP4"
+    },
+    {
       "Id": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/videos/deadlift.mp4",
       "PackagePath": "staticwebassets/videos/deadlift.mp4"
+    },
+    {
+      "Id": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/videos/dips.MP4",
+      "PackagePath": "staticwebassets/videos/dips.MP4"
+    },
+    {
+      "Id": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/videos/dumbbell_fly.MP4",
+      "PackagePath": "staticwebassets/videos/dumbbell_fly.MP4"
+    },
+    {
+      "Id": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/videos/dumbbell_row.MP4",
+      "PackagePath": "staticwebassets/videos/dumbbell_row.MP4"
+    },
+    {
+      "Id": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/videos/hyperextensions.MP4",
+      "PackagePath": "staticwebassets/videos/hyperextensions.MP4"
+    },
+    {
+      "Id": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/videos/incline_dumbbell_press.MP4",
+      "PackagePath": "staticwebassets/videos/incline_dumbbell_press.MP4"
+    },
+    {
+      "Id": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/videos/lat_pulldown.MP4",
+      "PackagePath": "staticwebassets/videos/lat_pulldown.MP4"
+    },
+    {
+      "Id": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/videos/pec_deck.MP4",
+      "PackagePath": "staticwebassets/videos/pec_deck.MP4"
+    },
+    {
+      "Id": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/videos/pull_ups.MP4",
+      "PackagePath": "staticwebassets/videos/pull_ups.MP4"
+    },
+    {
+      "Id": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/videos/pushups.MP4",
+      "PackagePath": "staticwebassets/videos/pushups.MP4"
+    },
+    {
+      "Id": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/videos/seated_row.MP4",
+      "PackagePath": "staticwebassets/videos/seated_row.MP4"
+    },
+    {
+      "Id": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/videos/smith_machine_press.MP4",
+      "PackagePath": "staticwebassets/videos/smith_machine_press.MP4"
+    },
+    {
+      "Id": "/Users/andryare/college/FitApp/FitAppAPI/FitAppAPI/wwwroot/videos/t_bar_row.MP4",
+      "PackagePath": "staticwebassets/videos/t_bar_row.MP4"
     },
     {
       "Id": "obj/Debug/net8.0/staticwebassets/msbuild.FitAppAPI.Microsoft.AspNetCore.StaticWebAssets.props",
