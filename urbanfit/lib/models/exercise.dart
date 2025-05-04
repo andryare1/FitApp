@@ -3,6 +3,7 @@ class Exercise {
   final String name;
   final String muscleGroup;
   final String imageUrl;
+  final String videoUrl;
   int? sets;
   int? reps;
   double? weight;
@@ -12,6 +13,7 @@ class Exercise {
     required this.name,
     required this.muscleGroup,
     required this.imageUrl,
+    required this.videoUrl,
     this.sets,
     this.reps,
     this.weight,
@@ -19,10 +21,10 @@ class Exercise {
 
   factory Exercise.fromJson(Map<String, dynamic> json) {
     return Exercise(
-      id: json['id'],
-      name: json['name'],
-      muscleGroup: json['muscleGroup'],
-      imageUrl: json['imageUrl'],
-    );
+        id: json['id'],
+        name: json['name'],
+        muscleGroup: json['muscleGroup'],
+        imageUrl: json['imageUrl'],
+        videoUrl: json['videoUrl']);
   }
 }

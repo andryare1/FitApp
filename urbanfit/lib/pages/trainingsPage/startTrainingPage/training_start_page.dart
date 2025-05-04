@@ -41,7 +41,7 @@ class _TrainingStartPageState extends State<TrainingStartPage> {
   bool _isVideoInitialized = false;
   bool _hasError = false;
   Timer? _loadTimeoutTimer;
-  late VideoPlayerController _videoController;
+  VideoPlayerController? _videoController;
 
   final List<Map<String, dynamic>> _exerciseStats = [];
 
@@ -55,39 +55,42 @@ class _TrainingStartPageState extends State<TrainingStartPage> {
     _createTrainingSession(); // создаем сессию
     _loadMuscleGroup();
     _startTimer();
+     _initializeVideo();
   }
-  
+
   Future<void> _initializeVideo() async {
     final videoUrl = _exercises[_currentExerciseIndex]['videoUrl']?.toString();
 
     if (videoUrl == null || videoUrl.isEmpty) {
-      if (mounted) setState (() => _hasError = true);
+      if (mounted) setState(() => _hasError = true);
       return;
     }
-_startTimeoutTimer();
+    _startTimeoutTimer();
     try {
-_videoController = VideoPlayerController.networkUrl(Uri.parse(videoUrl))..addListener(_videoListener);
-await _videoController.initialize();
- _cancelTimer();
-    _videoController.setLooping(true);
-    _videoController.play();
+      _videoController = VideoPlayerController.networkUrl(Uri.parse(videoUrl))
+        ..addListener(_videoListener);
+      await _videoController?.initialize();
+      _cancelTimer();
+      _videoController?.setLooping(true);
+      _videoController?.play();
 
-    if (mounted) setState(() => _isVideoInitialized = true);
-  } catch (e) {
-    debugPrint('Error initializing video: $e');
-    _cancelTimer();
-    if (mounted) setState(() => _hasError = true);
-    await _videoController.dispose();
+      if (mounted) setState(() => _isVideoInitialized = true);
+    } catch (e) {
+      debugPrint('Error initializing video: $e');
+      _cancelTimer();
+      if (mounted) setState(() => _hasError = true);
+      await _videoController?.dispose();
     }
   }
+
   void _videoListener() {
-    if (_videoController.value.hasError && mounted) {
+    if (_videoController!.value.hasError && mounted) {
       setState(() => _hasError = true);
       _cancelTimer();
     }
   }
 
-   void _startTimeoutTimer() {
+  void _startTimeoutTimer() {
     _loadTimeoutTimer = Timer(const Duration(seconds: 5), () {
       if (mounted && !_isVideoInitialized && !_hasError) {
         setState(() => _hasError = true);
@@ -99,6 +102,7 @@ await _videoController.initialize();
     _loadTimeoutTimer?.cancel();
     _loadTimeoutTimer = null;
   }
+
   Future<void> _createTrainingSession() async {
     final token = await _authService.getToken();
     if (token == null) return;
@@ -239,6 +243,7 @@ await _videoController.initialize();
       'completed': _completedSets,
       'skipped': skipped,
       'imageUrl': _exercises[_currentExerciseIndex]['imageUrl'],
+      'videoUrl': _exercises[_currentExerciseIndex]['videoUrl'],
     });
     if (_currentExerciseIndex < _exercises.length - 1) {
       setState(() {
@@ -247,6 +252,11 @@ await _videoController.initialize();
         _completedSets = 0;
         _totalSets = _exercises[_currentExerciseIndex]['sets'];
       });
+      await _videoController?.pause();
+await _videoController?.dispose();
+_isVideoInitialized = false;
+_hasError = false;
+_initializeVideo(); 
       _loadMuscleGroup();
       _startExerciseProgress();
       _weightController.clear();
@@ -355,8 +365,8 @@ await _videoController.initialize();
 
   @override
   void dispose() {
-    _videoController.removeListener(_videoListener);
-    _videoController.dispose();
+    _videoController?.removeListener(_videoListener);
+    _videoController?.dispose();
     _cancelTimer();
     _timer.cancel();
     _weightController.dispose();
@@ -400,9 +410,12 @@ await _videoController.initialize();
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                ClipRRect(            
-                    borderRadius: BorderRadius.circular(12),
-                  child: AspectRatio(aspectRatio: 16/9, child: _buildVideoWidget(),),
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(12),
+                  child: AspectRatio(
+                    aspectRatio: 16 / 9,
+                    child: _buildVideoWidget(),
+                  ),
                 ),
                 const SizedBox(height: 16),
                 TweenAnimationBuilder<double>(
@@ -529,16 +542,15 @@ await _videoController.initialize();
     );
   }
 
+  Widget _buildVideoWidget() {
+    if (_hasError) return _buildErrorPlaceholder();
+    if (!_isVideoInitialized) return _buildLoadingIndicator();
 
-   Widget _buildVideoWidget() {
-  if (_hasError) return _buildErrorPlaceholder();
-  if (!_isVideoInitialized) return _buildLoadingIndicator();
-
-  return AspectRatio(
-    aspectRatio: _videoController.value.aspectRatio,
-    child: VideoPlayer(_videoController),
-  );
-}
+    return AspectRatio(
+      aspectRatio: _videoController!.value.aspectRatio,
+      child: VideoPlayer(_videoController!),
+    );
+  }
 
   Widget _buildLoadingIndicator() {
     return Container(
@@ -566,8 +578,10 @@ await _videoController.initialize();
             const SizedBox(height: 8),
             Text(
               'Видео недоступно',
-              style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                color: Colors.grey),
+              style: Theme.of(context)
+                  .textTheme
+                  .titleMedium
+                  ?.copyWith(color: Colors.grey),
             ),
             const SizedBox(height: 8),
             TextButton(
@@ -580,7 +594,7 @@ await _videoController.initialize();
     );
   }
 
-    void _retryVideoLoading() {
+  void _retryVideoLoading() {
     if (mounted) {
       setState(() {
         _hasError = false;

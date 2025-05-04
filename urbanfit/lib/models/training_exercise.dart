@@ -7,6 +7,7 @@ class TrainingExercise {
   final double weight;
   final int orderIndex;
   final String? imageUrl;
+   final String? videoUrl;
 
   TrainingExercise({
     required this.id,
@@ -18,6 +19,7 @@ class TrainingExercise {
     this.orderIndex = 0,
 
     this.imageUrl,
+    this.videoUrl
   });
 
   factory TrainingExercise.fromJson(Map<String, dynamic> json) {
@@ -30,6 +32,7 @@ class TrainingExercise {
       weight: json['weight']?.toDouble() ?? 0,
       orderIndex: json['orderIndex'],
       imageUrl: json['imageUrl'],
+      videoUrl: json['videoUrl'],
     );
   }
 

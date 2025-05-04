@@ -1,10 +1,10 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 
-//const baseUrl = 'http://192.168.31.169:5016'; // для макбука
-const baseUrl = 'http://192.168.31.142:5016';   // для ПК
+const baseUrl = 'http://192.168.31.169:5016'; // для макбука
+//const baseUrl = 'http://192.168.31.142:5016';   // для ПК
 
-class ExerciseService { 
+class ExerciseService {
   // Метод для получения заголовков с токеном
   Map<String, String> _getHeaders(String token) {
     return {
@@ -26,7 +26,7 @@ class ExerciseService {
       return data.map((exercise) {
         exercise['imageUrl'] = '$baseUrl${exercise['imageUrl']}';
         exercise['videoUrl'] = '$baseUrl${exercise['videoUrl']}';
-        
+
         return exercise as Map<String, dynamic>;
       }).toList();
     } else {
@@ -48,23 +48,22 @@ class ExerciseService {
     });
   }
 
-
   Future<List<Map<String, dynamic>>> searchExercises(
-    String query, String token) async {
-  final response = await http.get(
-    Uri.parse('$baseUrl/api/exercises/search?query=$query'),
-    headers: _getHeaders(token),
-  );
+      String query, String token) async {
+    final response = await http.get(
+      Uri.parse('$baseUrl/api/exercises/search?query=$query'),
+      headers: _getHeaders(token),
+    );
 
-  return _handleResponse<List<Map<String, dynamic>>>(response, (data) {
-    final List<dynamic> exercises = data; 
-    return exercises.map<Map<String, dynamic>>((exercise) {
-      final updatedExercise = Map<String, dynamic>.from(exercise);
-      updatedExercise['imageUrl'] = '$baseUrl${updatedExercise['imageUrl']}';
-      return updatedExercise;
-    }).toList();
-  });
-}
+    return _handleResponse<List<Map<String, dynamic>>>(response, (data) {
+      final List<dynamic> exercises = data;
+      return exercises.map<Map<String, dynamic>>((exercise) {
+        final updatedExercise = Map<String, dynamic>.from(exercise);
+        updatedExercise['imageUrl'] = '$baseUrl${updatedExercise['imageUrl']}';
+        return updatedExercise;
+      }).toList();
+    });
+  }
 
   // Получение прогресса тренировки
   Future<List<Map<String, dynamic>>> getTrainingProgress(
@@ -79,45 +78,47 @@ class ExerciseService {
     });
   }
 
-Future<void> completeExerciseProgress(
-    int progressId, int setsCompleted, bool wasSkipped, String token, {required int sessionId}) async {
-  final response = await http.put(
-    Uri.parse('$baseUrl/api/trainings/progress/$progressId'),
-    headers: _getHeaders(token),
-    body: jsonEncode({
-      'SetsCompleted': setsCompleted,
-      'WasSkipped': wasSkipped,
-      'SessionId': sessionId,  // Добавление sessionId
-    }),
-  );
-
-  _handleResponse(response, (_) {});
-}
-
-Future<int> startExerciseProgress(
-    int trainingId, int exerciseId, int setsPlanned, String token, {required int sessionId}) async {
-
-  try {
-    final response = await http.post(
-      Uri.parse('$baseUrl/api/trainings/progress'),
+  Future<void> completeExerciseProgress(
+      int progressId, int setsCompleted, bool wasSkipped, String token,
+      {required int sessionId}) async {
+    final response = await http.put(
+      Uri.parse('$baseUrl/api/trainings/progress/$progressId'),
       headers: _getHeaders(token),
       body: jsonEncode({
-        'TrainingId': trainingId,
-        'ExerciseId': exerciseId,
-        'SetsPlanned': setsPlanned,
-        'TrainingSessionId': sessionId,
+        'SetsCompleted': setsCompleted,
+        'WasSkipped': wasSkipped,
+        'SessionId': sessionId, // Добавление sessionId
       }),
     );
 
-    final responseData = _handleResponse<Map<String, dynamic>>(response, (data) {
-      return data;
-    });
-
-    return responseData['id'];
-  } catch (e) {
-    rethrow;  // Re-throw the error to handle it outside if needed
+    _handleResponse(response, (_) {});
   }
-}
+
+  Future<int> startExerciseProgress(
+      int trainingId, int exerciseId, int setsPlanned, String token,
+      {required int sessionId}) async {
+    try {
+      final response = await http.post(
+        Uri.parse('$baseUrl/api/trainings/progress'),
+        headers: _getHeaders(token),
+        body: jsonEncode({
+          'TrainingId': trainingId,
+          'ExerciseId': exerciseId,
+          'SetsPlanned': setsPlanned,
+          'TrainingSessionId': sessionId,
+        }),
+      );
+
+      final responseData =
+          _handleResponse<Map<String, dynamic>>(response, (data) {
+        return data;
+      });
+
+      return responseData['id'];
+    } catch (e) {
+      rethrow; // Re-throw the error to handle it outside if needed
+    }
+  }
 
   // Универсальный обработчик ответа
   T _handleResponse<T>(

@@ -24,6 +24,7 @@ dependencies:
   fl_chart: ^0.71.0
   video_player: ^2.9.5
   chewie: ^1.11.3
+  network_info_plus: ^5.0.1
 
 dev_dependencies:
   flutter_test:

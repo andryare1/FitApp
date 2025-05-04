@@ -77,6 +77,7 @@ class _TrainingDetailsPageState extends State<TrainingDetailsPage> {
                       'weight': e.weight,
                       'orderIndex': e.orderIndex,
                       'imageUrl': e.imageUrl ?? '',
+                      'videoUrl': e.videoUrl ?? '',
                     })
                 .toList();
             _isInitialized = true;
@@ -267,6 +268,7 @@ class _TrainingDetailsPageState extends State<TrainingDetailsPage> {
                   'comment': e['comment'] ?? '',
                   'orderIndex': _exercises.length,
                   'imageUrl': e['imageUrl'] ?? '',
+                  'videoUrl': e['videoUrl'] ?? ''
                 })
             .toList();
 
