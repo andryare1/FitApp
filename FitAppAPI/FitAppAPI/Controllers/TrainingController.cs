@@ -12,7 +12,6 @@ using FitAppAPI.Models;
 namespace FitAppAPI.Controllers
 {
 
-
     [ApiController]
     [Route("api/trainings")]
     [Authorize]

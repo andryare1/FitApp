@@ -44,32 +44,70 @@ public class SessionController : ControllerBase
     {
         var userId = GetUserId();
 
-        // Находим сессию тренировки по ID
         var session = await _context.TrainingSessions
-            .Include(s => s.Progresses) // Включаем прогресс сессии
-            .Include(s => s.Training) // Включаем саму тренировку
+            .Include(s => s.Progresses)
+            .Include(s => s.Training)
+                .ThenInclude(t => t.TrainingExercises)
             .FirstOrDefaultAsync(s => s.Id == sessionId && s.UserId == userId);
 
-        if (session == null)
-            return NotFound("Session not found.");
+        if (session == null) return NotFound();
 
-        // Если нет прогресса в сессии
-        if (session.Progresses == null || !session.Progresses.Any())
-            return BadRequest("No progress found for this session.");
+        // 1. Создаем недостающие записи прогресса
+        foreach (var exercise in session.Training.TrainingExercises)
+        {
+            var progress = session.Progresses.FirstOrDefault(p => p.ExerciseId == exercise.ExerciseId);
+            if (progress == null)
+            {
+                progress = new TrainingProgress
+                {
+                    TrainingId = session.TrainingId,
+                    ExerciseId = exercise.ExerciseId,
+                    UserId = userId,
+                    TrainingSessionId = sessionId,
+                    SetsPlanned = exercise.Sets,
+                    SetsCompleted = 0,
+                    SetsSkipped = exercise.Sets,
+                    WasSkipped = true, // Все автоматически созданные - пропущенные
+                    ExerciseCompletionPercentage = 0,
+                    StartTime = DateTime.UtcNow.AddMinutes(-5),
+                    EndTime = DateTime.UtcNow,
+                    CreatedAt = DateTime.UtcNow
+                };
+                _context.TrainingProgress.Add(progress);
+            }
+            else if (progress.SetsCompleted == 0 && !progress.WasSkipped)
+            {
+                // Корректируем некорректные записи
+                progress.WasSkipped = true;
+                progress.SetsSkipped = progress.SetsPlanned;
+            }
+        }
 
-        // Вычисляем процент выполнения для текущей сессии
-        var sessionCompletion = session.Progresses.Average(p => p.ExerciseCompletionPercentage);
+        // 2. Пересчитываем проценты для всех упражнений
+        foreach (var progress in session.Progresses)
+        {
+            progress.ExerciseCompletionPercentage = progress.SetsPlanned > 0
+                ? (decimal)progress.SetsCompleted / progress.SetsPlanned * 100
+                : 0;
+        }
 
-        // Обновляем процент выполнения тренировки в таблице Trainings
-        session.Training.CompletionPercentage = Math.Round(sessionCompletion, 2);
+        // 3. Считаем общий процент
+        session.Training.CompletionPercentage = session.Progresses.Any()
+            ? Math.Round(session.Progresses.Average(p => p.ExerciseCompletionPercentage), 2)
+            : 0;
 
-        // Сохраняем изменения в базе данных
+        session.CompletedAt = DateTime.UtcNow;
         await _context.SaveChangesAsync();
 
         return Ok(new
         {
-            message = "Session completed",
-            completionPercentage = session.Training.CompletionPercentage
+            completionPercentage = session.Training.CompletionPercentage,
+            details = session.Progresses.Select(p => new {
+                p.ExerciseId,
+                p.SetsCompleted,
+                p.WasSkipped,
+                p.ExerciseCompletionPercentage
+            })
         });
     }
 

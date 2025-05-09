@@ -385,6 +385,30 @@
         }
       }
     },
+    "/api/Statistics/user": {
+      "get": {
+        "tags": [
+          "Statistics"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Statistics/muscle-groups": {
+      "get": {
+        "tags": [
+          "Statistics"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/trainings": {
       "get": {
         "tags": [
@@ -1048,6 +1072,10 @@
             "nullable": true
           },
           "imageUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "videoUrl": {
             "type": "string",
             "nullable": true
           },

@@ -222,6 +222,26 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "FitAppAPI.Controllers.StatisticsController",
+    "Method": "GetMuscleGroupStats",
+    "RelativePath": "api/Statistics/muscle-groups",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FitAppAPI.Controllers.StatisticsController",
+    "Method": "GetUserStatistics",
+    "RelativePath": "api/Statistics/user",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "FitAppAPI.Controllers.TrainingsController",
     "Method": "GetTrainings",
     "RelativePath": "api/trainings",
