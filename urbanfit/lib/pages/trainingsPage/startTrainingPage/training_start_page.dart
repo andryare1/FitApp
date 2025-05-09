@@ -235,36 +235,88 @@ class _TrainingStartPageState extends State<TrainingStartPage> {
     _nextSet();
   }
 
-  void _nextExercise({bool skipped = false}) async {
-    await _completeExercise(skipped: skipped);
-    _exerciseStats.add({
-      'name': _exercises[_currentExerciseIndex]['name'],
-      'sets': _totalSets,
-      'completed': _completedSets,
-      'skipped': skipped,
-      'imageUrl': _exercises[_currentExerciseIndex]['imageUrl'],
-      'videoUrl': _exercises[_currentExerciseIndex]['videoUrl'],
+ // Добавляем переменную для отслеживания пропусков
+bool _isCurrentSkipped = false;
+
+void _nextExercise({bool skipped = false}) async {
+  _isCurrentSkipped = skipped; // Сохраняем статус пропуска
+  
+  await _completeExercise(skipped: skipped); 
+
+  _exerciseStats.add({
+    'name': _exercises[_currentExerciseIndex]['name'],
+    'sets': _totalSets,
+    'completed': skipped ? 0 : _completedSets,
+    'skipped': skipped,
+    'imageUrl': _exercises[_currentExerciseIndex]['imageUrl'],
+    'videoUrl': _exercises[_currentExerciseIndex]['videoUrl'],
+  });
+
+  if (_currentExerciseIndex < _exercises.length - 1) {
+    setState(() {
+      _currentExerciseIndex++;
+      _currentSet = 1;
+      _completedSets = 0;
+      _totalSets = _exercises[_currentExerciseIndex]['sets'];
+      _isCurrentSkipped = false; // Сбрасываем для нового упражнения
     });
-    if (_currentExerciseIndex < _exercises.length - 1) {
-      setState(() {
-        _currentExerciseIndex++;
-        _currentSet = 1;
-        _completedSets = 0;
-        _totalSets = _exercises[_currentExerciseIndex]['sets'];
-      });
-      await _videoController?.pause();
-await _videoController?.dispose();
-_isVideoInitialized = false;
-_hasError = false;
-_initializeVideo(); 
-      _loadMuscleGroup();
-      _startExerciseProgress();
-      _weightController.clear();
-      _repsController.clear();
-    } else {
-      _finishTraining();
-    }
+
+    await _videoController?.dispose();
+    _isVideoInitialized = false;
+    _hasError = false;
+    _initializeVideo();
+    await _loadMuscleGroup();
+    await _startExerciseProgress();
+  } else {
+    _finishTraining();
   }
+}
+
+Future<void> _validateExerciseCompletion() async {
+  // Проверяем только текущее упражнение
+  if (_completedSets == 0 && !_isCurrentSkipped) {
+    await _completeExercise(skipped: true);
+  }
+}
+
+void _finishTraining() async {
+  // Проверяем только текущее упражнение перед завершением
+  await _validateExerciseCompletion();
+  
+  _timer.cancel();
+
+  final token = await _authService.getToken();
+  if (token == null || _sessionId == null) return;
+
+  try {
+    final response = await _sessionService.completeTraining(
+      widget.trainingId,
+      token,
+      sessionId: _sessionId!,
+    );
+
+    if (response['completionPercentage'] != null) {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(
+          builder: (context) => TrainingResultPage(
+            elapsedTime: _elapsedTime,
+            stats: _exerciseStats,
+            completionPercentage: (response['completionPercentage'] as num).toDouble(),
+          ),
+        ),
+      );
+    } else {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Ошибка при завершении тренировки')),
+      );
+    }
+  } catch (e) {
+    ScaffoldMessenger.of(context).showSnackBar(
+      const SnackBar(content: Text('Ошибка при завершении тренировки')),
+    );
+  }
+}
 
   void _addSetData() {
     if (_weightController.text.isEmpty || _repsController.text.isEmpty) {
@@ -290,46 +342,7 @@ _initializeVideo();
     _nextSet();
   }
 
-  void _finishTraining() async {
-    // Останавливаем таймер
-    _timer.cancel();
 
-    // Отправляем запрос на сервер для завершения тренировки и обновления процента
-    final token = await _authService.getToken();
-    if (token == null || _sessionId == null) return;
-
-    try {
-      // Вызов эндпоинта для завершения тренировки
-      final response = await _sessionService.completeTraining(
-        widget.trainingId,
-        token,
-        sessionId: _sessionId!,
-      );
-
-      // Проверка успешного ответа от сервера
-      if (response['completionPercentage'] != null) {
-        // Перенаправляем на страницу результатов с данными тренировки
-        Navigator.pushReplacement(
-          context,
-          MaterialPageRoute(
-            builder: (context) => TrainingResultPage(
-              elapsedTime: _elapsedTime,
-              stats: _exerciseStats,
-              completionPercentage: response['completionPercentage'],
-            ),
-          ),
-        );
-      } else {
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(content: Text('Ошибка при завершении тренировки')),
-        );
-      }
-    } catch (e) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Ошибка при завершении тренировки')),
-      );
-    }
-  }
 
   String getMuscleGroupName(dynamic muscleGroup) {
     switch (muscleGroup) {

@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:urbanfit/pages/authorizationPage/login_page.dart';
 import 'package:urbanfit/services/auth_service.dart';
+import 'package:urbanfit/widgets/statistics_widget.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});
@@ -189,64 +190,129 @@ class _ProfilePageState extends State<ProfilePage> {
     );
   }
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Профиль'),
-        centerTitle: true,
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.exit_to_app),
-            onPressed: _showExitDialog,
-          ),
-        ],
-      ),
-      body: Padding(
-        padding: const EdgeInsets.all(1.0),
-        child: _isLoading
-            ? const Center(child: CircularProgressIndicator())
-            : Column(
-                mainAxisAlignment: MainAxisAlignment.start,
+ @override
+Widget build(BuildContext context) {
+  return Scaffold(
+    appBar: AppBar(
+      title: const Text('Профиль'),
+      centerTitle: true,
+      actions: [
+        IconButton(
+          icon: const Icon(Icons.exit_to_app),
+          onPressed: _showExitDialog,
+        ),
+      ],
+    ),
+    body: _isLoading
+        ? const Center(child: CircularProgressIndicator())
+        : SingleChildScrollView(
+            child: Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
+                  // Аватар с кнопкой редактирования
                   Center(
-                    child: CircleAvatar(
-                      radius: 45,
-                      backgroundColor: avatarBytes == null
-                          ? Colors.grey[300]
-                          : Colors.transparent,
-                      child: avatarBytes != null
-                          ? ClipOval(
-                              child: Image.memory(
-                                avatarBytes!,
-                                fit: BoxFit.cover,
-                                width: 100,
-                                height: 100,
-                                errorBuilder: (context, error, stackTrace) {
-                                  return Image.asset('assets/error.png');
-                                },
+                    child: Stack(
+                      clipBehavior: Clip.none,
+                      children: [
+                        CircleAvatar(
+                          radius: 48,
+                          backgroundColor: Theme.of(context).colorScheme.surfaceVariant,
+                          child: avatarBytes != null
+                              ? ClipOval(
+                                  child: Image.memory(
+                                    avatarBytes!,
+                                    fit: BoxFit.cover,
+                                    width: 96,
+                                    height: 96,
+                                  ),
+                                )
+                              : Icon(
+                                  Icons.person,
+                                  size: 56,
+                                  color: Theme.of(context).colorScheme.onSurfaceVariant,
+                                ),
+                        ),
+                        Positioned(
+                          bottom: -4,
+                          right: -4,
+                          child: Container(
+                            width: 32,
+                            height: 32,
+                            decoration: BoxDecoration(
+                              color: Colors.deepPurple.shade300,
+                              shape: BoxShape.circle,
+                              border: Border.all(
+                                color: Theme.of(context).scaffoldBackgroundColor,
+                                width: 2,
                               ),
-                            )
-                          : const Icon(Icons.person,
-                              size: 60, color: Colors.white),
+                            ),
+                            child: IconButton(
+                              padding: EdgeInsets.zero,
+                              iconSize: 16,
+                              icon: const Icon(Icons.edit),
+                              color: Colors.white,
+                              onPressed: _showPhotoOptions,
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
                   ),
-                  TextButton(
-                    onPressed: _showPhotoOptions,
-                    style: TextButton.styleFrom(
-                      foregroundColor: Colors.black,
+                  const SizedBox(height: 16),
+                  
+                  // Приветственное сообщение
+                  Container(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 20,
+                      vertical: 10,
                     ),
-                    child: const Text('Изменить фото'),
+                    decoration: BoxDecoration(
+                      color: Colors.deepPurple.shade50,
+                      borderRadius: BorderRadius.circular(20),
+                      border: Border.all(
+                        color: Colors.deepPurple.shade100,
+                        width: 1,
+                      ),
+                    ),
+                    child: Text(
+                      username != null 
+                          ? 'Добро пожаловать, $username!' 
+                          : 'Добро пожаловать!',
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.w500,
+                        color: Colors.deepPurple.shade800,
+                      ),
+                    ),
                   ),
-                  Text(
-                    username != null
-                        ? 'Добро пожаловать, $username!'
-                        : 'Загрузка...',
-                    style: const TextStyle(fontSize: 18),
+                  
+                  const SizedBox(height: 24),
+                  const Divider(),
+                  const SizedBox(height: 16),
+                  
+                  // Заголовок статистики
+                  const Align(
+                    alignment: Alignment.centerLeft,
+                    child: Center
+                    (child: Text( 'Ваша статистика',
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.w600,
+                        color: Colors.black87,)
+                     
+                      ),
+                    ),
                   ),
+                  const SizedBox(height: 16),
+                  
+                  // Виджет статистики
+                  const StatisticsWidget(),
                 ],
               ),
-      ),
-    );
-  }
+            ),
+          ),
+  );
+}
 }
