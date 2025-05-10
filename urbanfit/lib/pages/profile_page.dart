@@ -207,7 +207,7 @@ Widget build(BuildContext context) {
         ? const Center(child: CircularProgressIndicator())
         : SingleChildScrollView(
             child: Padding(
-              padding: const EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(4.0),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
@@ -305,7 +305,7 @@ Widget build(BuildContext context) {
                       ),
                     ),
                   ),
-                  const SizedBox(height: 16),
+                  const SizedBox(height: 4),
                   
                   // Виджет статистики
                   const StatisticsWidget(),

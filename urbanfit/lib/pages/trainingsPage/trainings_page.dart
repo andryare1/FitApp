@@ -283,6 +283,7 @@ class _TrainingsPageState extends State<TrainingsPage> {
           'exerciseId': exercise.exerciseId,
           'name': exercise.exerciseName,
           'imageUrl': exercise.imageUrl,
+          'videoUrl': exercise.videoUrl,
           'sets': exercise.sets,
           'reps': exercise.reps,
           'weight': exercise.weight,

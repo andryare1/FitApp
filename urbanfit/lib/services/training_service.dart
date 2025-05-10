@@ -5,8 +5,8 @@ import 'package:urbanfit/models/training_exercise.dart';
 import 'package:urbanfit/services/auth_service.dart';
 
 class TrainingService {
-  static const _baseUrl = 'http://192.168.31.142:5016/api'; // для ПК
-  //static const _baseUrl = 'http://192.168.31.169:5016/api'; // для макбука
+  //static const _baseUrl = 'http://192.168.31.142:5016/api'; // для ПК
+  static const _baseUrl = 'http://192.168.31.208:5016/api'; // для макбука
   final AuthService _authService = AuthService();
 
   Future<List<Training>> getUserTrainings() async {
@@ -15,7 +15,6 @@ class TrainingService {
       Uri.parse('$_baseUrl/trainings'),
       headers: _getHeaders(token),
     );
-
 
     return _handleResponse<List<Training>>(
       response,
@@ -170,9 +169,8 @@ class TrainingService {
 
     return _handleResponse<Map<String, dynamic>>(
       response,
-      (body) => body,  // Возвращаем данные, например, процент завершения тренировки
+      (body) =>
+          body, // Возвращаем данные, например, процент завершения тренировки
     );
   }
-
-
 }

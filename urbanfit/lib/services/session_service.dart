@@ -3,8 +3,8 @@ import 'package:http/http.dart' as http;
 import 'package:urbanfit/services/auth_service.dart';
 
 class SessionService {
-  static const _baseUrl = 'http://192.168.31.142:5016/api'; // для ПК
-  //static const _baseUrl = 'http://192.168.31.169:5016/api'; // для макбука
+  //static const _baseUrl = 'http://192.168.31.142:5016/api'; // для ПК
+  static const _baseUrl = 'http://192.168.31.208:5016/api'; // для макбука
   final AuthService _authService = AuthService();
 
 
