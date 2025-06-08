@@ -33,7 +33,7 @@
 ## 🔧 Установка и запуск
 1. Клонировать репозиторий:
    ```bash
-   git clone https://github.com/your-username/fittrack.git](https://github.com/andryare1/FitApp.git
+   git clone https://github.com/andryare1/FitApp.git
 2. Установить зависимости:
     ```bash
     flutter pub get
